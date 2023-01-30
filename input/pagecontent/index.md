@@ -1,3 +1,15 @@
 # Terminology for XDS Metadata
+The purpose of the Implementation Guide (IG) is to...
 
-Feel free to modify this index page with your own awesome content!
+## Usage
+...
+
+
+### Validation
+...
+
+### Upload
+...
+
+### Download/Search
+...

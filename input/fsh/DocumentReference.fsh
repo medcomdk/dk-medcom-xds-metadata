@@ -18,7 +18,9 @@ Description: "A profile stating the rules, when exchanging a CDA Appointment (AP
   * system 1..
   * system from APD_DK_IHE_FormatCode_VS (required)
   * code 1..
-* category 1..1
+  * obeys apd-dk-rule-1
+* category 1..1 
+* category ^short = "Describing the class of the "
 * category.coding.code 1..
 * category.coding.system 1..
 * category.coding.system from DK_IHE_ClassCode_VS (required)
@@ -31,3 +33,8 @@ Description: "A profile stating the rules, when exchanging a CDA Appointment (AP
 * context.facilityType.coding.code 1..
 * context.facilityType.coding.system 1..
 * context.facilityType.coding.system from APD_DK_IHE_HealthcareFacilityTypeCode_VS (required)
+
+Invariant: apd-dk-rule-1
+Description: "Where formatCode is 'urn:ad:dk:medcom:appointmentsummary:full', the eventCode must be 'ALAL01' (hjertesygdomme)"
+Severity: #error
+Expression: "where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/dk-ihe-typecode-de-regenstrief').code = '56446-8').context.event.coding.code = 'ALAL01'"
