@@ -1,5 +1,5 @@
 CodeSystem: MedComIHE_LOINCTypeCode
-Id: MedCom-ihe-LOINC-type-codes-CS
+Id: MedCom-ihe-LOINC-typecode-CS
 Title: "LOINC (Logical Observation Identifiers Names and Codes)"
 Description: "LOINC document type codes (International)"
 * ^version = "1.0.0"
@@ -19,7 +19,7 @@ Description: "LOINC document type codes (International)"
 * #28615-3 "Audiology Study"
 
 CodeSystem: MedComIHE_TypeCode
-Id: MedCom-ihe-type-codes-CS
+Id: MedCom-ihe-typecode-CS
 Title: "MedCom Message Codes"
 Description: "MedCom document type codes (Danish)"
 * ^version = "1.0.0"
