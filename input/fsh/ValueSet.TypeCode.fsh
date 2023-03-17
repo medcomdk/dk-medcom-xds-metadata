@@ -15,8 +15,7 @@ Description: "APD-DK: ValueSet containing TypeCodes."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
-* include codes from system MedComIHE_LOINCTypeCode
-* include codes from system MedComIHE_TypeCode
+* MedComIHE_LOINCTypeCode#56446-8 "Appointment Summary Document" 
 
 ValueSet: QRD_DK_IHE_TypeCode
 Id: MedCom-dk-ihe-qrd-typecode-VS
@@ -25,5 +24,4 @@ Description: "QRD-DK: ValueSet containing TypeCodes."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
-* include codes from system MedComIHE_LOINCTypeCode
-* include codes from system MedComIHE_TypeCode
+* MedComIHE_LOINCTypeCode#74465-6 "Questionnaire Response Document"
