@@ -2,6 +2,7 @@ ValueSet: MedComIHE_CoreHealthcareFacilityTypeCode
 Id: MedCom-ihe-core-HealthcareFacilityTypeCode-VS
 Title: "IHE HealthcareFacilityTypeCode"
 Description: "ValueSet containing HealthcareFacilityTypeCode."
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
@@ -74,6 +75,7 @@ ValueSet: MedComIHE_APDDkHealthcareFacilityTypeCode
 Id: MedCom-ihe-apd-HealthcareFacilityTypeCode-VS
 Title: "APD-DK IHE HealthcareFacilityTypeCode"
 Description: "APD-DK: ValueSet containing HealthcareFacilityTypeCode."
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
@@ -146,6 +148,7 @@ ValueSet: MedComIHE_QRDDkHealthcareFacilityTypeCode
 Id: MedCom-ihe-qrd-HealthcareFacilityTypeCode-VS
 Title: "QRD-DK IHE HealthcareFacilityTypeCode"
 Description: "QRD-DK: ValueSet containing HealthcareFacilityTypeCode."
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"

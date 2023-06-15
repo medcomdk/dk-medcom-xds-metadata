@@ -5,6 +5,7 @@ Description: "Identifies the type of the encapsulated data and identifies a meth
 1. top level media type and
 2. media subtype.
 Lookup value set: http://www.iana.org/assignments/media-types/media-types.xhtml"			
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-01"

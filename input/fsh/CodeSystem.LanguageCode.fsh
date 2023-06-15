@@ -2,6 +2,7 @@ CodeSystem: MedComIHE_IdentificationOfLanguages
 Id: MedCom-ihe-LanguageCode-CS
 Title: "Identification of Languages"
 Description: "Tags for the Identification of Languages"
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-01"

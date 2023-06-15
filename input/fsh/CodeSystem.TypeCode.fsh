@@ -2,6 +2,7 @@ CodeSystem: MedComIHE_LOINCTypeCode
 Id: MedCom-ihe-LOINC-typecode-CS
 Title: "LOINC (Logical Observation Identifiers Names and Codes)"
 Description: "LOINC document type codes (International)"
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-01"
@@ -22,6 +23,7 @@ CodeSystem: MedComIHE_TypeCode
 Id: MedCom-ihe-typecode-CS
 Title: "MedCom Message Codes"
 Description: "MedCom document type codes (Danish)"
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-01"

@@ -2,6 +2,7 @@ CodeSystem: MedComIHE_ClassCode
 Id: MedCom-ihe-classcode-CS
 Title: "DK IHE ClassCode"
 Description: "CodeSystem for ClassCode"
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"

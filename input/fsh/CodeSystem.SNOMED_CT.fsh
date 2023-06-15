@@ -2,6 +2,7 @@ CodeSystem: MedComIHE_SnomedCT
 Id: MedCom-ihe-snomed-CS
 Title: "DK-subset SNOMED CT"
 Description: "Subset of the SNOMED CT CodeSystem"
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-01-01"

@@ -2,6 +2,7 @@ CodeSystem: MedComIHE_EpisodeOfCare
 Id: MedCom-ihe-episodeOfCare-CS
 Title: "DK IHE Episode of care label"
 Description: "CodeSystem for Danish episode of care - defined by SKS Danish Collection og codesystems"
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-01-01"
@@ -20,6 +21,7 @@ CodeSystem: MedComIHE_NPU
 Id: MedCom-ihe-npu-CS
 Title: "DK IHE NPU"
 Description: "CodeSystem for Danish NPU"
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-01"
@@ -37,6 +39,7 @@ CodeSystem: MedComIHE_AnalysisCodes
 Id: MedCom-ihe-analysis-codes-CS
 Title: "DK MedCom analysis codes"
 Description: "CodeSystem for MedCom analysis codes"
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-01"
@@ -49,6 +52,7 @@ CodeSystem: MedComIHE_PRODKQuestionnaire
 Id: MedCom-ihe-prodk-questionnaire-CS
 Title: "Questionnaires used in the Danish Patient Reported Outcome (PRO), by PRO-sekretariatet."
 Description: "Standards and profiles used for the Patient Reported Outcome (PRO) in Danish Health; https://spgdef.dk/qfdd"
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-08-31"

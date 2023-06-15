@@ -2,6 +2,7 @@ ValueSet: MedComIHE_CorePracticeSettingCode
 Id: MedCom-ihe-core-PracticeSettingCode-VS
 Title: "IHE PracticeSettingCode"
 Description: "ValueSet containing PracticeSettingCode."
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
@@ -58,6 +59,7 @@ ValueSet: MedComIHE_APDDkPracticeSettingCode
 Id: MedCom-ihe-apd-PracticeSettingCode-VS
 Title: "APD_DK IHE PracticeSettingCode"
 Description: "APD_DK: ValueSet containing PracticeSettingCode."
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
@@ -113,6 +115,7 @@ ValueSet: MedComIHE_QRDDkPracticeSettingCode
 Id: MedCom-ihe-qrd-PracticeSettingCode-VS
 Title: "QRD_DK IHE PracticeSettingCode"
 Description: "QRD_DK: ValueSet containing PracticeSettingCode."
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"

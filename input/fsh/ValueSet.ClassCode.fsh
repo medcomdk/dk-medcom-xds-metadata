@@ -2,6 +2,7 @@ ValueSet: MedComIHE_CoreClassCode
 Id: MedCom-ihe-core-classcode-VS
 Title: "IHE ClassCode"
 Description: "ValueSet containing ClassCodes."
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"

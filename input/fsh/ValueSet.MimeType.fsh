@@ -2,6 +2,7 @@ ValueSet: MedComIHE_CoreMimeType
 Id: MedCom-ihe-core-mimetype-VS
 Title: "IHE MimeType"
 Description: "Values for the document metadata attribute mimeType"
+* ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-04"
