@@ -9,6 +9,7 @@ Description: "CodeSystem for FormatCode"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.184.100.10"
 * #urn:ad:dk:medcom:apd-v2.0.1:full "DK APD schema" /*12-05-2020*/
+* #urn:ad:dk:medcom:apd-v2.9.0:full "Future DK APD schema" /*12-05-2020*/
 * #urn:ad:dk:medcom:appointmentsummary:full "DK Appointment Summary Document schema" /*08-06-2016*/
 * #urn:ad:dk:medcom:cmr-v1.0:full "DK CMR schema" /*01-09-2021*/
 * #urn:ad:dk:medcom:cpd-v1.0.1:full "DK CPD schema" /*29-11-2018*/
