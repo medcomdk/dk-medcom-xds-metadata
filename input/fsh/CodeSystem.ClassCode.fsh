@@ -1,4 +1,4 @@
-CodeSystem: MedComIHE_ClassCode
+/* CodeSystem: MedComIHE_ClassCode
 Id: MedCom-ihe-classcode-CS
 Title: "DK IHE ClassCode"
 Description: "CodeSystem for ClassCode"
@@ -8,4 +8,4 @@ Description: "CodeSystem for ClassCode"
 * ^date = "2022-01-26"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.184.100.9"
-* #001 "Klinisk rapport"
+* #001 "Klinisk rapport" */

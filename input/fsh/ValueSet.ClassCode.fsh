@@ -5,8 +5,8 @@ Description: "ValueSet containing ClassCodes."
 * ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
-* ^date = "2022-01-26"
-* include codes from system MedComIHE_ClassCode
+* ^date = "2022-01-26" //1.2.208.184.100.9
+* $DanishiheOID#001 "Klinisk Rapport"
 /*
 ValueSet: MedComIHE_APDDkClassCode
 Id: MedCom-ihe-apd-classcode-VS

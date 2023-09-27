@@ -6,7 +6,8 @@ Description: "Values for the document metadata attribute mimeType"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-04"
-* include codes from system MedComIHE_MediaTypes
+* $IANAMediaOID#text/xml "MimeType-text/xml"
+//* $IANAMediaOID#"All Mime Media Types" "MimeType-text/subType-text"
 
 /*
 ValueSet: MedComIHE_APDDkMimeType

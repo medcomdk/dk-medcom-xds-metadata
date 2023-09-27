@@ -1,4 +1,4 @@
-ValueSet: MedComIHE_CoreTypeCode
+/* ValueSet: MedComIHE_CoreTypeCode
 Id: MedCom-ihe-core-typecode-VS
 Title: "IHE TypeCode"
 Description: "ValueSet containing TypeCode."
@@ -6,9 +6,9 @@ Description: "ValueSet containing TypeCode."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
-* include codes from system MedComIHE_LOINCTypeCode
-* include codes from system MedComIHE_TypeCode
-
+* include codes from system $LoincOID
+* include codes from system $MedComOID
+ */
 ValueSet: APD_DK_IHE_TypeCode
 Id: MedCom-dk-ihe-apd-typecode-VS
 Title: "APD-DK IHE TypeCode"
@@ -17,7 +17,7 @@ Description: "APD-DK: ValueSet containing TypeCodes."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
-* MedComIHE_LOINCTypeCode#56446-8 "Appointment Summary Document" 
+* $LoincOID#56446-8 "Appointment Summary Document" 
 
 ValueSet: QRD_DK_IHE_TypeCode
 Id: MedCom-dk-ihe-qrd-typecode-VS
@@ -27,4 +27,4 @@ Description: "QRD-DK: ValueSet containing TypeCodes."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
-* MedComIHE_LOINCTypeCode#74465-6 "Questionnaire Response Document"
+* $LoincOID#74465-6 "Questionnaire Response Document"

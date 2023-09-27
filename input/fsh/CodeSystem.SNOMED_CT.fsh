@@ -1,4 +1,4 @@
-CodeSystem: MedComIHE_SnomedCT
+/* CodeSystem: MedComIHE_SnomedCT
 Id: MedCom-ihe-snomed-CS
 Title: "DK-subset SNOMED CT"
 Description: "Subset of the SNOMED CT CodeSystem"
@@ -118,4 +118,4 @@ Description: "Subset of the SNOMED CT CodeSystem"
 * #550691000005104 "tandplejeklinik"
 * #550701000005104 "tandteknisk klinik"
 * #554231000005106 "vaccinationsklinik"
-* #554051000005108 "zoneterapiklinik"
+* #554051000005108 "zoneterapiklinik" */

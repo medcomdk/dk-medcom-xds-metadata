@@ -1,4 +1,4 @@
-CodeSystem: MedComIHE_EpisodeOfCare
+/* CodeSystem: MedComIHE_EpisodeOfCare
 Id: MedCom-ihe-episodeOfCare-CS
 Title: "DK IHE Episode of care label"
 Description: "CodeSystem for Danish episode of care - defined by SKS Danish Collection og codesystems"

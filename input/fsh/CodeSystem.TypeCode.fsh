@@ -1,4 +1,4 @@
-CodeSystem: MedComIHE_LOINCTypeCode
+/* CodeSystem: MedComIHE_LOINCTypeCode
 Id: MedCom-ihe-LOINC-typecode-CS
 Title: "LOINC (Logical Observation Identifiers Names and Codes)"
 Description: "LOINC document type codes (International)"
@@ -31,4 +31,4 @@ Description: "MedCom document type codes (Danish)"
 * ^identifier.value = "1.2.208.184.100.1"
 * #CMR "Clinical Mesurement Report"
 * #PDC "Stamkort"
-* #MADC "MADC"
+* #MADC "MADC" */
