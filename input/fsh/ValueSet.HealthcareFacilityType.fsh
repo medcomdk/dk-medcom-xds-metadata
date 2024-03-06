@@ -1,11 +1,11 @@
 ValueSet: MedComIHE_CoreHealthcareFacilityTypeCode
 Id: MedCom-ihe-core-HealthcareFacilityTypeCode-VS
 Title: "IHE HealthcareFacilityTypeCode"
-Description: "ValueSet containing HealthcareFacilityTypeCode."
+Description: "Value set for healthcare facility type code represents the type of organizational setting of the clinical encounter during which the documented act occurred."
 * ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
-* ^date = "2022-01-26"
+* ^date = "2024-01-19"
 * $SnomedctOID#557511000005107 "akupunkturklinik"
 * $SnomedctOID#550871000005101 "akutmodtageenhed"
 * $SnomedctOID#394761003 "almen lægepraksis"
@@ -70,6 +70,7 @@ Description: "ValueSet containing HealthcareFacilityTypeCode."
 * $SnomedctOID#550701000005104 "tandteknisk klinik"
 * $SnomedctOID#554231000005106 "vaccinationsklinik"
 * $SnomedctOID#554051000005108 "zoneterapiklinik"
+* $SnomedctOID#550811000005108 "administrativ enhed"
 
 /* ValueSet: MedComIHE_APDDkHealthcareFacilityTypeCode
 Id: MedCom-ihe-apd-HealthcareFacilityTypeCode-VS

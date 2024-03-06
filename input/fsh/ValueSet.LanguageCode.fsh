@@ -1,7 +1,7 @@
 ValueSet: MedComIHE_CoreLanguageCode
 Id: MedCom-ihe-core-languagecode-VS
 Title: "IHE LanguageCode"
-Description: "Dansk - Tags for the Identification of Languages (RFC 3066)"
+Description: "Tags for the Identification of Languages (RFC 3066)"
 * ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
