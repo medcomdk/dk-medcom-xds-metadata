@@ -44,7 +44,8 @@ Description: "QRD-DK: Event codes used in DK IHE Document sharing. The codes for
 * $SKSOID#ALAL22 "Type 2-diabetes"
 * $SKSOID#ALAL23 "Osteoporose"
 * $SKSOID#ALAL51 "Graviditet, fødsel og barsel"
-* $SKSOID#ALAL52 "Nyfødte"/* 
+* $SKSOID#ALAL52 "Nyfødte"
+/* 
 * $PROdkOID#3d3d6f46-ea42-4d64-a2bb-52646dcd6513 "Psoriasis v.3"
 * $PROdkOID#1de279ff-99fd-4544-9e41-300f56bc08e4 "Diabetes v.10"
 * $PROdkOID#898cba44-c668-41e8-ac25-c2b880ac7090 "Hjerterehabilitering uddrag start v.3"
