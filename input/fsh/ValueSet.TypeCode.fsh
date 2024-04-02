@@ -37,5 +37,5 @@ Description: "HCO-DK: Value set for the typeCode attribute. The typeCode specifi
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2024-03-06"
-* $LoincOID#56446-8 "Appointment Summary Document" 
+* $LoincOID#55188-7 "Patient data Document" 
 
