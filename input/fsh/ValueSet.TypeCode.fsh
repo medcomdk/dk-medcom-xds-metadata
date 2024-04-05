@@ -19,6 +19,16 @@ Description: "APD-DK: Value set for the typeCode attribute. The typeCode specifi
 * ^date = "2024-03-06"
 * $LoincOID#56446-8 "Appointment Summary Document" 
 
+ValueSet: PHAD_DK_IHE_TypeCode
+Id: MedCom-dk-ihe-phad-typecode-VS
+Title: "PHAD-DK IHE TypeCode"
+Description: "PHAD-DK: Value set for the typeCode attribute. The typeCode specifies the precise type of document from the user perspective. The granularity of typeCode is finer grained than its superior classCode."
+* ^experimental = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2024-01-01"
+* $LoincOID#103140-0 "Personal health attachment Document" 
+
 ValueSet: QRD_DK_IHE_TypeCode
 Id: MedCom-dk-ihe-qrd-typecode-VS
 Title: "QRD-DK IHE TypeCode"

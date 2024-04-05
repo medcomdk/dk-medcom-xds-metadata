@@ -24,6 +24,17 @@ Description: "APD-DK: List of operational and in production home communities (XC
 * $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
 * $DanishxdsOID#1.2.208.176.8.1 "PROD"
 
+ValueSet: MedComIHE_PHADDkHomeCommunityId
+Id: MedCom-ihe-phad-homeCommunityId-VS
+Title: "PHAD-DK IHE HomeCommunityId"
+Description: "PHAD-DK: List of operational and in production home communities (XCA) in Danish Document Sharing"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2016-11-01"
+* $DanishxdsOID#1.2.208.176.43210.8.10 "TEST1"
+* $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
+* $DanishxdsOID#1.2.208.176.8.1 "PROD"
+
 ValueSet: MedComIHE_QRDDkHomeCommunityId
 Id: MedCom-ihe-qrd-homeCommunityId-VS
 Title: "QRD-DK IHE HomeCommunityId"

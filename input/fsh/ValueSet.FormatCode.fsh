@@ -18,6 +18,15 @@ Description: "APD-DK: Code system for document format code used in national Docu
 * ^date = "2020-05-16"
 * $MedComFormatOID#urn:ad:dk:medcom:apd-v2.0.1:full "DK APD schema" //12-05-2020
 
+ValueSet: MedComIHE_PHADDkFormatCode
+Id: MedCom-ihe-phad-formatcode-VS
+Title: "PHAD-DK IHE FormatCode"
+Description: "PHAD-DK: Code system for document format code used in national Document sharing. The value set for format code is based on code system DK_IHE_FormatCode. New formatCode will be added, when created."
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2024-01-01"
+* $MedComFormatOID#urn:ad:dk:medcom:phad-v1.0:full "Document adheres to HL7 PHAD DK profile ver. 1.0" //12-05-2020
+
 ValueSet: MedComIHE_QRDDkFormatCode
 Id: MedCom-ihe-qrd-formatcode-VS
 Title: "QRD-DK IHE FormatCode"

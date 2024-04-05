@@ -29,6 +29,16 @@ Description: "APD-DK: Event codes used in DK IHE Document sharing. The codes for
 * $SKSOID#ALAL51 "Graviditet, fødsel og barsel"
 * $SKSOID#ALAL52 "Nyfødte"
 
+ValueSet: MedComIHE_PHADDkEventCodeLists
+Id: MedCom-dk-ihe-phad-eventcodelist-VS
+Title: "PHAD-DK IHE EventCodeLists"
+Description: "PHAD-DK: Event codes used in DK IHE Document sharing. The codes for Documenttype PHMR shall be selected NPU codes used in the Danish health care systems. http://www.labterm.dk/ https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/om-terminologi/npu. The codes for episode of care shall be selected SKS used in the Danish health care systems"
+* ^experimental = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2021-01-01"
+* $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
+
 ValueSet: MedComIHE_QRDDkEventCodeLists
 Id: MedCom-dk-ihe-qrd-prodk-questionnaire-VS
 Title: "QRD-DK IHE EventCodeLists"
