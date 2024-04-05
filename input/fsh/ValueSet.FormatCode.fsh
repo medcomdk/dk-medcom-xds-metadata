@@ -25,7 +25,7 @@ Description: "PHAD-DK: Code system for document format code used in national Doc
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2024-01-01"
-* $MedComFormatOID#urn:ad:dk:medcom:phad-v1.0:full "Document adheres to HL7 PHAD DK profile ver. 1.0" //12-05-2020
+* $MedComFormatOID#urn:ad:dk:medcom:phad-v1.0:full "DK CPD schema" //12-05-2020
 
 ValueSet: MedComIHE_QRDDkFormatCode
 Id: MedCom-ihe-qrd-formatcode-VS
