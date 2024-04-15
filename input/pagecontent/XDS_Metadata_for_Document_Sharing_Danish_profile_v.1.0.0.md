@@ -289,7 +289,6 @@ Table 5 Danish localization and refinement of Metadata
 
 ## Attribute Definitions
 
-
 ### author
 
 **General information:**
@@ -333,8 +332,6 @@ This specification restricts the coding to include the following fields:
 No other fields **SHALL** be specified.
 
 **CDA Reference:**
-
-
         
         The mapping **SHALL** include the following values from the CDA as listed below.  
         
@@ -353,17 +350,13 @@ No other fields **SHALL** be specified.
         $displayName = “ Odense Universitetshospital – Svendborg” 
         $codeSystem = ”1.2.208.176.1.1” |
 
---- 
-
-
 **XML example:**
 
-      <rim:Slot name="authorInstitution">  
+        <rim:Slot name="authorInstitution">  
             <rim:ValueList>  
                 <rim:Value> Odense Universitetshospital – Svendborg ^^^^^&amp;  1.2.208.176.1.1&amp;ISO^^^^ 8071000016009</rim:Value>  
             </rim:ValueList>
         </rim:Slot>
-
 
 #### authorPerson
 
@@ -390,7 +383,6 @@ This specification restricts the coding to include the following fields:
 -   Second and Further Given Names
 
 No other fields **SHALL** be specified.
-
 
 **CDA Reference:**
 
@@ -453,12 +445,22 @@ It is always set to Approved as a result of the successful submission of new doc
 
 The format of the availabilityStatus value is a URN.
 
-In a query response the value is coded in the status attribute of the ExtrinsicObject representing the DocumentEntry and **SHALL** be "urn:oasis:names:tc:ebxml-regrep:StatusType:Approved" or "urn:oasis:names:tc:ebxml-regrep:StatusType:Deprecated". The example below shows the status attribute.
+In a query response the value is coded in the status attribute of the ExtrinsicObject representing the DocumentEntry and **SHALL** be 
+    
+        "urn:oasis:names:tc:ebxml-regrep:StatusType:Approved" 
+        
+        or 
+        
+        "urn:oasis:names:tc:ebxml-regrep:StatusType:Deprecated" 
+        
+        The example below shows the status attribute.
 
 **XML example:**
 
-      <ExtrinsicObject  id="urn:uuid:fbeacdb7-5421-4474-9267-985007cd8855"
-        objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"  status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved"
+      <ExtrinsicObject  
+        id="urn:uuid:fbeacdb7-5421-4474-9267-985007cd8855"
+        objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"  
+        status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
 
 
 ### classCode
@@ -483,9 +485,7 @@ This metadata attribute has a limited allowed value set. See this reference for 
 
 There **SHALL** be exactly one ebRIM Classification containing a classCode for any DocumentEntry. For the classCode metadata attribute, the classificationScheme **SHALL** be urn: urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a.
 
-
 **RDK reference:**
-
 
         The code **SHALL** be a valid value for the document type.  
         The codeSystem **SHALL** be the associated OID for “DK IHE classCodes”  
@@ -496,29 +496,27 @@ There **SHALL** be exactly one ebRIM Classification containing a classCode for a
         $displayName = “Klinisk rapport” 
         $codeSystem = ” 1.2.208.184.100.9”  
 
-
 **XML example:**
         
         <rim:Classification  
-         classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"  
-         classifiedObject="ExampleDocument"  
-         id="IdExample_046"  
-         objectType="urn:oasis:names:tc:ebxml- regrep:ObjectType:RegistryObject:Classification"  
-         nodeRepresentation="001"  >  
-        <rim:Name>  
+            classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"  
+            classifiedObject="ExampleDocument"  
+            id="IdExample_046"  
+            objectType="urn:oasis:names:tc:ebxml- regrep:ObjectType:RegistryObject:Classification"  
+            nodeRepresentation="001"  >  
+          <rim:Name>  
             <rim:LocalizedString  value="Klinisk rapport"/>  
-        </rim:Name>  
-        <rim:Slot name="codingScheme">  
+          </rim:Name>  
+          <rim:Slot name="codingScheme">  
             <rim:ValueList>  
                 <rim:Value>1.2.208.184.100.9</rim:Value>    
             </rim:ValueList>  
-        </rim:Slot> </rim:Classification>
-
+          </rim:Slot> 
+        </rim:Classification>
 
 ### comments
 
 Not used in this profile.
-
 
 ### confidentialityCode
 
@@ -540,10 +538,7 @@ The confidentialityCode **SHALL** contain exactly one value from the HL7 code sy
 
 For the confidentialityCode metadata attribute, the classificationScheme **SHALL** be urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f.
 
-
-
 **CDA Reference:**
-
 
         $code = ClinicalDocument/confidentialityCode/@code 
         $displayName = ClinicalDocument/confidentialityCode/@displayName 
@@ -554,7 +549,6 @@ For the confidentialityCode metadata attribute, the classificationScheme **SHALL
         $displayName = “Normal” 
         $codeSystem = “2.16.840.1.113883.5.25” 
 
-
 **XML example:**
         
         <rim:Classification
@@ -563,21 +557,20 @@ For the confidentialityCode metadata attribute, the classificationScheme **SHALL
           id="IdExample_046"
           objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification"
           nodeRepresentation="N">  
-            <rim:Name>  
-                <rim:LocalizedString value="Normal"/>  
-            </rim:Name>  
-            <rim:Slot name="codingScheme">  
-                <rim:ValueList>  
-                    <rim:Value>2.16.840.1.113883.5.25</rim:Value>    
-                </rim:ValueList>  
-            </rim:Slot> 
+          <rim:Name>  
+            <rim:LocalizedString value="Normal"/>  
+          </rim:Name>  
+          <rim:Slot name="codingScheme">  
+            <rim:ValueList>  
+                <rim:Value>2.16.840.1.113883.5.25</rim:Value>    
+            </rim:ValueList>  
+          </rim:Slot> 
         </rim:Classification>  
 
 
 ### contentTypeCode
 
 The contentTypeCode is not used in this profile.
-
 
 ### creationTime
 
@@ -601,7 +594,6 @@ The value is coded as a single value within an ebRIM Slot in the DocumentEntry. 
 
 **CDA Reference:**
 
-
         $value = ClinicalDocument/effectiveTime/@value  
         
         Note: The CDA data type for time is TS, which includes an offset from UTC. 
@@ -618,7 +610,6 @@ The value is coded as a single value within an ebRIM Slot in the DocumentEntry. 
                 <rim:Value>20141225212010</rim:Value>    
             </rim:ValueList> 
         </rim:Slot
-
 
 ### entryUUID
 
@@ -644,9 +635,11 @@ The value of the entryUUID is coded in the id XML attribute on the ExtrinsicObje
 
 **XML example:**
 
-    <rim:ExtrinsicObject mimeType="text/xml"
+    <rim:ExtrinsicObject 
+        mimeType="text/xml"
         id="urn:uuid:a6e06ca8-0c75-4064-9e5c-88b9045a96f6"
-        objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"  > … 
+        objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"> 
+    … 
 
 ### eventCodeList
 
@@ -694,19 +687,19 @@ The eventCodeList is coded with ebRIM Classification objects. There **MAY** be z
 **XML example:**
 
         <rim:Classification
-        classificationScheme=  "urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
-        classifiedObject="ExampleDocument"
-        id="IdExample_048"
-        objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification"
-        nodeRepresentation="ZZ3160"  >
-   \<rim:Name>  
-        <rim:LocalizedString value="Blodtryksmåling"/>  </rim:Name>  
-        <rim:Slot name="codingScheme">  
+            classificationScheme=  "urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
+            classifiedObject="ExampleDocument"
+            id="IdExample_048"
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification"
+            nodeRepresentation="ZZ3160"  >
+          <rim:Name>  
+          <rim:LocalizedString value="Blodtryksmåling"/>  </rim:Name>  
+          <rim:Slot name="codingScheme">  
             <rim:ValueList>
-   \<rim:Value>1.2.208.176.2.1</rim:Value>    
+                <rim:Value>1.2.208.176.2.1</rim:Value>    
             </rim:ValueList>  
-        </rim:Slot> </rim:Classification\
-
+          </rim:Slot> 
+        </rim:Classification>
 
 ### formatCode
 
@@ -735,7 +728,6 @@ There **SHALL** be one ebRIM Classification containing a formatCode. For the for
 
 **RDK reference:**
 
-
         The code **SHALL** be a valid value for the formatCode.  
         The codeSystem **SHALL** be the associated OID for the list of “DK IHE formatCodes”  
         The displayName **SHALL** be the name for the document type found in the list of “DK IHE formatCodes”  
@@ -745,20 +737,22 @@ There **SHALL** be one ebRIM Classification containing a formatCode. For the for
         $displayName = “DK PHMR schema” 
         $codeSystem = ”urn:ad:dk:medcom:phmr:full”  
 
+**XML example**
 
-| \<rim:Classification
-        classificationScheme=  "urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
-        classifiedObject="ExampleDocument"
-        id="IdExample_049"
-        objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification"
-        nodeRepresentation="DK PHMR schema"  >  
-        <rim:Name>  
-        <rim:LocalizedString value="DK PHMR schema"/>  </rim:Name>  
-        <rim:Slot name="codingScheme">  
+        <rim:Classification
+            classificationScheme=  "urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+            classifiedObject="ExampleDocument"
+            id="IdExample_049"
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification"
+            nodeRepresentation="DK PHMR schema"  >  
+          <rim:Name>  
+          <rim:LocalizedString value="DK PHMR schema"/>  </rim:Name>  
+          <rim:Slot name="codingScheme">  
             <rim:ValueList>  
                 <rim:Value>urn:ad:dk:medcom:phmr:full</rim:Value>    
             </rim:ValueList>  
-        </rim:Slot> </rim:Classification\
+          </rim:Slot> 
+        </rim:Classification>
 
 
 ### hash
@@ -781,7 +775,7 @@ The value is coded as a case-insensitive single value within an ebRIM Slot in th
 
 Is required for XDS Document Repository. Is not required for XDS On-Demand source.
 
-| \<rim:Slot name="hash">  
+        <rim:Slot name="hash">  
             <rim:ValueList>  
                 <rim:Value>da39a3ee5e6b4b0d3255bfef95601890afd80709</rim:Value>    
             </rim:ValueList> 
@@ -810,9 +804,7 @@ There **SHALL** be one ebRIM Classification containing a healthcareFacilityTypeC
 
 In this profile, the healthcareFacilityCode is given by values from the value set DK IHE healthcareFacilityCodes described in section 3.9.
 
-
 **RDK reference:**
-
 
         The code **SHALL** be a valid value for the health care facility type.  
         The codeSystem **SHALL** be the OID associated with the code value in the value set “DK IHE healthCareFacilityTypeCodes”  
@@ -822,14 +814,15 @@ In this profile, the healthcareFacilityCode is given by values from the value se
         $code = “22232009"
         $displayName = “hospital” 
         $codeSystem = ”2.16.840.1.113883.6.96”  
+
 **XML example:**
 
         <rim:Classification
-        classificationScheme=  "urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
-        classifiedObject="ExampleDocument"
-        id="IdExample_050"
-        objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification"
-        nodeRepresentation="22232009">  
+            classificationScheme=  "urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+            classifiedObject="ExampleDocument"
+            id="IdExample_050"
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification"
+            nodeRepresentation="22232009">  
         <rim:Name>  
         <rim:value "hospital"/>  </rim:Name>  
         <rim:Slot name="codingScheme">  
@@ -897,9 +890,9 @@ The nn portion **SHALL** be a legal ISO=-639-1 language code in lower case. The 
 
 **CDA Reference:**
 
-
         $code = ClinicalDocument/languageCode/@code  Example values in the DK PHMR CDA is: 
         $code = “da-DK”  
+
 **XML example:**
 
         <rim:Slot name="languageCode">  
@@ -958,7 +951,9 @@ No other fields **SHALL** be specified.
         $middle_name =”Frederik Ingolf” 
 
 
-| XML example  \<rim:Slot name="legalAuthenticator">  
+**XML example**  
+
+        <rim:Slot name="legalAuthenticator">  
             <rim:ValueList>  
                 <rim:Value>^Andersen^Ander^Frederik&amp;Ingolf^^^^^^^&amp; ISO</rim:Value>    
             </rim:ValueList> 
@@ -1000,9 +995,10 @@ The maximum length is unbounded. **SHALL** have only a single value. Encoded in 
 
 **XML example:**
 
-        <rim:ExtrinsicObject mimeType="text/xml"
-        id="ExampleDocument"
-        objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+        <rim:ExtrinsicObject 
+            mimeType="text/xml"
+            id="ExampleDocument"
+            objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1">
 
 
 ### objectType
