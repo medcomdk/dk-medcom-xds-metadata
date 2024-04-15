@@ -130,7 +130,7 @@ The XDS metadata attributes are described in chapter 2, using a uniform template
 
 A table shows the basic information for the attributes:
 
-![xds-basic-etities](media/xds-basic-etities.png)
+<img src="xds-basic-etities.png" alt="xds-basic-etities table" style="horizontal-align:left;margin:30px 300px"/>
 
 Entity: The entity/entities, where the attribute are used.
 
