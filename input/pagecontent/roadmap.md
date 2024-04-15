@@ -19,17 +19,28 @@ Establishing the core foundation for actual projects using the National Danish X
 - KIH PRO: 
     - removing restrictions to close relationship with SOR classification data
     - adding proper values for regsitration of Municality data in the XDS Infrastructure
-- Changing custodian of the standard from SDS to MedCom
-
+- Custodianship
+    - Changing the custodianship of the standard from SDS to MedCom
+- Typos
+    - Handling a variety of typos in the earlier versions
+- "Outdated data"
+    - Removed the old list of the initial members of the working group, who established the XDS Metadata Standard
 
 ## Next
 
 **Version 1.1.0**
 
-- Establishing the foundation for the sharing of messages through the EHMI infrastructure [Link](https://medcomdk.github.io/ehmi/)
-- Moving the documentation to Github
-- Establishing the data in this IG as the masterdata of the XDS Metadata Standard and its valuesets. The data in the excel-based valuesets will be a copy of the IG
-- Setting EOL of the excel-based valuesets
+- Establishing the foundation for 
+    - the sharing of messages through the EHMI infrastructure [Link](https://medcomdk.github.io/ehmi/)
+    - the sharing of FHIR Documents 
+- Documentation
+    - Moving the documentation to Github
+    - Establishing the data in this IG as the masterdata of the XDS Metadata Standard and its valuesets. The data in the excel-based valuesets will be a copy of the IG
+    - Setting EOL of the excel-based valuesets
+- Typos
+    - Further handling of a variety of typos
+- "Outdated data"
+    - Further handling of a variety of "Outdated data"
 
 ## Later
 
