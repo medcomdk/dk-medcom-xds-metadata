@@ -63,7 +63,7 @@ IHE XDS enables healthcare documents to be shared over a wide area network, betw
 
 <br/>
 
-<img src="xds-transaction-diagram.png" alt="XDS transaction diagram" style="vertical-align:left;margin:15px 500px 15px 15px"/>
+<img src="xds-transaction-diagram.png" alt="XDS transaction diagram" style="vertical-align:left;margin:15px 600px 15px 15px"/>
 
 Figure 1. XDS transaction diagram
 
@@ -130,7 +130,7 @@ The XDS metadata attributes are described in chapter 2, using a uniform template
 
 A table shows the basic information for the attributes:
 
-<img src="xds-basic-etities.png" alt="xds-basic-etities table" style="vertical-align:left;margin:15px 600px 15px 15px"/>
+<img src="xds-basic-etities.png" alt="xds-basic-etities table" style="vertical-align:left;margin:15px 650px 15px 15px"/>
 
 Entity: The entity/entities, where the attribute are used.
 
