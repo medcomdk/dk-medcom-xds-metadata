@@ -2,6 +2,8 @@
 
 ## Hvad er XDS-metadatastandarden? [to be translated]
 
+The Danish Profile is based upon the international <a href="https://profiles.ihe.net/ITI/papers/metadata/index.html">IHE Profile</a>
+
 Standarden definerer en række metadataelementer, der er knyttet til sundhedsdokumenter, og som tillader en ensartet og struktureret beskrivelse af dokumenterne. Formålet er at muliggøre en pålidelig og sikker udveksling af dokumenter.
 
 Standarden bliver anvendt i bl.a. Et Samlet Patientoverblik, Graviditetsmappen og PRO-løsningerne til opmærkning af dokumenter i dokumentdelingsservicens SDS Patientindeks. Derfra anvendes standarden til afgrænsning af dokumentudsøgning.
