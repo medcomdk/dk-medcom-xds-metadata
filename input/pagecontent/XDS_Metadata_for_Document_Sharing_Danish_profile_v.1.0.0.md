@@ -1774,9 +1774,7 @@ OID: 2.16.840.1.113883.6.96
 
 The OID is Systematized Nomenclature of Medicine-Clinical Terms (SNOMED CT). Sundhedsdatastyrelsen (Danish Health Data Authority) administers the allowed codes.
 
-Web:
-
-DK-IHE_Metadata-Common_Code_systems-Value_sets [^4]
+Web: DK-IHE_Metadata-Common_Code_systems-Value_sets [^4]
 
 Owner: IHTSDO and managed by Sundhedsdatastyrelsen
 
@@ -1800,9 +1798,7 @@ OID: 2.16.840.1.113883.6.96
 
 The OID is Systematized Nomenclature of Medicine-Clinical Terms (SNOMED CT). Sundhedsdatastyrelsen (Danish Health Data Authority) administers the allowed codes.
 
-Web:
-
-DK-IHE_Metadata-Common_Code_systems-Value_sets [^4]
+Web: DK-IHE_Metadata-Common_Code_systems-Value_sets [^4]
 
 Owner and managed by Sundhedsdatastyrelsen
 
