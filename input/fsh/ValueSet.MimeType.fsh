@@ -7,6 +7,8 @@ Description: "Values for the document metadata attribute mimeType"
 * ^status = #active
 * ^date = "2015-01-04"
 * $IANAMediaOID#text/xml "MimeType-text/xml"
+* $IANAMediaOID#fhir/xml "MimeType-fhir/xml"
+* $IANAMediaOID#fhir/json "MimeType-fhir/json"
 //* $IANAMediaOID#"All Mime Media Types" "MimeType-text/subType-text"
 
 /*
