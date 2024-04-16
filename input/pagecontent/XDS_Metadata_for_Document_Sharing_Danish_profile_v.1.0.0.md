@@ -1721,7 +1721,7 @@ The XDS affinity domain will define more codes on request and when needed.
 
 OID: 1.2.208.184.100.9
 
-Web: [^4]: DK-IHE_Metadata-Common_Code_systems-Value_sets
+Web: DK-IHE_Metadata-Common_Code_systems-Value_sets [^4]
 
 Owner: MedCom/Sundhedsdatastyrelsen
 
@@ -1750,7 +1750,7 @@ The XDS affinity domain will define more codes on request and when needed.
 
 OID: 1.2.208.184.100.10
 
-Web: [^4]: DK-IHE_Metadata-Common_Code_systems-Value_sets
+Web: DK-IHE_Metadata-Common_Code_systems-Value_sets [^4]
 
 Owner: Sundhedsdatastyrelsen
 
@@ -1765,7 +1765,7 @@ DK IHE healthCareFacilityTypeCodes are used for the healthCareFacilityTypeCode a
 
 **Use**
 
-The value set for healthcare facility type code represents the allowed values for the type of organizational setting of the clinical encounter during which the documented act occurred. The value set "DK_IHE_HealthcareFacilityTypeCodeSystem" was initially a subset of the code list from the SOR lookup table "SOR-Enhedstyper". All code values are given in the code system SNOMED CT identifiers (SCTID). Further use of code systems are documented in [^4]: DK-IHE_Metadata-Common_Code_systems-Value_sets
+The value set for healthcare facility type code represents the allowed values for the type of organizational setting of the clinical encounter during which the documented act occurred. The value set "DK_IHE_HealthcareFacilityTypeCodeSystem" was initially a subset of the code list from the SOR lookup table "SOR-Enhedstyper". All code values are given in the code system SNOMED CT identifiers (SCTID). Further use of code systems are documented in DK-IHE_Metadata-Common_Code_systems-Value_sets [^4]
 
 
 **Other information**
@@ -1776,7 +1776,7 @@ The OID is Systematized Nomenclature of Medicine-Clinical Terms (SNOMED CT). Sun
 
 Web:
 
-[^4]: DK-IHE_Metadata-Common_Code_systems-Value_sets
+DK-IHE_Metadata-Common_Code_systems-Value_sets [^4]
 
 Owner: IHTSDO and managed by Sundhedsdatastyrelsen
 
@@ -1791,7 +1791,7 @@ DK_IHE_practiceSettingCode is used for the IHE practiceSettingCode attribute.
 
 **Use**
 
-The value set for practiceSettingCode represents the type of clinical setting of the clinical encounter during which the documented act occurred. The value set "DK_IHE_practiceSettingCode" was initially comprised of a subset of the code list from the SOR lookup table "clinical_speciality". All code values are SNOMED CT identifiers (SCTID). Further use of code systems are documented in [^4]: DK-IHE_Metadata-Common_Code_systems-Value_sets
+The value set for practiceSettingCode represents the type of clinical setting of the clinical encounter during which the documented act occurred. The value set "DK_IHE_practiceSettingCode" was initially comprised of a subset of the code list from the SOR lookup table "clinical_speciality". All code values are SNOMED CT identifiers (SCTID). Further use of code systems are documented in DK-IHE_Metadata-Common_Code_systems-Value_sets [^4]
 
 
 **Other information**
@@ -1802,7 +1802,7 @@ The OID is Systematized Nomenclature of Medicine-Clinical Terms (SNOMED CT). Sun
 
 Web:
 
-[^4]: DK-IHE_Metadata-Common_Code_systems-Value_sets
+DK-IHE_Metadata-Common_Code_systems-Value_sets [^4]
 
 Owner and managed by Sundhedsdatastyrelsen
 
