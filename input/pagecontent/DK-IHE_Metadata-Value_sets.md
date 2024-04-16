@@ -2,9 +2,10 @@
 
 ## Terminology: Value Sets
 
+These define sets of codes used by systems conforming to this implementation guide.
+
 | Terminology: Value Sets | |
 | --- | --- |
-| These define sets of codes used by systems conforming to this implementation guide. | |
 | [IHE ClassCode](ValueSet-MedCom-ihe-core-classcode-VS.html) | Value set for the classCode attribute. classCode used in DK IHE Document sharing |
 | [IHE ConfidentialityCode](ValueSet-MedCom-ihe-core-confidentialitycode-VS.html) | Confidentiality code used in Danish Document sharing. |
 | [IHE HealthcareFacilityTypeCode](ValueSet-MedCom-ihe-core-HealthcareFacilityTypeCode-VS.html) | Value set for healthcare facility type code represents the type of organizational setting of the clinical encounter during which the documented act occurred. |
@@ -14,8 +15,9 @@
 
 ## Terminology: Code Systems
 
+These define new code systems used by systems conforming to this implementation guide.
+
 | Terminology: Code Systems | |
 | --- | --- |
-| These define new code systems used by systems conforming to this implementation guide. | |
 | [DK IHE ClassCode](CodeSystem-MedCom-ihe-classcode-CS.html) | CodeSystem for ClassCode |
 | [IHE XDS Affinity Domain](CodeSystem-MedCom-ihe-homeCommunityId-CS.html) | IHE XDS Affinity Domains who has agreed to share healthcare related documents in Denmark |
