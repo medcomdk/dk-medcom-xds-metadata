@@ -1,4 +1,4 @@
-# XDS Metadata for Document Sharing -Danish Profile
+# XDS Metadata for Document Sharing - Danish Profile
 
 ## Hvad er XDS-metadatastandarden? [to be translated]
 
