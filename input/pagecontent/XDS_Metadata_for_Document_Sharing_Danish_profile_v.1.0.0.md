@@ -163,7 +163,7 @@ For some of the metadata attributes the corresponding value set is comprised of 
 
 The allowed values in the value set, are listed in the Excel document placed at a public website at MedCom:
 
-https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx
+<a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx" target="_blank">DK-IHE_Metadata-Common_Code_systems-Value_sets (opens in new window)</a>
 
 Go to the tab for a given metadata attribute to look up allowed values for the given metadata attribute. Further instructions are written in the first tab “Instruction” of the Excel file.
 
@@ -1721,7 +1721,7 @@ The XDS affinity domain will define more codes on request and when needed.
 
 OID: 1.2.208.184.100.9
 
-Web: [https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx](http://svn.medcom.dk/svn/drafts/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx)
+Web: [<a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx" target="_blank">DK-IHE_Metadata-Common_Code_systems-Value_sets (opens in new window)</a>](http://svn.medcom.dk/svn/drafts/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx)
 
 Owner: MedCom/Sundhedsdatastyrelsen
 
@@ -1750,7 +1750,7 @@ The XDS affinity domain will define more codes on request and when needed.
 
 OID: 1.2.208.184.100.10
 
-Web: [https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx](http://svn.medcom.dk/svn/drafts/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx)
+Web: [<a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx" target="_blank">DK-IHE_Metadata-Common_Code_systems-Value_sets (opens in new window)</a>](http://svn.medcom.dk/svn/drafts/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx)
 
 Owner: Sundhedsdatastyrelsen
 
@@ -1765,7 +1765,7 @@ DK IHE healthCareFacilityTypeCodes are used for the healthCareFacilityTypeCode a
 
 **Use**
 
-The value set for healthcare facility type code represents the allowed values for the type of organizational setting of the clinical encounter during which the documented act occurred. The value set "DK_IHE_HealthcareFacilityTypeCodeSystem" was initially a subset of the code list from the SOR lookup table "SOR-Enhedstyper". All code values are given in the code system SNOMED CT identifiers (SCTID). Further use of code systems are documented in [https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx](http://svn.medcom.dk/svn/drafts/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx)
+The value set for healthcare facility type code represents the allowed values for the type of organizational setting of the clinical encounter during which the documented act occurred. The value set "DK_IHE_HealthcareFacilityTypeCodeSystem" was initially a subset of the code list from the SOR lookup table "SOR-Enhedstyper". All code values are given in the code system SNOMED CT identifiers (SCTID). Further use of code systems are documented in [<a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx" target="_blank">DK-IHE_Metadata-Common_Code_systems-Value_sets (opens in new window)</a>](http://svn.medcom.dk/svn/drafts/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx)
 
 
 **Other information**
@@ -1776,7 +1776,7 @@ The OID is Systematized Nomenclature of Medicine-Clinical Terms (SNOMED CT). Sun
 
 Web:
 
-[https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx](http://svn.medcom.dk/svn/drafts/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx)
+[<a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx" target="_blank">DK-IHE_Metadata-Common_Code_systems-Value_sets (opens in new window)</a>](http://svn.medcom.dk/svn/drafts/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx)
 
 Owner: IHTSDO and managed by Sundhedsdatastyrelsen
 
@@ -1791,7 +1791,7 @@ DK_IHE_practiceSettingCode is used for the IHE practiceSettingCode attribute.
 
 **Use**
 
-The value set for practiceSettingCode represents the type of clinical setting of the clinical encounter during which the documented act occurred. The value set "DK_IHE_practiceSettingCode" was initially comprised of a subset of the code list from the SOR lookup table "clinical_speciality". All code values are SNOMED CT identifiers (SCTID). Further use of code systems are documented in [https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx](http://svn.medcom.dk/svn/drafts/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx)
+The value set for practiceSettingCode represents the type of clinical setting of the clinical encounter during which the documented act occurred. The value set "DK_IHE_practiceSettingCode" was initially comprised of a subset of the code list from the SOR lookup table "clinical_speciality". All code values are SNOMED CT identifiers (SCTID). Further use of code systems are documented in [<a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx" target="_blank">DK-IHE_Metadata-Common_Code_systems-Value_sets (opens in new window)</a>](http://svn.medcom.dk/svn/drafts/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx)
 
 
 **Other information**
@@ -1802,6 +1802,6 @@ The OID is Systematized Nomenclature of Medicine-Clinical Terms (SNOMED CT). Sun
 
 Web:
 
-[https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx](http://svn.medcom.dk/svn/drafts/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx)
+[<a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx" target="_blank">DK-IHE_Metadata-Common_Code_systems-Value_sets (opens in new window)</a>](http://svn.medcom.dk/svn/drafts/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx)
 
 Owner and managed by Sundhedsdatastyrelsen
