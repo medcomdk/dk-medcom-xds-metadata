@@ -1,4 +1,16 @@
-# Terminology for XDS Metadata
+# XDS Metadata for Document Sharing -Danish Profile
+
+## Hvad er XDS-metadatastandarden? [to be translated]
+
+Standarden definerer en række metadataelementer, der er knyttet til sundhedsdokumenter, og som tillader en ensartet og struktureret beskrivelse af dokumenterne. Formålet er at muliggøre en pålidelig og sikker udveksling af dokumenter.
+
+Standarden bliver anvendt i bl.a. Et Samlet Patientoverblik, Graviditetsmappen og PRO-løsningerne til opmærkning af dokumenter i dokumentdelingsservicens SDS Patientindeks. Derfra anvendes standarden til afgrænsning af dokumentudsøgning.
+
+Ejerskabsoverdragelsen vil centralisere ansvaret for løbende revision af XSD-metadata, hvilket resulterer i en hurtigere og mere effektiv specifikation af søgeparametre. Dette vil gavne både leverandører og slutbrugere ved at levere præcise og mere relevante søgeresultater.
+
+Du finder standarddokumentationen på MedComs SVN.
+
+## Terminology for XDS Metadata
 Codes represented in the ValueSets comes from more CodeSystems, which are represented below. For each coded element in the DocumentReference profil, a ValueSet is included. This ValueSet can either be general, e.g. HealthCareFacilityTypeCode, for all DocumentReferences or specific for the individual standard, e.g. formatcode. 
 
 <style type="text/css">
