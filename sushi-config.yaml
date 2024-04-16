@@ -80,8 +80,8 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Danish XDS Metadata profile v.1.0.0: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.0.0.html
-  DK-IHE_Metadata-Common_Code_systems-Value_sets: DK-IHE_Metadata-Value_sets.html
+  DK XDS Metadata profile 1.0: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.0.0.html
+  DK XDS Metadata Terminology: DK-IHE_Metadata-Value_sets.html
   Roadmap: roadmap.html
   Artifacts: artifacts.html
   Downloads: downloads.html
