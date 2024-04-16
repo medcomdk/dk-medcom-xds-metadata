@@ -3,7 +3,7 @@
 | [Terminology: Value Sets](#RANGE!terminology-value-sets) | |
 | --- | --- |
 | These define sets of codes used by systems conforming to this implementation guide. | |
-| [IHE ClassCode](../../output/ValueSet-MedCom-ihe-core-classcode-VS.html) | Value set for the classCode attribute. classCode used in DK IHE Document sharing |
+| [IHE ClassCode](/output/ValueSet-MedCom-ihe-core-classcode-VS.html) | Value set for the classCode attribute. classCode used in DK IHE Document sharing |
 | [IHE ConfidentialityCode](../../output/ValueSet-MedCom-ihe-core-confidentialitycode-VS.html) | Confidentiality code used in Danish Document sharing. |
 | [IHE HealthcareFacilityTypeCode](../../output/ValueSet-MedCom-ihe-core-HealthcareFacilityTypeCode-VS.html) | Value set for healthcare facility type code represents the type of organizational setting of the clinical encounter during which the documented act occurred. |
 | [IHE LanguageCode](../../output/ValueSet-MedCom-ihe-core-languagecode-VS.html) | Tags for the Identification of Languages (RFC 3066) |
