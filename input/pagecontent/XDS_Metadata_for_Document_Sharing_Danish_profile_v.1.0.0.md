@@ -161,12 +161,9 @@ For some of the metadata attributes the corresponding value set is comprised of 
 
 #### [DK-IHE_Metadata Value_sets]
 
-The allowed values in the value set, are listed in the Excel document placed at a public website at MedCom:
-
-<a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx" target="_blank">DK-IHE_Metadata-Common_Code_systems-Value_sets (opens in new window)</a>
+The allowed values in the value set, are listed in the Excel document placed at a public website at MedCom: DK-IHE_Metadata-Common_Code_systems-Value_sets [^4]
 
 Go to the tab for a given metadata attribute to look up allowed values for the given metadata attribute. Further instructions are written in the first tab “Instruction” of the Excel file.
-
 
 # DANISH XDS Metadata attributes FOR Clinical documents
 
