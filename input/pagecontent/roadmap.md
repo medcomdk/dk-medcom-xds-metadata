@@ -28,7 +28,7 @@ Establishing the core foundation for actual projects using the National Danish X
 
 ## Next
 
-**Version 1.1.0**
+**Version 2.0.0**
 
 - Establishing the foundation for 
     - the sharing of messages through the EHMI infrastructure [Link](https://medcomdk.github.io/ehmi/)
@@ -44,7 +44,7 @@ Establishing the core foundation for actual projects using the National Danish X
 
 ## Later
 
-**Version 1.1.0**
+**Version 2++**
 
 Constantly adapting to the requirements from projects in the Danish XDS Infrastructure, while being loyal and compliant with the international Standard for being so. 
 
