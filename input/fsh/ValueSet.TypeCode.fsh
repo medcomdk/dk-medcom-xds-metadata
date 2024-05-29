@@ -18,6 +18,8 @@ Description: "APD-DK: Value set for the typeCode attribute. The typeCode specifi
 * ^status = #active
 * ^date = "2024-03-06"
 * $LoincOID#56446-8 "Appointment Summary Document" 
+* $LoincOID#39289-4 "Follow-up (referred to) provider /specialist, appointment date CPHS"
+* $LoincOID#39290-2 "Follow-up (referred to) program, appointment date CPHS"
 
 ValueSet: PHAD_DK_IHE_TypeCode
 Id: MedCom-dk-ihe-phad-typecode-VS
