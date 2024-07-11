@@ -53,6 +53,13 @@ Description: "Values used for the document metadata attribute practiceSettingCod
 * $SnomedctOID#394603008 "thoraxkirurgi"
 * $SnomedctOID#408448007 "tropemedicin"
 * $SnomedctOID#394612005 "urologi"
+* $SnomedctOID#658171000005102 "hjemmepleje"
+* $SnomedctOID#658161000005107 "hjemmesygepleje"
+* $SnomedctOID#658151000005105 "sundhedsfremme og forebyggelse"
+* $SnomedctOID#658191000005101 "sundhedspleje"
+* $SnomedctOID#658201000005103 "kommunal tandpleje"
+* $SnomedctOID#658141000005108 "genoptræning efter hospitalsophold"
+* $SnomedctOID#658181000005104 "hjælpemiddelområdet"
 
 /* 
 ValueSet: MedComIHE_APDDkPracticeSettingCode

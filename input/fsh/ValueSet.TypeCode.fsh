@@ -51,3 +51,13 @@ Description: "HCO-DK: Value set for the typeCode attribute. The typeCode specifi
 * ^date = "2024-03-06"
 * $LoincOID#55188-7 "Patient data Document" 
 
+ValueSet: COND_DK_IHE_TypeCode
+Id: MedCom-dk-ihe-cond-typecode-VS
+Title: "COND-DK IHE TypeCode"
+Description: "COND-DK: Value set for the typeCode attribute. The typeCode specifies the precise type of document from the user perspective. The granularity of typeCode is finer grained than its superior classCode."
+* ^experimental = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2024-03-06"
+* $LoincOID#11450-4 "Problem list" 
+
