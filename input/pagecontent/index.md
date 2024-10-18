@@ -1,7 +1,7 @@
 # Terminology for XDS Metadata
 Codes represented in the ValueSets comes from more CodeSystems, which are represented below. For each coded element in the DocumentReference profil, a ValueSet is included. This ValueSet can either be general, e.g. HealthCareFacilityTypeCode, for all DocumentReferences or specific for the individual standard, e.g. formatcode. 
 
-> Note: This IG is a FHIR representation of the [ValueSets in provided here for the IHE-XDS standard](https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/). The Excel document is currently the valid representatio of the allowed codes.
+> Note: This IG is a FHIR representation of the [ValueSets in provided here for the IHE-XDS standard](https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/). The Excel document is currently the valid representation of the allowed codes.
 
 ## CodeSystems
 The codes in the ValueSet are selected from different CodeSystems. These CodeSystems are represented with an OID. An overview of the CodeSystems and their usages can be found in the table below.
