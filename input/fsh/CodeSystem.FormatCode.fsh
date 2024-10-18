@@ -23,4 +23,4 @@ Description: "CodeSystem for FormatCode"
 * #urn:ad:dk:medcom:qrd-v1.1:full "DK QRD schema"
 * #urn:ad:dk:medcom:qrd-v1.2:full "DK QRD schema" /*19-05-2015*/
 * #urn:ad:dk:medcom:qrd-v1.3:full "DK QRD schema" /*11-02-2022*/
-* #urn:ad:dk:medcom:cond-v1.0:full "DK COND schema" /*11-07-2024*/
+* #urn:ad:dk:medcom:pca-v1.0:full "DK PCA schema" /*11-07-2024*/

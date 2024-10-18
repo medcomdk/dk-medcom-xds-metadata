@@ -16,7 +16,7 @@ Description: "Values for the document metadata attribute mimeType"
 * ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
-* ^date = "2015-01-04"
+* ^date = "2025-01-01"
 * $IANAMediaOID#application/fhir+json "MimeType-application/fhir+json"
 * $IANAMediaOID#application/fhir+xml "MimeType-application/fhir+xml"
 //* $IANAMediaOID#"All Mime Media Types" "MimeType-text/su bType-text"
