@@ -6,4 +6,4 @@ Description: "Value set for the classCode attribute. classCode used in DK IHE Do
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-01" //1.2.208.184.100.9
-* $DanishiheOID#001 "Klinisk Rapport"
+* $DanishiheOID#001 

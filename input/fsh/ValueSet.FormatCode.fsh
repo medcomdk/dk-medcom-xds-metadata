@@ -47,11 +47,11 @@ Description: "HCO-DK: Code system for document format code used in national Docu
 * ^date = "2020-05-16"
 * $MedComFormatOID#urn:ad:dk:medcom:pdd-v1.0.1:full // "DK PDD document" // Danish XDS typecode must be updated*/
 
-ValueSet: MedComIHE_PCA_DK_FormatCode
-Id: MedCom-ihe-pca-formatcode-VS
-Title: "PCA-DK IHE FormatCode"
-Description: "PCA-DK: Code system for document format code used in national Document sharing. The value set for format code is based on code system DK_IHE_FormatCode. New formatCode will be added, when created."
+ValueSet: MedComIHE_PLR_DK_FormatCode
+Id: MedCom-ihe-plr-formatcode-VS
+Title: "PLR-DK IHE FormatCode"
+Description: "PLR-DK: Code system for document format code used in national Document sharing. The value set for format code is based on code system DK_IHE_FormatCode."
 * ^version = "1.0.0"
 * ^status = #active
-* ^date = "2024-07-11"
-* $MedComFormatOID#urn:ad:dk:medcom:pca-v1.0:full
+* ^date = "2025-03-01"
+* $MedComFormatOID#urn:ad:dk:medcom:plr-v1.0:full

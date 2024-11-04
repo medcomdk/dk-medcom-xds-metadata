@@ -51,13 +51,13 @@ Description: "HCO-DK: Value set for the typeCode attribute. The typeCode specifi
 * ^date = "2024-03-06"
 * $LoincOID#55188-7 "Patient data Document" */
 
-ValueSet: PCA_DK_IHE_TypeCode
-Id: MedCom-dk-ihe-pca-typecode-VS
-Title: "PCA-DK IHE TypeCode"
-Description: "PCA-DK: Value set for the typeCode attribute. The typeCode specifies the precise type of document from the user perspective. The granularity of typeCode is finer grained than its superior classCode."
+ValueSet: PLR_DK_IHE_TypeCode
+Id: MedCom-dk-ihe-plr-typecode-VS
+Title: "PLR-DK IHE TypeCode"
+Description: "PLR-DK: Value set for the typeCode attribute. The typeCode specifies the precise type of document from the user perspective. The granularity of typeCode is finer grained than its superior classCode."
 * ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
-* ^date = "2024-10-18"
-* $LoincOID#HL7v3-PCA "Problem Concern Act" 
+* ^date = "2025-03-01"
+* $LoincOID#11450-4 
 

@@ -6,4 +6,4 @@ Description: "Confidentiality code used in Danish Document sharing."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-01" 
-* $HL7#N "normal"
+* $HL7#N 

@@ -20,9 +20,9 @@ Description: "List of operational and in production home communities (XCA) in Da
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2016-11-01"
-* $DanishxdsOID#1.2.208.176.43210.8.10 "TEST1"
-* $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
-* $DanishxdsOID#1.2.208.176.8.1 "PROD"
+* $DanishxdsOID#1.2.208.176.8.1
+* $DanishxdsOID#1.2.208.193.100
+
 
 /* ValueSet: MedComIHE_APDDkHomeCommunityId
 Id: MedCom-ihe-apd-homeCommunityId-VS
