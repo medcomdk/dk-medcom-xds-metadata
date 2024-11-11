@@ -6,24 +6,25 @@ Description: "ValueSet containing TypeCode."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
-* $LoincOID#53576-5 "Personal health monitoring report Document"
-* $LoincOID#74468-0 "Questionnaire Form Definition Document"
-* $LoincOID#56446-8 "Appointment Summary Document" 
-* $LoincOID#39289-4 "Follow-up (referred to) provider /specialist, appointment date CPHS"
-* $LoincOID#39290-2 "Follow-up (referred to) program, appointment date CPHS"
-* $LoincOID#103140-0 "Personal health attachment Document" 
-* $LoincOID#74465-6 "Questionnaire Response Document"
-* $LoincOID#11450-4 "Problem list - Reported"
-* $LoincOID#81215-6 "Care plan - recommended C-CDA R2.0 & R2.1 sections"
-* $LoincOID#11502-2 "Laboratory report"
-* $LoincOID#57059-8 "Pregnancy visit summary note Narrative"
-* $LoincOID#28615-3 "Audiology Study"
-* $MedComOID#CMR "Clinical Mesurement Report"
-* $MedComOID#PDC "Stamkort"
-* $MedComOID#MADC "MADC"
-* $MedComOID#PFR "Pregnancy Referral Form"
-* $MedComOID#PSCR "Pregnancy Shared Care Report"
-* $MedComOID#PMR "Pregnancy Measurement Report"
+* $LoincOID#53576-5
+* $LoincOID#74468-0
+* $LoincOID#56446-8 //"Appointment Summary Document" 
+* $LoincOID#39289-4 //"Follow-up (referred to) provider /specialist, appointment date CPHS"
+* $LoincOID#39290-2 //"Follow-up (referred to) program, appointment date CPHS"
+* $LoincOID#103140-0 //"Personal health attachment Document" 
+* $LoincOID#74465-6 //"Questionnaire Response Document"
+* $LoincOID#55188-7 //"Patient data Document"
+* $LoincOID#11450-4 //"Problem List"
+* $LoincOID#81215-6  
+* $LoincOID#11502-2
+* $LoincOID#57059-8
+* $LoincOID#28615-3
+* $MedComOID#CMR
+* $MedComOID#PDC
+* $MedComOID#MADC
+* $MedComOID#PFR
+* $MedComOID#PSCR
+* $MedComOID#PMR
 /*  
 ValueSet: APD_DK_IHE_TypeCode
 Id: MedCom-dk-ihe-apd-typecode-VS
