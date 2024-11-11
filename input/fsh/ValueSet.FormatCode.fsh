@@ -1,4 +1,4 @@
-/* ValueSet: MedComIHE_CoreFormatCode
+ValueSet: MedComIHE_CoreFormatCode
 Id: MedCom-ihe-core-formatcode-VS
 Title: "IHE FormatCode"
 Description: "ValueSet containing FormatCode."
@@ -7,7 +7,7 @@ Description: "ValueSet containing FormatCode."
 * ^status = #active
 * ^date = "2022-01-26"
 * include codes from system MedComIHE_FormatCode
- */
+
 
 /* ValueSet: MedComIHE_APDDkFormatCode
 Id: MedCom-ihe-apd-formatcode-VS

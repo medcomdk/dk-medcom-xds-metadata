@@ -1,10 +1,18 @@
 # Terminology for XDS Metadata
-Codes represented in the ValueSets comes from more CodeSystems, which are represented below. For each coded element in the DocumentReference profile, a ValueSet is included. This ValueSet can either be general, e.g. HealthCareFacilityTypeCode, for all DocumentReferences or specific for the individual standard, e.g. formatcode. 
+This Implementation Guide (IG) is a FHIR representation of the [ValueSets in provided here for the IHE-XDS metadata](https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/). The ValueSets are used to define the allowed codes for a coded element in the metadata standard. A FHIR representation of the [IHE-XDS metadata standard](https://svn.medcom.dk/svn/releases/Standarder/IHE/DK_profil_metadata/) has also been developed using the FHIR resource DocumentReference. The [profile MedComDocumentReference](https://build.fhir.org/ig/medcomdk/dk-medcom-document/StructureDefinition-medcom-documentreference.html) includes bindings to the ValueSets in this IG.
 
-> Note: This IG is a FHIR representation of the [ValueSets in provided here for the IHE-XDS standard](https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/). The Excel document is currently the valid representation of the allowed codes.
+> Note: The [IHE-XDS metadata standard](https://svn.medcom.dk/svn/releases/Standarder/IHE/DK_profil_metadata/) and [IHE-XDS metadata ValueSets](https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/) are currently the valid representation of the allowed metadata and codes, respectively.
 
-## CodeSystems
-The codes in the ValueSet are selected from different CodeSystems. These CodeSystems are represented with an OID. An overview of the CodeSystems and their usages can be found in the table below.
+## Content
+This IG includes ValueSets used in the MedComDocumentReference profile. Further, it includes relevant CodeSystems defined by MedCom.
+
+### ValueSets
+Codes represented in the ValueSets comes from more CodeSystems, intended for use in a particular context. For each coded element in the DocumentReference profile, a ValueSet is included. The included ValueSet can either be generic across metadata for all standards, e.g. [HealthCareFacilityTypeCode](https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata/ValueSet-MedCom-ihe-core-HealthcareFacilityTypeCode-VS.html), or specific for the individual standard, e.g. [formatcode](https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata/ValueSet-MedCom-ihe-plr-formatcode-VS.html). Therefore, several ValueSets for representing e.g. formatCode can be found, one for each type of MedCom document standard. 
+
+### CodeSystems
+CodeSystems defines which codes exists and how they should be understood to avoid ambiguities. As mentioned, this IG only includes relevant CodeSystems defined by MedCom, whereas CodeSystems defined by other organizations can be found elsewhere. 
+
+The codes in the ValueSet origin from different CodeSystems that are owned by different organizations. In the table below, these CodeSystems are represented with an OID, name, description from the [OID-repository](http://www.oid-info.com/), and owner of the CodeSystem. 
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -22,40 +30,22 @@ The codes in the ValueSet are selected from different CodeSystems. These CodeSys
   <tr>
     <th class="tg-fymr">OID</th>
     <th class="tg-7btt">Name</th>
-    <th class="tg-fymr">Description</th>
-    <th class="tg-7btt">OID Owner</th>
+    <th class="tg-fymr">Description from OID-registry</th>
+    <th class="tg-7btt">Owner</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky">1.2.208.184.100.9</td>
-    <td class="tg-c3ow">classcode</td>
-    <td class="tg-0pky">Danish Integrating the Healthcare Enterprise (IHE) metadata class codes</td>
-    <td class="tg-c3ow">MedCom</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">1.2.208.184.100.1</td>
-    <td class="tg-c3ow">message-codes</td>
-    <td class="tg-0pky">Message codes administered by MedCom</td>
-    <td class="tg-c3ow">MedCom</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">1.2.208.184.100.10</td>
-    <td class="tg-c3ow">formatcode</td>
-    <td class="tg-0pky">Danish Integrating the Healthcare Enterprise (IHE) metadata format codes</td>
-    <td class="tg-c3ow">MedCom</td>
-  </tr>
-  <tr>
     <td class="tg-0pky">2.16.840.1.113883.6.96</td>
     <td class="tg-c3ow">SCT</td>
     <td class="tg-0pky">Systematized Nomenclature Of MEDicine (SNOMED) Clinical Terms (CT)</td>
-    <td class="tg-c3ow">HL7</td>
+    <td class="tg-c3ow">IHTSDO</td>
   </tr>
   <tr>
     <td class="tg-0pky">2.16.840.1.113883.6.1</td>
     <td class="tg-c3ow">LOINC</td>
     <td class="tg-0pky">Logical Observation Identifier Names and Codes (LOINC)</td>
-    <td class="tg-c3ow">HL7</td>
+    <td class="tg-c3ow">Regenstrief Institute</td>
   </tr>
   <tr>
     <td class="tg-0pky">2.16.840.1.113883.5.79</td>
@@ -99,6 +89,31 @@ The codes in the ValueSet are selected from different CodeSystems. These CodeSys
     <td class="tg-0pky">Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain</td>
     <td class="tg-c3ow">Danish Health Data Authority</td>
   </tr>
+  <tr>
+    <td class="tg-0pky">1.2.208.184.100.9</td>
+    <td class="tg-c3ow">classcode</td>
+    <td class="tg-0pky">Danish Integrating the Healthcare Enterprise (IHE) metadata class codes</td>
+    <td class="tg-c3ow">MedCom</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">1.2.208.184.100.1</td>
+    <td class="tg-c3ow">message-codes</td>
+    <td class="tg-0pky">Message codes administered by MedCom</td>
+    <td class="tg-c3ow">MedCom</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">1.2.208.184.100.10</td>
+    <td class="tg-c3ow">formatcode</td>
+    <td class="tg-0pky">Danish Integrating the Healthcare Enterprise (IHE) metadata format codes</td>
+    <td class="tg-c3ow">MedCom</td>
+  </tr>
 </tbody>
 </table>
 
+## Usage
+​Currently it is possible to [download](downloads.html) the ValueSets and CodeSystems in different formats. The vendor of the system is responsible for using updated terminologies.
+
+The date of the recent update can be seen in the bottom of this page, but to see if a specific CodeSystem, ValueSet or ConceptMap is updated, you’ll have to look at the specific terminology and see if the version has been changed. In the ‘History’-tab the history of the IG can be seen.
+
+## Contact
+[MedCom](https://medcom.dk/) is responsible for this site. If you have any questions, please contact <fhir@medcom.dk> or write to MedCom’s stream in [Zulip](https://chat.fhir.org/#narrow/stream/315677-denmark.2Fmedcom.2FFHIRimplementationErfaGroup).

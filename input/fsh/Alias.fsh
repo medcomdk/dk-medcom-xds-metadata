@@ -10,3 +10,4 @@ Alias: $DanishxdsOID = urn:oid:1.2.208.176.8.1
 Alias: $IANALanguageOID = urn:oid:2.16.840.1.113883.6.121
 Alias: $IANAMediaOID = urn:oid:2.16.840.1.113883.5.79
 Alias: $HL7 = urn:oid:2.16.840.1.113883.5.25
+Alias: $hoer = urn:ad:dk:medcom:noah:action-categories

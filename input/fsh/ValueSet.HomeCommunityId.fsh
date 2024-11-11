@@ -13,8 +13,8 @@ Description: "List of operational and in production home communities (XCA) in Da
 * $DanishxdsOID#1.2.208.176.43210.8.50 "STAGING"
 * $DanishxdsOID#1.2.208.176.8.1 "PROD" */
 
-ValueSet: MedComIHE_DkHomeCommunityId
-Id: MedCom-ihe-homeCommunityId-VS
+ValueSet: MedComIHE_CoreDkHomeCommunityId
+Id: MedCom-ihe-core-homeCommunityId-VS
 Title: "IHE HomeCommunityId"
 Description: "List of operational and in production home communities (XCA) in Danish Document Sharing"
 * ^version = "1.0.0"
