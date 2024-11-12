@@ -8,7 +8,6 @@ Description: "Values for the document metadata attribute mimeType"
 * ^date = "2015-01-04"
 * $IANAMediaOID#text/xml "MimeType-text/xml"
 
-
 ValueSet: MedComIHE_CoreMimeType_FHIR
 Id: MedCom-ihe-core-mimetype-fhir-VS
 Title: "IHE MimeType for FHIR documents"
@@ -19,7 +18,7 @@ Description: "Values for the document metadata attribute mimeType"
 * ^date = "2025-01-01"
 * $IANAMediaOID#application/fhir+json "MimeType-application/fhir+json"
 * $IANAMediaOID#application/fhir+xml "MimeType-application/fhir+xml"
-//* $IANAMediaOID#"All Mime Media Types" "MimeType-text/su bType-text"
+//* $IANAMediaOID#"All Mime Media Types" "MimeType-text/subType-text"
 
 /*
 ValueSet: MedComIHE_APDDkMimeType

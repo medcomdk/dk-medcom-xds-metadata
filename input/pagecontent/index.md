@@ -1,7 +1,22 @@
-# Terminology for XDS Metadata
+# XDS Metadata for Document Sharing - Danish Profile
+
 This Implementation Guide (IG) is a FHIR representation of the [ValueSets in provided here for the IHE-XDS metadata](https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/). The ValueSets are used to define the allowed codes for a coded element in the metadata standard. A FHIR representation of the [IHE-XDS metadata standard](https://svn.medcom.dk/svn/releases/Standarder/IHE/DK_profil_metadata/) has also been developed using the FHIR resource DocumentReference. The [profile MedComDocumentReference](https://build.fhir.org/ig/medcomdk/dk-medcom-document/StructureDefinition-medcom-documentreference.html) includes bindings to the ValueSets in this IG.
 
 > Note: The [IHE-XDS metadata standard](https://svn.medcom.dk/svn/releases/Standarder/IHE/DK_profil_metadata/) and [IHE-XDS metadata ValueSets](https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/) are currently the valid representation of the allowed metadata and codes, respectively.
+
+## What is the XDS-metadata profile?
+
+The Danish Profile is based upon the international <a href="https://profiles.ihe.net/ITI/papers/metadata/index.html" target="_blank">IHE Profile</a>
+
+Standarden definerer en række metadataelementer, der er knyttet til sundhedsdokumenter, og som tillader en ensartet og struktureret beskrivelse af dokumenterne. Formålet er at muliggøre en pålidelig og sikker udveksling af dokumenter.
+
+Standarden bliver anvendt i bl.a. Et Samlet Patientoverblik, Graviditetsmappen og PRO-løsningerne til opmærkning af dokumenter i dokumentdelingsservicens SDS Patientindeks. Derfra anvendes standarden til afgrænsning af dokumentudsøgning.
+
+Ejerskabsoverdragelsen vil centralisere ansvaret for løbende revision af XSD-metadata, hvilket resulterer i en hurtigere og mere effektiv specifikation af søgeparametre. Dette vil gavne både leverandører og slutbrugere ved at levere præcise og mere relevante søgeresultater.
+
+Du finder standarddokumentationen på MedComs SVN.
+
+# Terminology for XDS Metadata
 
 ## Content
 This IG includes ValueSets used in the MedComDocumentReference profile. Further, it includes relevant CodeSystems defined by MedCom.
