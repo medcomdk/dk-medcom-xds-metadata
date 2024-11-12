@@ -70,7 +70,8 @@ Description: "Value set for healthcare facility type code represents the type of
 * $SnomedctOID#550701000005104 "tandteknisk klinik"
 * $SnomedctOID#554231000005106 "vaccinationsklinik"
 * $SnomedctOID#554051000005108 "zoneterapiklinik"
-* $SnomedctOID#550811000005108 "administrativ enhed"
+* $SnomedctOID#550811000005108 "administrativ enhed" 
+
 
 /* ValueSet: MedComIHE_APDDkHealthcareFacilityTypeCode
 Id: MedCom-ihe-apd-HealthcareFacilityTypeCode-VS

@@ -18,7 +18,7 @@ Description: "LOINC document type codes (International)"
 * #81215-6 "Care plan - recommended C-CDA R2.0 & R2.1 sections" 
 * #57059-8 "Pregnancy visit summary note Narrative"
 * #28615-3 "Audiology Study"
-
+*/
 CodeSystem: MedComIHE_TypeCode
 Id: MedCom-ihe-typecode-CS
 Title: "MedCom Message Codes"
@@ -31,4 +31,7 @@ Description: "MedCom document type codes (Danish)"
 * ^identifier.value = "1.2.208.184.100.1"
 * #CMR "Clinical Mesurement Report"
 * #PDC "Stamkort"
-* #MADC "MADC" */
+* #MADC "MADC" 
+* #PRF "Pregnancy Referral Form"
+* #PSCR "Pregnancy Shared Care Report"
+* #PMR "Pregnancy Measurement Report"
