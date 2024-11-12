@@ -3,8 +3,8 @@ canonical: http://medcomfhir.dk/ig/xdsmetadata
 name: Terminology for XDS Metadata
 title: Dk Terminology for XDS Metadata
 description: MedCom Terminology for XDS Metadata
-status: active # draft | active | retired | unknown
-version: 1.0.1
+status: draft # draft | active | retired | unknown
+version: 1.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -17,5 +17,8 @@ parameters:
 
 menu:
   Home: index.html
+  DK XDS Metadata profile 1.0: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.0.0.html
+  DK XDS Metadata Terminology: DK-IHE_Metadata-Value_sets.html
+  Roadmap: roadmap.html
   Artifacts: artifacts.html
   Downloads: downloads.html
