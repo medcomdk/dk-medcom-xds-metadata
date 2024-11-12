@@ -1,5 +1,5 @@
-ValueSet: MedComIHE_CoreMimeType
-Id: MedCom-ihe-core-mimetype-VS
+ValueSet: MedComIHE_CoreMimeType_CDA
+Id: MedCom-ihe-core-mimetype-cda-VS
 Title: "IHE MimeType"
 Description: "Values for the document metadata attribute mimeType"
 * ^experimental = true

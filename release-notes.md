@@ -1,1 +1,1 @@
-Fix to hyperlink pathing issues to a local path "C:\Users\TMS..."
+Initial commit of DK MedCom XDS Metadata IG as trail use
