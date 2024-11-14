@@ -1,7 +1,9 @@
 # Terminology for XDS Metadata
 This Implementation Guide (IG) is a FHIR representation of the [ValueSets in defined in the IHE-XDS metadata](https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/). The ValueSets are used to define the allowed codes for a coded element in the metadata standard. A FHIR representation of the submission of [IHE-XDS metadata standard](https://svn.medcom.dk/svn/releases/Standarder/IHE/DK_profil_metadata/) has also been developed using the FHIR resource DocumentReference. The [profile MedComDocumentReference](https://build.fhir.org/ig/medcomdk/dk-medcom-document/StructureDefinition-medcom-documentreference.html) includes bindings to the ValueSets in this IG.
 
-> Note: The [IHE-XDS metadata standard](https://svn.medcom.dk/svn/releases/Standarder/IHE/DK_profil_metadata/) and [IHE-XDS metadata ValueSets](https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/) are currently the officially valid representations of the Danish XDS MetaData Standard and its allowed metadata and codes, respectively.
+The [IHE-XDS metadata standard](https://svn.medcom.dk/svn/releases/Standarder/IHE/DK_profil_metadata/) and [IHE-XDS metadata ValueSets](https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/) are currently the officially valid representations of the Danish XDS MetaData Standard and its allowed metadata and codes, respectively.
+
+> Please notice: This IG is published as trial use. This version is published to support metadata of the document standard ConditionList. Therefore, only generic ValueSets and specific ValueSets for that standard is included, and more ValueSets should be expected to be included.
 
 ## Content
 This IG includes ValueSets used in the MedComDocumentReference profile. Further, it includes relevant CodeSystems defined by MedCom.

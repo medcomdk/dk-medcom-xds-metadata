@@ -7,7 +7,7 @@
     "first" : true,
     "ci-build" : "https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata",
     "milestone" : true,
-    "title": "Dk MedCom Terminology for XDS Metadata",
+    "title": "Dk Terminology for XDS Metadata",
     "category": "MedCom Terminology for XDS Metadata",
     "introduction": "The MedCom Document Implementation Guide includes CodeSystems and ValueSets for XDS metadata.",
     "descmd": "@release-notes.md"
