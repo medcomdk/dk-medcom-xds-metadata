@@ -1,5 +1,5 @@
 {
-    "package-id": "medcom.fhir.dk.xds.metadata",
+    "package-id": "medcom.fhir.dk.xdsmetadata",
     "version": "1.0.0",
     "path": "http://medcomfhir.dk/ig/xdsmetadata/1.0.0",
     "status": "release",

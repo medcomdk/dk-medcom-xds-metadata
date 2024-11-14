@@ -3,7 +3,7 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: medcom.fhir.dk.xds.metadata
+id: medcom.fhir.dk.xdsmetadata
 canonical: http://medcomfhir.dk/ig/xdsmetadata
 name: Terminology for XDS Metadata
 title: Dk Terminology for XDS Metadata
