@@ -9,3 +9,4 @@ Description: "CodeSystem for ClassCode"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.184.100.9"
 * #001 "Klinisk rapport" 
+*
