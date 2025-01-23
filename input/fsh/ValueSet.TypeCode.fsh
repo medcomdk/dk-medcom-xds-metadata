@@ -25,6 +25,8 @@ Description: "ValueSet containing TypeCode."
 * $MedComOID#PFR "Pregnancy Referral Form"
 * $MedComOID#PSCR "Pregnancy Shared Care Report"
 * $MedComOID#PMR "Pregnancy Measurement Report"
+* $MedComOID#MsgHCO "HomeCareObservationMessage"
+
 /*  
 ValueSet: APD_DK_IHE_TypeCode
 Id: MedCom-dk-ihe-apd-typecode-VS
