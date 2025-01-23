@@ -34,3 +34,4 @@ Description: "CodeSystem for FormatCode"
 * #urn:ad:dk:medcom:prf-v1.0:full "DK PRF schema" /*11-07-2024*/
 * #urn:ad:dk:medcom:pscr-v1.0:full "DK PSCR schema"
 * #urn:ad:dk:medcom:pmr-v1.0:full "DK PMR schema"
+* #urn:ad:dk:medcom:msg:hco-v1.1:full "DK HCO message"

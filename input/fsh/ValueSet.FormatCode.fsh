@@ -6,7 +6,7 @@ Description: "ValueSet containing FormatCode."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
-* include codes from system MedComIHE_FormatCode
+* include codes from system MedCom-ihe-formatcode-CS
 
 
 /* ValueSet: MedComIHE_APDDkFormatCode
@@ -37,6 +37,7 @@ Description: "QRD-DK: Code system for document format code used in national Docu
 * $MedComFormatOID#urn:ad:dk:medcom:qrd-v1.1:full // "DK QRD schema"
 * $MedComFormatOID#urn:ad:dk:medcom:qrd-v1.2:full // "DK QRD schema" //19-05-2015
 * $MedComFormatOID#urn:ad:dk:medcom:qrd-v1.3:full // "DK QRD schema" //11-02-2022 
+*/
 
 ValueSet: MedComIHE_HCODkFormatCode
 Id: MedCom-ihe-hco-formatcode-VS
@@ -45,7 +46,7 @@ Description: "HCO-DK: Code system for document format code used in national Docu
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2020-05-16"
-* $MedComFormatOID#urn:ad:dk:medcom:pdd-v1.0.1:full // "DK PDD document" // Danish XDS typecode must be updated*/
+* $MedComFormatOID#urn:ad:dk:medcom:pdd-v1.0.1:full // "DK PDD document" // Danish XDS typecode must be updated
 
 ValueSet: MedComIHE_PLR_DK_FormatCode
 Id: MedCom-ihe-plr-formatcode-VS
