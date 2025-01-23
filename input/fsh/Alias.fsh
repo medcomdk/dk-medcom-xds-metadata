@@ -11,3 +11,9 @@ Alias: $IANALanguageOID = urn:oid:2.16.840.1.113883.6.121
 Alias: $IANAMediaOID = urn:oid:2.16.840.1.113883.5.79
 Alias: $HL7 = urn:oid:2.16.840.1.113883.5.25
 Alias: $hoer = urn:ad:dk:medcom:noah:action-categories
+
+Alias: $HcoTypeCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-ihe-hco-typecode-VS
+Alias: $HcoEventCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-ihe-hco-eventcodelist-VS
+Alias: $HcoHomeCommunityID = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-hco-homeCommunityId-VS
+Alias: $HcoFormatCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-hco-formatcode-VS
+
