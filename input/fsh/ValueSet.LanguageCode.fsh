@@ -1,6 +1,6 @@
 ValueSet: MedComIHE_CoreLanguageCode
 Id: MedCom-ihe-core-languagecode-VS
-Title: "IHE XDS LanguageCode"
+Title: "DK IHE XDS LanguageCode"
 Description: "Tags for the Identification of Languages (RFC 3066)"
 * ^experimental = true
 * ^version = "1.0.0"
