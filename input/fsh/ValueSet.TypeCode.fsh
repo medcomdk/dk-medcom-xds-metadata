@@ -24,6 +24,8 @@ Description: "ValueSet containing TypeCode."
 * $MedComOID#PFR "Pregnancy Referral Form"
 * $MedComOID#PSCR "Pregnancy Shared Care Report"
 * $MedComOID#PMR "Pregnancy Measurement Report"
+* $MedComOID#HcoMsg "HomeCareObservation Messsage"
+
 /*  
 ValueSet: APD_DK_IHE_TypeCode
 Id: MedCom-dk-ihe-apd-typecode-VS
@@ -65,7 +67,7 @@ Description: "HCO-DK: Value set for the typeCode attribute. The typeCode specifi
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2024-03-06"
-* $LoincOID#55188-7 "Patient data Document" */
+* $LoincOID#55188-7 "Patient data Document"
 
 ValueSet: PLR_DK_IHE_TypeCode
 Id: MedCom-dk-ihe-plr-typecode-VS
@@ -77,3 +79,4 @@ Description: "PLR-DK: Value set for the typeCode attribute. The typeCode specifi
 * ^date = "2025-03-01"
 * $LoincOID#11450-4 
 
+ */
