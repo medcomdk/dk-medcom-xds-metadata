@@ -1,6 +1,6 @@
  ValueSet: MedComIHE_CoreEventCodeLists
 Id: MedCom-ihe-core-eventcodelist-VS
-Title: "IHE EventCodeLists"
+Title: "IHE XDS EventCodeLists"
 Description: "ValueSet containing EventCodeLists."
 * ^experimental = true
 * ^version = "1.0.0"

@@ -1,6 +1,6 @@
 ValueSet: MedComIHE_CoreFormatCode
 Id: MedCom-ihe-core-formatcode-VS
-Title: "IHE FormatCode"
+Title: "IHE XDS FormatCode"
 Description: "ValueSet containing FormatCode."
 * ^experimental = true
 * ^version = "1.0.0"

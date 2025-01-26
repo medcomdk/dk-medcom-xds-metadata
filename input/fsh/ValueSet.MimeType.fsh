@@ -1,6 +1,6 @@
 ValueSet: MedComIHE_CoreMimeType
 Id: MedCom-ihe-core-mimetype-VS
-Title: "IHE MimeType"
+Title: "IHE XDS MimeType"
 Description: "Values for the document metadata attribute mimeType"
 * ^experimental = true
 * ^version = "1.0.0"
@@ -12,7 +12,7 @@ Description: "Values for the document metadata attribute mimeType"
 
 /* ValueSet: MedComIHE_CoreMimeType_FHIR
 Id: MedCom-ihe-core-mimetype-fhir-VS
-Title: "IHE MimeType for FHIR documents"
+Title: "IHE XDS MimeType for FHIR documents"
 Description: "Values for the document metadata attribute mimeType"
 * ^experimental = true
 * ^version = "1.0.0"

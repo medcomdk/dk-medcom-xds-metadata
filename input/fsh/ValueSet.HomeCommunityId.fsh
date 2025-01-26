@@ -1,6 +1,6 @@
 /* ValueSet: MedComIHE_CoreHomeCommunityId
 Id: MedCom-ihe-core-homeCommunityId-VS
-Title: "IHE HomeCommunityId"
+Title: "IHE XDS HomeCommunityId"
 Description: "List of operational and in production home communities (XCA) in Danish Document Sharing"
 * ^experimental = true
 * ^version = "1.0.0"
@@ -15,7 +15,7 @@ Description: "List of operational and in production home communities (XCA) in Da
 
 ValueSet: MedComIHE_CoreDkHomeCommunityId
 Id: MedCom-ihe-core-homeCommunityId-VS
-Title: "IHE HomeCommunityId"
+Title: "IHE XDS HomeCommunityId"
 Description: "List of operational and in production home communities (XCA) in Danish Document Sharing"
 * ^version = "1.0.0"
 * ^status = #active

@@ -1,6 +1,6 @@
 ValueSet: MedComIHE_CoreTypeCode
 Id: MedCom-ihe-core-typecode-VS
-Title: "IHE TypeCode"
+Title: "IHE XDS TypeCode"
 Description: "ValueSet containing TypeCode."
 * ^experimental = true
 * ^version = "1.0.0"

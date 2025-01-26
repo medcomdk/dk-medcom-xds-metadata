@@ -1,6 +1,6 @@
 ValueSet: MedComIHE_ConfidentialityCode
 Id: MedCom-ihe-core-confidentialitycode-VS
-Title: "IHE ConfidentialityCode"
+Title: "IHE XDS ConfidentialityCode"
 Description: "Confidentiality code used in Danish Document sharing."
 * ^experimental = true
 * ^version = "1.0.0"
