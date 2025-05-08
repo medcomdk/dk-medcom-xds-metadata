@@ -1,1 +1,1 @@
-Initial commit of DK MedCom XDS Metadata IG as trial use. This version is published to support metadata of the document standard ConditionList. Therefore, only generic ValueSets and specific ValueSets for that standard is included, and more ValueSets should be expected to be included.
+Fix to hyperlink pathing issues to a local path "C:\Users\TMS..."
