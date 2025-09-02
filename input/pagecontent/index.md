@@ -131,4 +131,5 @@ The codes in the ValueSet origin from different CodeSystems that are owned by di
 The date of the recent update can be seen in the bottom of this page, but to see if a specific CodeSystem, ValueSet or ConceptMap is updated, you’ll have to look at the specific terminology and see if the version has been changed. In the ‘History’-tab the history of the IG can be seen.
 
 ## Contact
-[MedCom](https://medcom.dk/) is responsible for this site. If you have any questions, please contact <fhir@medcom.dk> or write to MedCom’s stream in [Zulip](https://chat.fhir.org/#narrow/stream/315677-denmark.2Fmedcom.2FFHIRimplementationErfaGroup).
+[MedCom](https://medcom.dk/) is responsible for this site. If you have any questions, please contact <xds-metadata@medcom.dk> or write to MedCom’s stream in [Zulip](https://chat.fhir.org/#narrow/stream/315677-denmark.2Fmedcom.2FFHIRimplementationErfaGroup).
+
