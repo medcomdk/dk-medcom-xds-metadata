@@ -11,7 +11,7 @@ title: Danish profile of the XDS Metadata Standard
 status: draft # draft | active | retired | unknown
 version: 1.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2023+
+copyrightYear: 2025+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
@@ -78,7 +78,11 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  DK XDS Metadata profile 1.0: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.0.0.html
+  DK XDS Metadata profile: 
+  DK XDS Metadata profile 1.0.0: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.0.0.html
+  DK XDS Metadata profile 1.1.0: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0.html
+  DK XDS Metadata profile CDA example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_cda.html
+  DK XDS Metadata profile ebXML example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebXML.html
   DK XDS Metadata Terminology: DK-IHE_Metadata-Value_sets.html
   Roadmap: roadmap.html
   Artifacts: artifacts.html
