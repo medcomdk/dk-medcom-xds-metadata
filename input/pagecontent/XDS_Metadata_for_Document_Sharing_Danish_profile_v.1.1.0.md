@@ -1,6 +1,6 @@
 # XDS Metadata for Document Sharing
 
-        Danish profile Version 1.0.0 10. April 2024
+        Danish profile Version 1.1.0 31. December 2025
 
         Custodians: MedCom/Danish Health Data Authority
 
