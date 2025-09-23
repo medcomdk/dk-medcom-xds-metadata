@@ -348,7 +348,7 @@ No other fields **SHALL** be specified.
         $displayName = “ Odense Universitetshospital – Svendborg” 
         $codeSystem = ”1.2.208.176.1.1” |
 
-**XML example:**
+#### authorInstitution **XML example:**
 
         <rim:Slot name="authorInstitution">  
             <rim:ValueList>  

@@ -329,7 +329,7 @@ This specification restricts the coding to include the following fields:
 
 No other fields **SHALL** be specified.
 
-**CDA Reference:**
+#### authorInstitution **CDA Reference:**
         
         The mapping **SHALL** include the following values from the CDA as listed below.  
         

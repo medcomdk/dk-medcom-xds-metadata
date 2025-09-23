@@ -78,15 +78,17 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  DK XDS Metadata profile: 
-  DK XDS Metadata profile 1.0.0: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.0.0.html
-  DK XDS Metadata profile 1.1.0: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0.html
-  DK XDS Metadata profile CDA example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_cda.html
-  DK XDS Metadata profile ebXML example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebXML.html
+  DK XDS Metadata profile:
+    DK XDS Metadata profile 1.0.0: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.0.0.html
+    DK XDS Metadata profile 1.0.1: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.0.1.html
+    DK XDS Metadata profile 1.1.0: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0.html
+    DK XDS Metadata profile CDA example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_cda.html
+    DK XDS Metadata profile ebXML example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html
   DK XDS Metadata Terminology: DK-IHE_Metadata-Value_sets.html
-  Roadmap: roadmap.html
   Artifacts: artifacts.html
-  Downloads: downloads.html
+  More:
+    Roadmap: roadmap.html
+    Downloads: downloads.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

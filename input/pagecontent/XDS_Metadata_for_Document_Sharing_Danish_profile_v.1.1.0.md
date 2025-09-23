@@ -14,9 +14,31 @@
 | 1.0.0   | 04-04-2024 | Ole Vilstrup Møller. MedCom                   | Revisions regarding further use of code systems added. Added MedCom logo and responsibility. |
 | 1.1.0   | 31-12-2025 | Ole Vilstrup Møller. MedCom                   | Revisions regarding xxxx |
 
-## Purpose, Audience and Introduction
+# Introduction
 
-### Purpose
+The Danish Document Sharing Service is based on IHE XDS specifications. The aim is that the document can be used for implementing XDS Metadata across Danish IHE Affinity Domains. Metadata is information about documents or records that is used when searching to find the right item. This metadata has to be supplied by the document source and is generally limited to what can be provided by source information systems.
+
+Each XDS system requires an XDS Affinity Domain (XAD), which establishes the rules and conventions about the type of clinical documents, metadata codes, security constraints and other policies that shall be used. One of the tasks in setting up an affinity domain is to specify the metadata code sets that are allowed. In Denmark this work is ongoing and not yet finalized.
+
+This document specifies (for trial purposes) metadata to be used in Denmark. The metadata specification has until now had a focus on the use of HL7 CDA, especially the Danish profile of the CDA PHMR, Questionnaires and the Danish CDA header profile, but will from now on focus broader on XDS metadata for all kinds of documents, since IHE XDS is not limited to HL7 CDA documents. The metadata set in this document has been derived from and mapped to IHE XDS and includes information about the patient, the document, the author and the service being documented.
+
+The metadata was originally used and assessed in pilot projects in 2018. The experiences from the pilot project and other later projects will systematically be collected and used for updates of this document.
+
+Initial assumptions and assessments were made for establishing the foundational code systems for the Danish XDS Metadata ValueSet. Due to a broader use of this standard in relation to the ongoing work of sharing documents through the XDS infrastructure, these initial assessments and assumptions have now been superseded by practice and therefore new code systems will be added and existing systems extended, when need be.
+
+The IBI[^1] project for the registration of image data on XDS-I was part of this work but need some more work to be finalized.
+
+[^1]: IBI – Interregional Billedindeks (Interregional Image Index) (2016)
+
+The requirements for the XDS registry transactions (as ebXML Registry Package) are not part of this specification.
+
+This version of the document is produced by MedCom, who has taken the responsibility role as custodian of this standard. This document will still reflect most of the style from the initial work done by the Danish Health Data Authority.
+
+## Audience
+
+The audience for this document includes software developers and implementers of products and services for the Danish Document Sharing Service (DDS).
+
+## Purpose
 
 This document defines XDS Metadata for the use of documents, and hereunder HL7 CDA documents, in IHE XDS-based clinical documents exchange in Denmark, for example as provided by the Danish Document Sharing Service. The main background documents for the definition of the Danish profile are listed below:
 
@@ -32,43 +54,15 @@ The first version of this document was prepared by the National Sundheds-it now 
 
 The work group held 2 workshops in the period from November 2014 to December 2014. The work group included:
 
-### Audience
-
-The audience for this document includes software developers and implementers of products and services for the Danish Document Sharing Service (DDS).
-
-### Introduction
-
-The Danish Document Sharing Service is based on IHE XDS specifications. The aim is that the document can be used for implementing XDS Metadata across Danish IHE Affinity Domains. Metadata is information about documents or records that is used when searching to find the right item. This metadata has to be supplied by the document source and is generally limited to what can be provided by source information systems.
-
-Each XDS system requires an XDS Affinity Domain (XAD), which establishes the rules and conventions about the type of clinical documents, metadata codes, security constraints and other policies that **SHALL** be used. One of the tasks in setting up an affinity domain is to specify the metadata code sets that are allowed. In Denmark this work is ongoing and not yet finalized.
-
-This document specifies (for trial purposes) metadata to be used in Denmark. The metadata specification has until now had a focus on the use of HL7 CDA, especially the Danish profile of the CDA PHMR, Questionnaires and the Danish CDA header profile, but will from now on focus broader on XDS metadata for all kinds of documents, since IHE XDS is not limited to HL7 CDA documents. The metadata set in this document has been derived from and mapped to IHE XDS and includes information about the patient, the document, the author and the service being documented.
-
-The metadata was originally used and assessed in pilot projects in 2018. The experiences from the pilot project and other later projects will systematically be collected and used for updates of this document.
-
-Initial assumptions and assessments were made for establishing the foundational code systems for the Danish XDS Metadata ValueSet. Due to a broader use of this standard in relation to the ongoing work of sharing documents through the XDS infrastructure, these initial assessments and assumptions have now being superseded by practice and therefore new code systems will be added and existing systems extended, when need be.
-
-The IBI[^1] project for the registration of image data on XDS-I was part of this work but need some more work to be finalized.
-
-[^1]: IBI – Interregional Billedindeks (Interregional Image Index) (2016)
-
-The requirements for the XDS registry transactions (as ebXML Registry Package) are not part of this specification.
-
-This version of the document is produced by MedCom, who has taken the responsibility role as custodian of this standard. This document will still reflect most of the style from the initial work done by the Danish Health Data Authority.
-
 ## Document Sharing
 
 ### Cross-Enterprise Document Sharing (XDS)
 
-IHE XDS enables healthcare documents to be shared over a wide area network, between hospitals, primary care providers, social services and others in the patients’ circle or web of care. Rather than having one big database at the centre, IHE XDS fits the distributed collaborative approach to sharing clinical documents where they are held in different organizations. The primary components in XDS are a centralized Registry and one or more local Repositories. The XDS Registry stores metadata, which is queried to retrieve documents, while local XDS Repositories store the actual documents. The Registry and Repositories are logically and physically separate. A book library provides an analogy for explaining how XDS works: A library has books and a central index. An index entry for each book points to where to find the book on the library shelves together with brief details of the content. In the same way, the XDS Registry contains standardized metadata describing the content of each item and where to find it. The Repository **MAY** contain any type of electronic content much like the library shelves **MAY** contain any type of book or other media. Every item in the Repository has corresponding metadata in the Registry just as every book in the library has an entry in the index. XDS enables external user applications to retrieve documents from one or more repositories in a quick and consistent way. Each document is retrieved in its original form, which **MAY** be structured or unstructured. Every XDS implementation has five actors: Document Source, Document Repository, Document Registry, Document Consumer and Patient Identity Source.
+IHE XDS enables healthcare documents to be shared over a wide area network, between hospitals, primary care providers, social services and others in the patients’ circle or web of care. Rather than having one big database at the centre, IHE XDS fits the distributed collaborative approach to sharing clinical documents where they are held in different organizations. The primary components in XDS are a centralized Registry and one or more local Repositories. The XDS Registry stores metadata, which is queried to retrieve documents, while local XDS Repositories store the actual documents. The Registry and Repositories are logically and physically separate. A book library provides an analogy for explaining how XDS works: A library has books and a central index. An index entry for each book points to where to find the book on the library shelves together with brief details of the content. In the same way, the XDS Registry contains standardized metadata describing the content of each item and where to find it. The Repository may contain any type of electronic content much like the library shelves may contain any type of book or other media. Every item in the Repository has corresponding metadata in the Registry just as every book in the library has an entry in the index. XDS enables external user applications to retrieve documents from one or more repositories in a quick and consistent way. Each document is retrieved in its original form, which may be structured or unstructured. Every XDS implementation has five actors: Document Source, Document Repository, Document Registry, Document Consumer and Patient Identity Source.
 
-<br/>
-
-<img src="xds-transaction-diagram.png" alt="XDS transaction diagram" style="vertical-align:left;margin:15px 600px 15px 15px"/>
+![](media/77175d98b8e420d688c52d825d8c6c74.png)
 
 Figure 1. XDS transaction diagram
-
-<br/>
 
 #### Patient Identity Source
 
@@ -76,22 +70,21 @@ The Patient Identity Source provides a unique XDS identifier for each and every 
 
 #### Document Source
 
-The Document Source submits HL7 CDA documents (or other documents) to a (local) Document Repository. Each organization **MAY** maintain its own Repository.
+The Document Source submits HL7 CDA documents (or other documents) to a (local) Document Repository. Each organization may maintain its own Repository.
 
 #### Document Repository
 
 The Document Repository provides a persistent store for each document. It assigns a unique Identifier (uniqueId) to each document for subsequent retrieval by a Document Consumer.
 
-In case of an updated version of the document will provide a new uniqueId and replacing the previous document, and updating metadata in Document Registry.
+In case of an updated version of the document, it will provide a new uniqueId and replacing the previous document and updating metadata in Document Registry.
 
 #### Document Registry
 
-The Document Registry provides an index to all registered documents in the repositories about each patient using the patient identifier as the key. One Registry can index documents in any number of Repositories. It maintains a link (pointer) back to the Repository where each document is stored. The Registry supports queries to find metadata about documents irrespective of where they are actually stored. To maintain security, the Registry has no access to the content of any document, but relies only on standardized metadata to retrieve relevant documents.
+The Document Registry provides an index to all registered documents in the repositories about each patient using the patient identifier as the key. One Registry can index documents in any number of Repositories. It maintains a link (pointer) back to the Repository where each document is stored. The Registry supports queries to find metadata about documents irrespective of where they are actually stored. To maintain security, the Registry has no access to the content of any document but relies only on standardized metadata to retrieve relevant documents.
 
 #### Document Consumer
 
 The Document Consumer submits queries to the Registry to get document metadata meeting specified query criteria, which are then used for locating the repository and retrieving the actual document from it. The Consumer can now retrieve the document(s). In order to retrieve a document, the following metadata attributes are required: homeCommunityId, repositoryUniqueId and document id (uniqueId).
-
 
 ### OID values used in Danish metadata
 
@@ -103,10 +96,10 @@ More of the metadata attributes are derived from national and international clas
 
 The table below shows the classification systems used in this document including the used OID’s. The table is consistent with the OID’s and classifications used in the Danish PHMR profile.
 
-Table 1. OID used in IHE Metadata
+Table 2. OID used in IHE Metadata
 
 | **Description**                                                                                         | **OID**                 | **Responsible organization**                                                                                                       |
-|---|---|---|
+|---------------------------------------------------------------------------------------------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | LOINC                                                                                                   | 2.16.840.1.113883.6.1   | Regenstrief                                                                                                                        |
 | **CPR-number** Danish civil registration system ("CPR"). Personal identification for Citizen in Denmark | 1.2.208.176.1.2         | Administered by Sundhedsdatastyrelsen (Danish Health Data Authority) for the owner Indenrigsministeriet (Ministry of the Interior) |
 | **SOR** Register of Danish Health Organisations                                                         | 1.2.208.176.1.1         | Administered and owned by Sundhedsdatastyrelsen (Danish Health Data Authority)                                                     |
@@ -122,7 +115,6 @@ Table 1. OID used in IHE Metadata
 
 More information on the classification systems are described in APPENDIX 1 – Classification systems.
 
-
 ### XDS Metadata attributes: Reading instructions
 
 The XDS metadata attributes are described in chapter 2, using a uniform template.
@@ -131,17 +123,17 @@ The XDS metadata attributes are described in chapter 2, using a uniform template
 
 A table shows the basic information for the attributes:
 
-<img src="xds-basic-entities.png" alt="xds-basic-entities table" style="vertical-align:left;margin:15px 700px 15px 15px"/>
+![](media/92af47e2cf8c6f8c3f2def4934f34483.png)
 
 Entity: The entity/entities, where the attribute are used.
 
-Optionality: The optionality for the attribute according to optionality code definitions given in Table 3.
+Optionality: The optionality for the attribute according to optionality code definitions given in Table 4.
 
 Data type: The data type for the attribute (HL7 v2 data types).
 
 Source: The data source for the attribute according to
 
-Table 4. The text (transformation) informs that the CDA data, which are based on HL7 v3 data types, **SHALL** be transformed to HL7 v2 data types.
+Table 5. The text (transformation) informs that the CDA data, which are based on HL7 v3 data types, shall be transformed to HL7 v2 data types.
 
 #### Attribute – Description
 
@@ -149,10 +141,9 @@ The section *description* is describing the use of the attribute in a Danish hea
 
 #### Attribute – Coding
 
-The section *Coding* describes how the coding of the attributes **SHALL** be performed.
+The section *Coding* describes how the coding of the attributes shall be performed.
 
 The section also includes (when applicable) colored boxes with examples on mapping to HL7 CDA, other requirements (RDK) and an XML metadata example.
-
 
 ### Allowed value sets for Danish metadata attributes
 
@@ -162,43 +153,46 @@ For some of the metadata attributes the corresponding value set is comprised of 
 
 #### [DK-IHE_Metadata Value_sets]
 
-The allowed values in the value set, are listed in the Excel document placed at a public website at MedCom: DK-IHE_Metadata-Common_Code_systems-Value_sets [^4]
+The allowed values in the value set, are listed in the Excel document placed at a public website at MedCom:
+
+https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx
 
 Go to the tab for a given metadata attribute to look up allowed values for the given metadata attribute. Further instructions are written in the first tab “Instruction” of the Excel file.
+
 
 # DANISH XDS Metadata attributes FOR Clinical documents
 
 
 ## Overview of Danish XDS Metadata for clinical documents for cross document sharing.
 
-The three tables below shows an overview of the Danish Metadata for CDA documents.
+The three tables below show an overview of the Danish Metadata for CDA documents.
 
-Table 2 shows the sources to be used for the metadata attributes.
+Table 3 shows the sources to be used for the metadata attributes.
 
-Table 2. Metadata Attribute Code Definitions for Source
+Table 3. Metadata Attribute Code Definitions for Source
 
 | Code | Data source                                                           |
----|---|
+|------|-----------------------------------------------------------------------|
 | CDA  | The data can be retrieved directly from a CDA document.               |
 | RDK  | Relevant for use in Denmark                                           |
 | AUT  | Automatic generated Metadata assigned by either source or repository. |
 
-Table 3 shows the optionality for the metadata attributes.
+Table 4 shows the optionality for the metadata attributes.
 
-Table 3. Metadata Attribute Optionality Code Definitions
+Table 4. Metadata Attribute Optionality Code Definitions
 
 | Code | Optionality           |
----|---|
+|------|-----------------------|
 | R    | Mandatory             |
 | R2   | Required (when known) |
 | O    | Optional              |
 
-Table 4 shows the metadata attributes, their optionality, and data sources. For this profile, the optionality in force is given in the column DK, while the optionality in the column IHE is for reference only.
+Table 5 shows the metadata attributes, their optionality, and data sources. For this profile, the optionality in force is given in the column DK, while the optionality in the column IHE is for reference only.
 
-Table 4. Metadata Attributes optionality and sources.
+Table 5. Metadata Attributes optionality and sources.
 
 | Metadata Attribute         | DocumentEntry | SubmissionSet | Optionality | Source |     |
-|---|---|---|---|---|---|
+|----------------------------|---------------|---------------|-------------|--------|-----|
 |                            |               |               | IHE         | DK     |     |
 | Author                     | X             | X             | R           | R      |     |
 |  author.authorInstitution  | X             | X             |             | R      | CDA |
@@ -237,17 +231,16 @@ Table 4. Metadata Attributes optionality and sources.
 
 [^3]: This attribute is prohibited for on-demand type of documents.
 
-
 ### Overview of Danish IHE XDS Metadata refinement and localization.
 
-Table 5 Danish localization and refinement of Metadata shows which metadata attributes has been specially treated and narrowed for Danish document and image sharing (column ‘Refined for Danish use’) and which is either not in use or is as-is in the international IHE metadata profile without any Danish specialization needs.
+Table 6 Danish localization and refinement of Metadata shows which metadata attributes has been specially treated and narrowed for Danish document and image sharing (column ‘Refined for Danish use’) and which is either not in use or is as-is in the international IHE metadata profile without any Danish specialization needs.
 
 The column ‘Danish Value Sets’ shows which metadata attribute has a limited allowed value set. See this reference for further information see section 1.3.4.1 [DK-IHE_Metadata Value_sets].
 
-Table 5 Danish localization and refinement of Metadata
+Table 6 Danish localization and refinement of Metadata
 
 | **  DocumentEntry Metadata   Attribute (Rev. 13.0)** |  **Refined for Danish use** |  **Not in Use** |  **No refinement** |  **Danish Value Sets** |
-|---|---|---|---|---|
+|------------------------------------------------------|-----------------------------|-----------------|--------------------|------------------------|
 | author                                               | X                           |                 |                    |                        |
 |  authorInstitution                                   | X                           |                 |                    |                        |
 |  authorPerson                                        | X                           |                 |                    |                        |
@@ -330,7 +323,8 @@ This specification restricts the coding to include the following fields:
 No other fields **SHALL** be specified.
 
 **CDA Reference:**
-        
+[Link to CDA Reference](/input/pagecontent/XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_cda.md/#authorinstitution-cda-reference)
+
         The mapping **SHALL** include the following values from the CDA as listed below.  
         
         The name of the institution: 
@@ -349,6 +343,7 @@ No other fields **SHALL** be specified.
         $codeSystem = ”1.2.208.176.1.1” |
 
 **XML example:**
+[Link to ebXML example](/input/pagecontent/XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.md/#authorinstitution-xml-example)
 
         <rim:Slot name="authorInstitution">  
             <rim:ValueList>  
