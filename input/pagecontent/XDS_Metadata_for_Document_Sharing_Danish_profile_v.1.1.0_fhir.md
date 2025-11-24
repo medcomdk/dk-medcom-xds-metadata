@@ -323,7 +323,9 @@ This specification restricts the coding to include the following fields:
 
 No other fields **SHALL** be specified.
 
-#### authorInstitution **CDA Reference:**
+#### authorInstitution 
+
+**FHIR Reference:**
         
         The mapping **SHALL** include the following values from the CDA as listed below.  
         
@@ -377,7 +379,7 @@ This specification restricts the coding to include the following fields:
 
 No other fields **SHALL** be specified.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         The name requires a last (family) name and a first (given) name. 
         One or more middle names can be inserted after the first name. 
@@ -530,7 +532,7 @@ The confidentialityCode **SHALL** contain exactly one value from the HL7 code sy
 
 For the confidentialityCode metadata attribute, the classificationScheme **SHALL** be urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         $code = ClinicalDocument/confidentialityCode/@code 
         $displayName = ClinicalDocument/confidentialityCode/@displayName 
@@ -584,7 +586,7 @@ The format of the creationTime value is data type DTM.
 
 The value is coded as a single value within an ebRIM Slot in the DocumentEntry. The creationTime **SHALL** be precise to the second.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         $value = ClinicalDocument/effectiveTime/@value  
         
@@ -661,7 +663,7 @@ This metadata attribute has a value set *comprised of a sub-set of values define
 
 The eventCodeList is coded with ebRIM Classification objects. There **MAY** be zero, one, or more ebRIM Classifications containing a code and additional eventCode entries are coded by specifying multiple classification objects. For the eventCodeList metadata attribute, the classificationScheme **SHALL** be urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         The mapping includes the following values from the CDA as listed below.  
         
@@ -881,7 +883,7 @@ The languageCode **SHALL** be in the form nn-CC.
 
 The nn portion **SHALL** be a legal ISO=-639-1 language code in lower case. The CC portion, if present, **SHALL** be an ISO-3166 Alpha-Code 2 country code in upper case.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         $code = ClinicalDocument/languageCode/@code  Example values in the DK PHMR CDA is: 
         $code = “da-DK”  
@@ -919,7 +921,7 @@ This specification restricts the coding to include the following fields:
 
 No other fields **SHALL** be specified.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         The name requires a last (family) name and a first (given) name. 
         One or more middle names can be inserted after the first name. 
@@ -1144,7 +1146,7 @@ The format of the serviceStartTime value is DTM. The creationTime **SHALL** be p
 
 The value is coded as a single value within an ebRIM Slot Attribute in the DocumentEntry.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         $value = ClinicalDocument/documentationOf/serviceEvent/effectiveTime/low/@value  
         
@@ -1181,7 +1183,7 @@ The format of the serviceStopTime value is DTM. The creationTime **SHALL** be pr
 
 The value is coded as a single value within an ebRIM Slot Attribute in the DocumentEntry.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         $value = ClinicalDocument/documentationOf/serviceEvent/effectiveTime/high/@value  
         
@@ -1253,7 +1255,7 @@ Max length is 256 characters. Coded as an ebRIM Slot with the value encoded acco
 
 All other CX components **SHALL** be omitted.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         The Danish patient identification (cpr-nummer): 
         $code = ClinicalDocument/recordTarget/patientRole/Id/@extension  
@@ -1297,7 +1299,7 @@ The sourcePatientInfo **SHALL** include values for:
 
 Max length is 256 characters. Coded as an ebRIM Slot.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         The mapping includes the following values from the CDA as listed below.  
         
@@ -1364,7 +1366,7 @@ The format of the title attribute **SHALL** be any string of length less than 12
 
 The title attribute is represented in ebXML as the "value" attribute of the LocalizedString element within the ebRIM Name structure. There can be only one ebRIM Name structure per DocumentEntry.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         $title = ClinicalDocument/title  
         
@@ -1402,7 +1404,7 @@ This metadata attribute has a limited allowed value set. See this reference for 
 
 Coded as an ebRIM classification. **SHALL** have one value.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         The mapping includes the following values from the CDA as listed below.  
         
@@ -1459,7 +1461,7 @@ This unique identifier **MAY** be used in other documents to reference this docu
 
 The format of the DocumentEntry.uniqueId value is OID. Coded as an ebRIM ExternalIdentifier which references, and is contained in, the ExtrinsicObject representing the DocumentEntry. There **SHALL** be only a single uniqueId value.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         $uniqueId = ClinicalDocument/id/@root + ^ + ClinicalDocument/id/@extension  
         

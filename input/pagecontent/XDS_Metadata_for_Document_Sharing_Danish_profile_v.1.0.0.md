@@ -1096,12 +1096,12 @@ Coded as an ebRIM Slot. **MAY** have multiple values. Max length for each value 
 **XML example:**
 
       
-   \<rim:Slot name="urn:ihe:iti:xds:2013:referenceIdList ">  
-            <rim:ValueList>  
-                <rim:Value>  2013001^^^&amp;1.2.3.4.5.6&amp;ISO^urn:ihe:iti:xds:2013:accession  </rim:Value>  
-                <rim:Value>  1.2.3.12.78.23^^^^urn:ihe:iti:xds:2013:uniqueId^&amp;1.2.3.4&amp;ISO  </rim:Value>    
-            </rim:ValueList> 
-        </rim:Slot>  
+    <rim:Slot name="urn:ihe:iti:xds:2013:referenceIdList">  
+        <rim:ValueList>  
+            <rim:Value>  2013001^^^&amp;1.2.3.4.5.6&amp;ISO^urn:ihe:iti:xds:2013:accession  </rim:Value>  
+            <rim:Value>  1.2.3.12.78.23^^^^urn:ihe:iti:xds:2013:uniqueId^&amp;1.2.3.4&amp;ISO  </rim:Value>    
+        </rim:ValueList> 
+    </rim:Slot>  
 
 ### repositoryUniqueId
 

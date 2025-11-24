@@ -1,225 +1,17 @@
-XDS Metadata for Document Sharing.
+# XDS Metadata for Document Sharing
 
-Danish profile.
+        Danish profile Version 1.0.1 25-06-2025
 
-v. 1.0.1
+        Custodians: MedCom/Danish Health Data Authority
 
-MedCom/Danish Health Data Authority
+        Contact: xds-metadata@medcom.dk.
 
-Contact: xds-metadata@medcom.dk.
+**Revision history**
 
-Version 1.0.1 25-06-2025
-
-TABLE OF CONTENT
-
-[1 Introduction](#_Toc163659212)
-
-[1.1 Audience](#_Toc163659213)
-
-[1.2 Purpose](#_Toc163659214)
-
-[1.3 Document Sharing](#_Toc163659215)
-
-[1.3.1 Cross-Enterprise Document Sharing (XDS)](#_Toc163659216)
-
-[1.3.1.1 Patient Identity Source](#_Toc163659217)
-
-[1.3.1.2 Document Source](#_Toc163659218)
-
-[1.3.1.3 Document Repository](#_Toc163659219)
-
-[1.3.1.4 Document Registry](#_Toc163659220)
-
-[1.3.1.5 Document Consumer](#_Toc163659221)
-
-[1.3.2 OID values used in Danish metadata](#_Toc163659222)
-
-[1.3.3 XDS Metadata attributes: Reading instructions](#_Toc163659223)
-
-[1.3.3.1 Attribute - Basic information](#_Toc163659224)
-
-[1.3.3.2 Attribute – Description](#_Toc163659225)
-
-[1.3.3.3 Attribute – Coding](#_Toc163659226)
-
-[1.3.4 Allowed value sets for Danish metadata attributes](#allowed-value-sets-for-danish-metadata-attributes)
-
-[1.3.4.1 [DK-IHE_Metadata Value_sets]](#_Toc163659228)
-
-[2 DANISH XDS Metadata attributes FOR Clinical documents](#danish-xds-metadata-attributes-for-clinical-documents)
-
-[2.1 Overview of Danish XDS Metadata for clinical documents for cross document sharing.](#_Toc163659230)
-
-[2.1.1 Overview of Danish IHE XDS Metadata refinement and localization.](#overview-of-danish-ihe-xds-metadata-refinement-and-localization)
-
-[2.2 Attribute Definitions](#_Toc163659232)
-
-[2.2.1 author](#_Toc163659233)
-
-[2.2.1.1 authorInstitution](#_Toc163659234)
-
-[2.2.1.2 authorPerson](#_Toc163659235)
-
-[2.2.1.3 authorRole](#_Toc163659236)
-
-[2.2.1.4 authorSpecialty](#_Toc163659237)
-
-[2.2.1.5 authorTeleCommunication](#_Toc163659238)
-
-[2.2.2 availabilityStatus](#_Toc163659239)
-
-[2.2.3 classCode](#_Toc163659240)
-
-[2.2.4 comments](#_Toc163659241)
-
-[2.2.5 confidentialityCode](#_Toc163659242)
-
-[2.2.6 contentTypeCode](#_Toc163659243)
-
-[2.2.7 creationTime](#_Toc163659244)
-
-[2.2.8 entryUUID](#_Toc163659245)
-
-[2.2.9 eventCodeList](#_Toc163659246)
-
-[2.2.10 formatCode](#_Toc163659247)
-
-[2.2.11 hash](#_Toc163659248)
-
-[2.2.12 healthcareFacilityTypeCode](#_Toc163659249)
-
-[2.2.13 homeCommunityId](#_Toc163659250)
-
-[2.2.14 intendedRecipient](#_Toc163659251)
-
-[2.2.15 languageCode](#_Toc163659252)
-
-[2.2.16 legalAuthenticator](#_Toc163659253)
-
-[2.2.17 limitedMetadata](#_Toc163659254)
-
-[2.2.18 mimeType](#_Toc163659255)
-
-[2.2.19 objectType](#_Toc163659256)
-
-[2.2.20 patientId](#_Toc163659257)
-
-[2.2.21 practiceSettingCode](#_Toc163659258)
-
-[2.2.22 referenceIdList](#_Toc163659259)
-
-[2.2.23 repositoryUniqueId](#_Toc163659260)
-
-[2.2.24 serviceStartTime](#_Toc163659261)
-
-[2.2.25 serviceStopTime](#_Toc163659262)
-
-[2.2.26 size](#_Toc163659263)
-
-[2.2.27 sourceId](#_Toc163659264)
-
-[2.2.28 sourcePatientId](#_Toc163659265)
-
-[2.2.29 sourcePatientInfo](#_Toc163659266)
-
-[2.2.30 submissionTime](#_Toc163659267)
-
-[2.2.31 title](#_Toc163659268)
-
-[2.2.32 typeCode](#_Toc163659269)
-
-[2.2.33 uniqueId](#_Toc163659270)
-
-[2.2.34 SubmissionSet.uniqueId](#submissionsetuniqueid)
-
-[2.2.35 URI](#uri)
-
-[3 APPENDIX 1 – Classification systems](#_Toc163659273)
-
-[3.1 LOINC](#_Toc163659274)
-
-[3.1.1 General information](#_Toc163659275)
-
-[3.1.2 Use](#_Toc163659276)
-
-[3.1.3 Other information](#_Toc163659277)
-
-[3.2 CPR](#_Toc163659278)
-
-[3.2.1 General information](#_Toc163659279)
-
-[3.2.2 Use](#_Toc163659280)
-
-[3.2.3 Other information](#_Toc163659281)
-
-[3.3 SOR](#_Toc163659282)
-
-[3.3.1 General information](#_Toc163659283)
-
-[3.3.2 Use](#_Toc163659284)
-
-[3.3.3 Other information](#_Toc163659285)
-
-[3.4 Yderregister](#_Toc163659286)
-
-[3.4.1 General information](#_Toc163659287)
-
-[3.4.2 Use](#_Toc163659288)
-
-[3.4.3 Other information](#_Toc163659289)
-
-[3.5 Autorisationsregister](#_Toc163659290)
-
-[3.5.1 General information](#_Toc163659291)
-
-[3.5.2 Use](#_Toc163659292)
-
-[3.5.3 Other information](#_Toc163659293)
-
-[3.6 SKS](#_Toc163659294)
-
-[3.6.1 General information](#_Toc163659295)
-
-[3.6.2 Use](#_Toc163659296)
-
-[3.6.3 Other information](#_Toc163659297)
-
-[3.7 DK IHE classCodes](#_Toc163659298)
-
-[3.7.1 General information](#_Toc163659299)
-
-[3.7.2 Use](#_Toc163659300)
-
-[3.7.3 Other information](#_Toc163659301)
-
-[3.8 DK IHE formatCodes](#_Toc163659302)
-
-[3.8.1 General information](#_Toc163659303)
-
-[3.8.2 Use](#_Toc163659304)
-
-[3.8.3 Other information](#_Toc163659305)
-
-[3.9 DK IHE healthCareFacilityTypeCodes](#_Toc163659306)
-
-[3.9.1 General information](#_Toc163659307)
-
-[3.9.2 Use](#_Toc163659308)
-
-[3.9.3 Other information](#_Toc163659309)
-
-[3.10 DK_IHE_practiceSettingCode](#_Toc163659310)
-
-[3.10.1 General information](#general-information-9)
-
-[3.10.2 Use](#use-9)
-
-[3.10.3 Other information](#other-information-9)
-
-| Version | Author                                        | Date       | Description                                                                                                                                                                                                                                |
-|---------|-----------------------------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0.96    | Thor Schliemann, Danish Health Data Authority | 01-01-2018 | Revisions of initial version                                                                                                                                                                                                               |
-| 1.0.0   | Ole Vilstrup Møller. MedCom                   | 04-04-2024 | Revisions regarding further use of code systems added. Added MedCom logo and responsibility.                                                                                                                                               |
+| Version | Date       | Author                                        | Description                                                                                  |
+|---|---|---|---|
+| 0.96    | 01-01-2018 | Thor Schliemann, Danish Health Data Authority | Revisions of initial version                                                                 |
+| 1.0.0   | 04-04-2024 | Ole Vilstrup Møller. MedCom                   | Revisions regarding further use of code systems added. Added MedCom logo and responsibility. |
 | 1.0.1   | Ole Vilstrup Møller. MedCom                   | 25-06-2025 | Revision of author.authorperson requirements. Now “R2” in both “Table 1. Metadata Attributes optionality and sources”. and concrete description in chapter 2.2.1.2. Before confusingly “R2” in the table and “R” in 2.2.1.2. A few typos.  |
 
 # Introduction
@@ -268,9 +60,13 @@ The work group held 2 workshops in the period from November 2014 to December 201
 
 IHE XDS enables healthcare documents to be shared over a wide area network, between hospitals, primary care providers, social services and others in the patients’ circle or web of care. Rather than having one big database at the centre, IHE XDS fits the distributed collaborative approach to sharing clinical documents where they are held in different organizations. The primary components in XDS are a centralized Registry and one or more local Repositories. The XDS Registry stores metadata, which is queried to retrieve documents, while local XDS Repositories store the actual documents. The Registry and Repositories are logically and physically separate. A book library provides an analogy for explaining how XDS works: A library has books and a central index. An index entry for each book points to where to find the book on the library shelves together with brief details of the content. In the same way, the XDS Registry contains standardized metadata describing the content of each item and where to find it. The Repository may contain any type of electronic content much like the library shelves may contain any type of book or other media. Every item in the Repository has corresponding metadata in the Registry just as every book in the library has an entry in the index. XDS enables external user applications to retrieve documents from one or more repositories in a quick and consistent way. Each document is retrieved in its original form, which may be structured or unstructured. Every XDS implementation has five actors: Document Source, Document Repository, Document Registry, Document Consumer and Patient Identity Source.
 
-![](media/77175d98b8e420d688c52d825d8c6c74.png)
+<br/>
+
+<img src="xds-transaction-diagram.png" alt="XDS transaction diagram" style="vertical-align:left;margin:15px 600px 15px 15px"/>
 
 Figure 1. XDS transaction diagram
+
+<br/>
 
 #### Patient Identity Source
 
@@ -331,7 +127,8 @@ The XDS metadata attributes are described in chapter 2, using a uniform template
 
 A table shows the basic information for the attributes:
 
-![](media/92af47e2cf8c6f8c3f2def4934f34483.png)
+<img src="xds-basic-entities.png" alt="xds-basic-entities table" style="vertical-align:left;margin:15px 700px 15px 15px"/>
+
 
 Entity: The entity/entities, where the attribute are used.
 
