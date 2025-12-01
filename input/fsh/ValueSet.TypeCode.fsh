@@ -3,7 +3,7 @@ Id: MedCom-ihe-core-typecode-VS
 Title: "IHE TypeCode"
 Description: "ValueSet containing TypeCode."
 * ^experimental = true
-* ^version = "1.0.0"
+* ^version = "1.0.1"
 * ^status = #active
 * ^date = "2022-01-26"
 * $LoincOID#53576-5 "Personal health monitoring report Document"
