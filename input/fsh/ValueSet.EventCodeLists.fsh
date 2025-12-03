@@ -1,4 +1,4 @@
- ValueSet: MedComIHE_CoreEventCodeLists
+ValueSet: MedComIHE_CoreEventCodeLists
 Id: MedCom-ihe-core-eventcodelist-VS
 Title: "IHE EventCodeLists"
 Description: "ValueSet containing EventCodeLists."

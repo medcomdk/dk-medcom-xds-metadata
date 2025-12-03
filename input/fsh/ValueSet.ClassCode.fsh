@@ -6,5 +6,7 @@ Description: "Value set for the classCode attribute. classCode used in DK IHE Do
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-01" //1.2.208.184.100.9
-* $DanishXdsOID#001 "Klinisk rapport"
-* $DanishXdsOID#006 "Workflow"
+//* $DanishXdsOID#001 "Klinisk rapport"
+//* $DanishXdsOID#006 "Workflow"
+* #001 from system MedCom-ihe-classcode-CS
+* #006 from system MedCom-ihe-classcode-CS
