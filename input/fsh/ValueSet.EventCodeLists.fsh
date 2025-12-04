@@ -1,11 +1,11 @@
- ValueSet: MedComIHE_CoreEventCodeLists
+ValueSet: MedComIHE_CoreEventCodeLists
 Id: MedCom-ihe-core-eventcodelist-VS
 Title: "IHE EventCodeLists"
 Description: "ValueSet containing EventCodeLists."
-* ^experimental = true
-* ^version = "1.0.0"
+* ^experimental = false
+* ^version = "1.0.2"
 * ^status = #active
-* ^date = "2022-01-26"
+* ^date = "2026-01-01"
 * $SKSOID#ALAL01 "Kræftsygdomme"
 * $SKSOID#ALAL02 "Hjertesygdomme"
 * $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"

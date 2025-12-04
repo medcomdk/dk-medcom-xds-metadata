@@ -2,11 +2,11 @@ ValueSet: MedComIHE_CoreFormatCode
 Id: MedCom-ihe-core-formatcode-VS
 Title: "IHE FormatCode"
 Description: "ValueSet containing FormatCode."
-* ^experimental = true
-* ^version = "1.0.0"
+* ^experimental = false
+* ^version = "1.1.0"
 * ^status = #active
-* ^date = "2022-01-26"
-* include codes from system MedComIHE_FormatCode
+* ^date = "2026-01-01"
+* include codes from system MedCom-ihe-formatcode-CS
 
 
 /* ValueSet: MedComIHE_APDDkFormatCode
@@ -47,6 +47,7 @@ Description: "HCO-DK: Code system for document format code used in national Docu
 * ^date = "2020-05-16"
 * $MedComFormatOID#urn:ad:dk:medcom:pdd-v1.0.1:full // "DK PDD document" // Danish XDS typecode must be updated*/
 
+/*
 ValueSet: MedComIHE_PLR_DK_FormatCode
 Id: MedCom-ihe-plr-formatcode-VS
 Title: "PLR-DK IHE FormatCode"
@@ -55,3 +56,4 @@ Description: "PLR-DK: Code system for document format code used in national Docu
 * ^status = #active
 * ^date = "2025-03-01"
 * $MedComFormatOID#urn:ad:dk:medcom:plr-v1.0:full
+*/
