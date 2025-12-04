@@ -5,7 +5,7 @@ Description: "CodeSystem for ClassCode"
 * ^experimental = false
 * ^version = "1.1.0"
 * ^status = #active
-* ^date = "2025-12-04"
+* ^date = "2026-01-01"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.184.100.9"
 * ^property[+].code = #status
