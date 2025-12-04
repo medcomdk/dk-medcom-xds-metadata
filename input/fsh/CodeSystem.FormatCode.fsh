@@ -129,14 +129,15 @@ Description: "CodeSystem for FormatCode"
   * ^property[+].code = #deprecationDate
   * ^property[=].valueDateTime = "2025-12-01"
 
-* #urn:ad:dk:medcom:ekg-v1.0:full "DK EKG schema"
-  * ^property[+].code = #effectiveDate
-  * ^property[=].valueDateTime = "2026-01-01"
-
+* #urn:ad:dk:medcom:prf-v2.0:full "DK PRF schema"
   * ^property[+].code = #effectiveDate
   * ^property[=].valueDateTime = "2025-12-01"
   * ^property[+].code = #deprecationDate
   * ^property[=].valueDateTime = "2025-12-01"
+
+* #urn:ad:dk:medcom:ekg-v1.0:full "DK EKG schema"
+  * ^property[+].code = #effectiveDate
+  * ^property[=].valueDateTime = "2026-01-01"
 
 * #urn:ad:dk:medcom:pscr-v2.0:full "DK PSCR schema"
   * ^property[+].code = #effectiveDate
