@@ -5,7 +5,7 @@ Description: "ValueSet containing TypeCode."
 * ^experimental = false
 * ^version = "1.1.0"
 * ^status = #active
-* ^date = "2025-12-03"
+* ^date = "2026-01-01"
 * $LoincOID#53576-5 "Personal health monitoring report Document"
 * $LoincOID#74468-0 "Questionnaire Form Definition Document"
 * $LoincOID#56446-8 "Appointment Summary Document" 
