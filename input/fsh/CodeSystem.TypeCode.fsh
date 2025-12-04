@@ -21,7 +21,7 @@ Description: "LOINC document type codes (International)"
 */
 CodeSystem: MedComIHE_TypeCode
 Id: MedCom-ihe-typecode-CS
-Title: "MedCom Message Codes"
+Title: "MedCom Type Codes"
 Description: "MedCom document type codes (Danish)"
 * ^experimental = false
 * ^version = "1.0.2"
