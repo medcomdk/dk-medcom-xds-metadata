@@ -3,9 +3,9 @@ Id: MedCom-ihe-homeCommunityId-CS
 Title: "IHE XDS Affinity Domain"
 Description: "IHE XDS Affinity Domains who has agreed to share healthcare related documents in Denmark"
 * ^experimental = false
-* ^version = "1.0.0"
+* ^version = "1.0.2"
 * ^status = #active
-* ^date = "2016-11-01"
+* ^date = "2026-01-01"
 * ^caseSensitive = false
 * ^property[+].code = #effectiveDate
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#effectiveDate"

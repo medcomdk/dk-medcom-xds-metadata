@@ -3,9 +3,9 @@ Id: MedCom-ihe-core-formatcode-VS
 Title: "IHE FormatCode"
 Description: "ValueSet containing FormatCode."
 * ^experimental = false
-* ^version = "1.0.0"
+* ^version = "1.1.0"
 * ^status = #active
-* ^date = "2022-01-26"
+* ^date = "2026-01-01"
 * include codes from system MedCom-ihe-formatcode-CS
 
 

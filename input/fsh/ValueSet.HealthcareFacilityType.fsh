@@ -3,9 +3,9 @@ Id: MedCom-ihe-core-HealthcareFacilityTypeCode-VS
 Title: "IHE HealthcareFacilityTypeCode"
 Description: "Value set for healthcare facility type code represents the type of organizational setting of the clinical encounter during which the documented act occurred."
 * ^experimental = false
-* ^version = "1.0.0"
+* ^version = "1.0.2"
 * ^status = #active
-* ^date = "2024-01-19"
+* ^date = "2026-01-01"
 * $SnomedctOID#557511000005107 "akupunkturklinik"
 * $SnomedctOID#550871000005101 "akutmodtageenhed"
 * $SnomedctOID#394761003 "almen lægepraksis"
