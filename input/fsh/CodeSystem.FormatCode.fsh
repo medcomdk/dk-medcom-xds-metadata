@@ -2,7 +2,7 @@ CodeSystem: MedComIHE_FormatCode
 Id: MedCom-ihe-formatcode-CS
 Title: "DK IHE FormatCode"
 Description: "CodeSystem for FormatCode"
-* ^experimental = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"

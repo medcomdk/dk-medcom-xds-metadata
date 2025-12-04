@@ -19,3 +19,5 @@ menu:
   Home: index.html
   Artifacts: artifacts.html
   Downloads: downloads.html
+  apply-version: false
+  default-version: true

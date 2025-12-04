@@ -3,8 +3,8 @@ Id: MedCom-ihe-classcode-CS
 //Id: 1.2.208.184.100.9
 Title: "DK IHE ClassCode"
 Description: "CodeSystem for ClassCode"
-* ^experimental = true
-* ^version = "1.0.0"
+* ^experimental = false
+* ^version = "1.0.2"
 * ^status = #active
 * ^date = "2022-01-26"
 * ^caseSensitive = false

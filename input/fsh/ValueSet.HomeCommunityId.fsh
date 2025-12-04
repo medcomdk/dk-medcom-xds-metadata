@@ -17,6 +17,7 @@ ValueSet: MedComIHE_CoreDkHomeCommunityId
 Id: MedCom-ihe-core-homeCommunityId-VS
 Title: "IHE HomeCommunityId"
 Description: "List of operational and in production home communities (XCA) in Danish Document Sharing"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2016-11-01"

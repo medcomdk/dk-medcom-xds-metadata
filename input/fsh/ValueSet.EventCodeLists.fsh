@@ -2,7 +2,7 @@ ValueSet: MedComIHE_CoreEventCodeLists
 Id: MedCom-ihe-core-eventcodelist-VS
 Title: "IHE EventCodeLists"
 Description: "ValueSet containing EventCodeLists."
-* ^experimental = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"

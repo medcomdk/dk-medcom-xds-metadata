@@ -2,7 +2,7 @@ ValueSet: MedComIHE_CoreTypeCode
 Id: MedCom-ihe-core-typecode-VS
 Title: "IHE TypeCode"
 Description: "ValueSet containing TypeCode."
-* ^experimental = true
+* ^experimental = false
 * ^version = "1.1.0"
 * ^status = #active
 * ^date = "2025-12-03"

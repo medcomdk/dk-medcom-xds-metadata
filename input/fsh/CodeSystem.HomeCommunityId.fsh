@@ -2,7 +2,7 @@ CodeSystem: MedComIHE_HomeCommunityId
 Id: MedCom-ihe-homeCommunityId-CS
 Title: "IHE XDS Affinity Domain"
 Description: "IHE XDS Affinity Domains who has agreed to share healthcare related documents in Denmark"
-* ^experimental = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2016-11-01"

@@ -2,7 +2,7 @@ ValueSet: MedComIHE_CoreLanguageCode
 Id: MedCom-ihe-core-languagecode-VS
 Title: "IHE LanguageCode"
 Description: "Tags for the Identification of Languages (RFC 3066)"
-* ^experimental = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-01"
