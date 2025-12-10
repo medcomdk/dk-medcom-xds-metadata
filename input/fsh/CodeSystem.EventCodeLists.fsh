@@ -1,4 +1,41 @@
-/* CodeSystem: MedComIHE_EpisodeOfCare
+CodeSystem: SKS
+Id: sks
+Url: urn:oid:1.2.208.176.2.4
+Version: 1.0.2
+Title: "Sundhedsvæsenets klassifikationssystem (SKS)"
+Status: #active
+CaseSensitive: true
+Content: #
+ 
+* ^name = "SKS"
+ 
+// Concepts
+* #ALAL01 "Kræftsygdomme"
+* #ALAL02 "Hjertesygdomme"
+* #ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
+* #ALAL21 "Kronisk obstruktiv lungesygdom (KOL)"
+* #ALAL22 "Type 2-diabetes"
+* #ALAL23 "Osteoporose"
+* #ALAL51 "Graviditet, fødsel og barsel"
+* #ALAL52 "Nyfødte"
+/*
+* #A "Administrative relationships"
+* #AL "Administrative codes for LPR3"
+* #ALA "Codes regarding care-pathway element"
+* #ALAL "Care-pathway element label"
+* #ALAL01 "Cancer diseases"
+* #ALAL02 "Heart diseases"
+* #ALAL03 "Mental disorders and behavioural disorders"
+* #ALAL21 "Chronic obstructive pulmonary disease (COPD)"
+* #ALAL22 "Type 2 diabetes"
+* #ALAL23 "Osteoporosis"
+* #ALAL51 "Pregnancy, birth and maternity"
+* #ALAL52 "Newborns"
+*/
+
+
+
+CodeSystem: Sundhedsvaesenets_klassifikationssystem  //
 Id: MedCom-ihe-episodeOfCare-CS
 Title: "DK IHE Episode of care label"
 Description: "CodeSystem for Danish episode of care - defined by SKS Danish Collection og codesystems"
@@ -16,7 +53,7 @@ Description: "CodeSystem for Danish episode of care - defined by SKS Danish Coll
 * #ALAL23 "Osteoporose"
 * #ALAL51 "Graviditet, fødsel og barsel"
 * #ALAL52 "Nyfødte"
-
+/*
 CodeSystem: MedComIHE_NPU
 Id: MedCom-ihe-npu-CS
 Title: "DK IHE NPU"
