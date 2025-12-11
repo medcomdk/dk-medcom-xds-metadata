@@ -28,6 +28,8 @@ Description: "MedCom document type codes (Danish)"
 * ^status = #active
 * ^date = "2026-01-01"
 * ^caseSensitive = false
+* ^url = "urn:oid:1.2.208.184.100.1"
+* ^identifier.system = "urn:ietf:rfc:3986"
 * ^identifier.value = "1.2.208.184.100.1"
 * ^property[+].code = #effectiveDate
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#effectiveDate"

@@ -7,6 +7,7 @@ Description: "A FHIR representation of a subset of the code system SKS for use i
 * ^status = #active
 * ^date = "2026-01-01"
 * ^identifier.value = "urn:oid:1.2.208.176.2.4"
+* ^identifier.value = "urn:oid:1.2.208.176.2.4"
 * ^status = #active
 * ^content = #fragment
 * #ALAL01 "Kræftsygdomme"
