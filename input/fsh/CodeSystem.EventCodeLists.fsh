@@ -8,7 +8,7 @@ Description: "A FHIR representation of a subset of the code system SKS for use i
 * ^status = #active
 * ^date = "2026-01-01"
 * ^caseSensitive = false
-* ^identifier.value = "urn:oid:1.2.208.176.2.4"
+* ^identifier.value = "1.2.208.176.2.4"
 * ^status = #active
 * ^content = #fragment
 * #ALAL01 "Kræftsygdomme"
@@ -141,7 +141,7 @@ Description: "A FHIR representation of the codes used for the HEAR (Danish:HØR)
 * ^status = #active
 * ^date = "2022-08-31"
 * ^caseSensitive = false
-* ^identifier.value = "urn:ad:dk:medcom:noah:action-categories"
+* ^identifier.value = "dk:medcom:noah:action-categories"
 * ^url = "urn:ad:dk:medcom:noah:action-categories"
 * #1 "Audiogram"
 * #15 "Impedance (left ear)"

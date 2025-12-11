@@ -9,14 +9,14 @@ Description: "Danish Integrating the Healthcare Enterprise (IHE) metadata format
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.184.100.10"
 * ^url = "urn:oid:1.2.208.184.100.10"
-* ^property[+].code = #effectiveDate
+/* * ^property[+].code = #effectiveDate
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#effectiveDate"
 * ^property[=].description = "The date from which the concept is considered valid/active."
 * ^property[=].type = #dateTime
 * ^property[+].code = #deprecationDate
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#deprecationDate"
 * ^property[=].description = "The date from which the concept is considered deprecated."
-* ^property[=].type = #dateTime
+* ^property[=].type = #dateTime */
 
 * #urn:ad:dk:medcom:apd-v2.0.1:full "DK APD schema"
 /*   * ^property[+].code = #effectiveDate

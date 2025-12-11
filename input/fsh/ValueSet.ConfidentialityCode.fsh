@@ -1,4 +1,4 @@
-ValueSet: MedComIHE_ConfidentialityCode
+ValueSet: MedComIHE_CoreConfidentialityCode
 Id: MedCom-ihe-core-confidentialitycode-VS
 Title: "IHE ConfidentialityCode"
 Description: "Confidentiality code used in Danish Document sharing."

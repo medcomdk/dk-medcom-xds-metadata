@@ -7,8 +7,8 @@ Description: "IHE XDS Affinity Domains who has agreed to share healthcare relate
 * ^status = #active
 * ^date = "2026-01-01"
 * ^caseSensitive = false
-* ^property[+].code = #effectiveDate
-/* * ^property[=].uri = "http://hl7.org/fhir/concept-properties#effectiveDate"
+/* * ^property[+].code = #effectiveDate
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#effectiveDate"
 * ^property[=].description = "The date from which the concept is considered valid/active."
 * ^property[=].type = #dateTime
 * ^property[+].code = #deprecationDate

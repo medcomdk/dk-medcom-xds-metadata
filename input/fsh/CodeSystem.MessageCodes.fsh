@@ -31,10 +31,10 @@ Description: "MedCom Message Codes, which includes document type codes (Danish) 
 * ^url = "urn:oid:1.2.208.184.100.1"
 //* ^identifier.system = "urn:ietf:rfc:3986"
 * ^identifier.value = "1.2.208.184.100.1"
-* ^property[+].code = #effectiveDate
+/* * ^property[+].code = #effectiveDate
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#effectiveDate"
 * ^property[=].description = "The date from which the concept is considered valid/active."
-* ^property[=].type = #dateTime
+* ^property[=].type = #dateTime */
 * ^property[+].code = #deprecationDate
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#deprecationDate"
 * ^property[=].description = "The date from which the concept is considered deprecated."
