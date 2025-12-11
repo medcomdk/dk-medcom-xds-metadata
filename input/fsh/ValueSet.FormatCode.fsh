@@ -1,7 +1,7 @@
-ValueSet: MedComIHE_CoreFormatCode
+ValueSet: MedComIHE_FormatCode_VS
 Id: MedCom-ihe-core-formatcode-VS
 Title: "IHE FormatCode"
-Description: "ValueSet containing FormatCode."
+Description: "ValueSet containing FormatCodes defines by MedCom."
 * ^experimental = false
 * ^version = "1.1.0"
 * ^status = #active

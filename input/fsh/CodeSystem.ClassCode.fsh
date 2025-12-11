@@ -1,7 +1,8 @@
 CodeSystem: MedComIHE_ClassCode
 Id: MedCom-ihe-classcode-CS
 Title: "DK IHE ClassCode"
-Description: "CodeSystem for ClassCode"
+Description: "Danish Integrating the Healthcare Enterprise (IHE) metadata class codes"
+* ^url = "urn:oid:1.2.208.184.100.9"
 * ^experimental = false
 * ^version = "1.1.0"
 * ^status = #active
@@ -19,6 +20,6 @@ Description: "CodeSystem for ClassCode"
 * #001 "Klinisk rapport"
   * ^property[+].code = #effectiveDate
   * ^property[=].valueDateTime = "2025-01-01"
-* #006 "Workflow"
+/* * #006 "Workflow"
   * ^property[+].code = #effectiveDate
-  * ^property[=].valueDateTime = "2025-01-26"
+  * ^property[=].valueDateTime = "2025-01-26" */

@@ -6,14 +6,14 @@ Description: "ValueSet containing EventCodeLists."
 * ^version = "2.0.0"
 * ^status = #active
 * ^date = "2026-01-01"
-* #ALAL01 from system sundhedsvaesenets-klassifikationssystem-subset
-* #ALAL02 from system sundhedsvaesenets-klassifikationssystem-subset
-* #ALAL03 from system sundhedsvaesenets-klassifikationssystem-subset
-* #ALAL21 from system sundhedsvaesenets-klassifikationssystem-subset
-* #ALAL22 from system sundhedsvaesenets-klassifikationssystem-subset
-* #ALAL23 from system sundhedsvaesenets-klassifikationssystem-subset
-* #ALAL51 from system sundhedsvaesenets-klassifikationssystem-subset
-* #ALAL52 from system sundhedsvaesenets-klassifikationssystem-subset
+* $SKSOID#ALAL01 "Kræftsygdomme"
+* $SKSOID#ALAL02 "Hjertesygdomme"
+* $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
+* $SKSOID#ALAL21 "Kronisk obstruktiv lungesygdom (KOL)"
+* $SKSOID#ALAL22 "Type 2-diabetes"
+* $SKSOID#ALAL23 "Osteoporose"
+* $SKSOID#ALAL51 "Graviditet, fødsel og barsel"
+* $SKSOID#ALAL52 "Nyfødte"
 * $PROdkOID#3d3d6f46-ea42-4d64-a2bb-52646dcd6513 "Psoriasis v.3"
 * $PROdkOID#1de279ff-99fd-4544-9e41-300f56bc08e4 "Diabetes v.10"
 * $PROdkOID#898cba44-c668-41e8-ac25-c2b880ac7090 "Hjerterehabilitering uddrag start v.3"
@@ -24,9 +24,9 @@ Description: "ValueSet containing EventCodeLists."
 * $NPUOID#NPU03963 "U—Erythrocytter; arb.k.(proc.) = ?"
 * $NPUOID#DNK05472 "Arm—Blodtryk(systolisk); tryk = ? mmHg"
 * $NPUOID#DNK05473 "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
-* $NPUOID#NPU21692 "Hjerte—Systole; frekv. = ? x 1/min"
-* $MedComOID#MCS88100 "Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L"
-* $MedComOID#MCS88015 "Lunge—Lungefunktionsundersøgelse FEV1; vol. = ? L"
+* $NPUOID#NPU21692 "Hjerte—Systole; frekv. = ? × 1/min"
+* urn:oid:1.2.208.184.100.8#MCS88100 "Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L"
+* urn:oid:1.2.208.184.100.8#MCS88015 "Lunge—Lungefunktionsundersøgelse FEV1; vol. = ? L"
 * $hoer#1 "Audiogram"
 * $hoer#15 "Impedance (left ear)"
 * $hoer#16 "Impedance (right ear)"
