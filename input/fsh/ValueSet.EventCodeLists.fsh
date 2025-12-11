@@ -1,19 +1,19 @@
- ValueSet: MedComIHE_CoreEventCodeLists
+ValueSet: MedComIHE_CoreEventCodeLists
 Id: MedCom-ihe-core-eventcodelist-VS
 Title: "IHE EventCodeLists"
 Description: "ValueSet containing EventCodeLists."
-* ^experimental = true
-* ^version = "1.0.0"
+* ^experimental = false
+* ^version = "2.0.0"
 * ^status = #active
-* ^date = "2022-01-26"
-* $SKSOID#ALAL01 "Kræftsygdomme"
-* $SKSOID#ALAL02 "Hjertesygdomme"
-* $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
-* $SKSOID#ALAL21 "Kronisk obstruktiv lungesygdom (KOL)"
-* $SKSOID#ALAL22 "Type 2-diabetes"
-* $SKSOID#ALAL23 "Osteoporose"
-* $SKSOID#ALAL51 "Graviditet, fødsel og barsel"
-* $SKSOID#ALAL52 "Nyfødte"
+* ^date = "2026-01-01"
+* #ALAL01 from system sundhedsvaesenets-klassifikationssystem-subset
+* #ALAL02 from system sundhedsvaesenets-klassifikationssystem-subset
+* #ALAL03 from system sundhedsvaesenets-klassifikationssystem-subset
+* #ALAL21 from system sundhedsvaesenets-klassifikationssystem-subset
+* #ALAL22 from system sundhedsvaesenets-klassifikationssystem-subset
+* #ALAL23 from system sundhedsvaesenets-klassifikationssystem-subset
+* #ALAL51 from system sundhedsvaesenets-klassifikationssystem-subset
+* #ALAL52 from system sundhedsvaesenets-klassifikationssystem-subset
 * $PROdkOID#3d3d6f46-ea42-4d64-a2bb-52646dcd6513 "Psoriasis v.3"
 * $PROdkOID#1de279ff-99fd-4544-9e41-300f56bc08e4 "Diabetes v.10"
 * $PROdkOID#898cba44-c668-41e8-ac25-c2b880ac7090 "Hjerterehabilitering uddrag start v.3"

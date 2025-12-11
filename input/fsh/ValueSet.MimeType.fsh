@@ -2,10 +2,10 @@ ValueSet: MedComIHE_CoreMimeType
 Id: MedCom-ihe-core-mimetype-VS
 Title: "IHE MimeType"
 Description: "Values for the document metadata attribute mimeType"
-* ^experimental = true
-* ^version = "1.0.0"
+* ^experimental = false
+* ^version = "1.0.2"
 * ^status = #active
-* ^date = "2015-01-04"
+* ^date = "2026-01-01"
 * $IANAMediaOID#text/xml "MimeType-text/xml"
 * $IANAMediaOID#application/fhir+json "MimeType-application/fhir+json"
 * $IANAMediaOID#application/fhir+xml "MimeType-application/fhir+xml"
