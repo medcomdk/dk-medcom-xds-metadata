@@ -6,7 +6,7 @@ Description: "Danish Integrating the Healthcare Enterprise (IHE) metadata class 
 * ^experimental = false
 * ^version = "1.1.0"
 * ^status = #active
-* ^date = "2026-01-01"
+* ^date = "2022-01-26"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.184.100.9"
 /* * ^property[+].code = #effectiveDate

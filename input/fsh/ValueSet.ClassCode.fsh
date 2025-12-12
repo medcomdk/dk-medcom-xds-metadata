@@ -5,7 +5,7 @@ Description: "Value set for the classCode attribute. classCode used in DK IHE Do
 * ^experimental = false
 * ^version = "1.1.0"
 * ^status = #active
-* ^date = "2026-01-01" //1.2.208.184.100.9
+* ^date = "2022-01-26" //1.2.208.184.100.9
 //* $DanishXdsOID#001 "Klinisk rapport"
 //* $DanishXdsOID#006 "Workflow"
 * #001 from system urn:oid:1.2.208.184.100.9

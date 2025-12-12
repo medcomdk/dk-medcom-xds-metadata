@@ -5,7 +5,7 @@ Description: "ValueSet containing EventCodeLists."
 * ^experimental = false
 * ^version = "2.0.0"
 * ^status = #active
-* ^date = "2026-01-01"
+* ^date = "2022-01-26"
 * $SKSOID#ALAL01 "Kræftsygdomme"
 * $SKSOID#ALAL02 "Hjertesygdomme"
 * $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"

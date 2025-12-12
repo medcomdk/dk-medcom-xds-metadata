@@ -6,7 +6,7 @@ Description: "A FHIR representation of a subset of the code system SKS for use i
 * ^experimental = false
 * ^version = "1.0.2"
 * ^status = #active
-* ^date = "2026-01-01"
+* ^date = "2021-01-01"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.176.2.4"
 * ^status = #active
@@ -139,7 +139,7 @@ Description: "A FHIR representation of the codes used for the HEAR (Danish:HØR)
 * ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
-* ^date = "2022-08-31"
+* ^date = "2025-01-01"
 * ^caseSensitive = false
 * ^identifier.value = "dk:medcom:noah:action-categories"
 * ^url = "urn:ad:dk:medcom:noah:action-categories"

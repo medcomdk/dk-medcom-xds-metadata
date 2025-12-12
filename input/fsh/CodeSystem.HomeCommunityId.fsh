@@ -5,7 +5,7 @@ Description: "IHE XDS Affinity Domains who has agreed to share healthcare relate
 * ^experimental = false
 * ^version = "1.0.2"
 * ^status = #active
-* ^date = "2026-01-01"
+* ^date = "2020-08-21"
 * ^caseSensitive = false
 /* * ^property[+].code = #effectiveDate
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#effectiveDate"
