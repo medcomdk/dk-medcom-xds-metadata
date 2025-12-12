@@ -64,7 +64,7 @@ Description: "Nomenclature for Properties and Units (NPU) terminology in Danish.
 
 CodeSystem: MedComIHE_Measurement_Codes_subset
 Id: MedCom-ihe-measurement-codes-CS-subset
-Title: "MedCom Measurement Codes"
+Title: "MedCom Measurement CodeSystem"
 Description: "MedCom Measurement Codes"
 * ^experimental = false
 * ^version = "1.0.0"

@@ -22,7 +22,7 @@ Description: "LOINC document type codes (International)"
 CodeSystem: MedCom_Message_Codes
 Id: MedCom-message-codes-CS
 Title: "MedCom Message Codes"
-Description: "MedCom Message Codes, which includes document type codes (Danish) and "
+Description: "MedCom Message Codes, which includes document type codes (Danish)."
 * ^experimental = false
 * ^version = "1.0.2"
 * ^status = #active
