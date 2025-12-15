@@ -1,13 +1,14 @@
-CodeSystem: Sundhedsvaesenets_klassifikationssystem_subset
-Id: sundhedsvaesenets-klassifikationssystem-subset
+CodeSystem: MedComIHE_SKS_subset
+Id: MedCom-ihe-sks-subset
 Title: "Sundhedsvaesenets klassifikationssystem (SKS) (subset)"
 Description: "A FHIR representation of a subset of the code system SKS for use in MedCom documents."
+* ^url = "urn:oid:1.2.208.176.2.4"
 * ^experimental = false
 * ^version = "1.0.2"
 * ^status = #active
-* ^date = "2026-01-01"
-* ^identifier.value = "urn:oid:1.2.208.176.2.4"
-* ^identifier.value = "urn:oid:1.2.208.176.2.4"
+* ^date = "2021-01-01"
+* ^caseSensitive = false
+* ^identifier.value = "1.2.208.176.2.4"
 * ^status = #active
 * ^content = #fragment
 * #ALAL01 "Kræftsygdomme"
@@ -19,29 +20,11 @@ Description: "A FHIR representation of a subset of the code system SKS for use i
 * #ALAL51 "Graviditet, fødsel og barsel"
 * #ALAL52 "Nyfødte"
 
-
-/*
-* #A "Administrative relationships"
-* #AL "Administrative codes for LPR3"
-* #ALA "Codes regarding care-pathway element"
-* #ALAL "Care-pathway element label"
-* #ALAL01 "Cancer diseases"
-* #ALAL02 "Heart diseases"
-* #ALAL03 "Mental disorders and behavioural disorders"
-* #ALAL21 "Chronic obstructive pulmonary disease (COPD)"
-* #ALAL22 "Type 2 diabetes"
-* #ALAL23 "Osteoporosis"
-* #ALAL51 "Pregnancy, birth and maternity"
-* #ALAL52 "Newborns"
-*/
-
-
-
 /* CodeSystem: Sundhedsvaesenets_klassifikationssystem  //
 Id: MedCom-ihe-episodeOfCare-CS
 Title: "DK IHE Episode of care label"
 Description: "CodeSystem for Danish episode of care - defined by SKS Danish Collection og codesystems"
-* ^experimental = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-01-01"
@@ -56,17 +39,19 @@ Description: "CodeSystem for Danish episode of care - defined by SKS Danish Coll
 * #ALAL51 "Graviditet, fødsel og barsel"
 * #ALAL52 "Nyfødte" */
 
-/*
-CodeSystem: MedComIHE_NPU
-Id: MedCom-ihe-npu-CS
+
+CodeSystem: MedComIHE_Danish_NPU_Codes_subset
+Id: MedCom-ihe-npu-codes-CS-subset
 Title: "DK IHE NPU"
-Description: "CodeSystem for Danish NPU"
-* ^experimental = true
+Description: "Nomenclature for Properties and Units (NPU) terminology in Danish. A FHIR representation of a subset of the code system NPU for use in MedCom documents."
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-01"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.176.2.1"
+* ^url = "urn:oid:1.2.208.176.2.1"
+* ^content = #fragment
 * #NPU03804 "Pt—Legeme; masse = ? kg"
 * #NPU19748 "P—C-reaktivt protein; massek. = ? mg/L"
 * #NPU22089 "P(kB)—Glucose; stofk. = ? mmol/L"
@@ -74,30 +59,42 @@ Description: "CodeSystem for Danish NPU"
 * #DNK05472 "Arm—Blodtryk(systolisk); tryk = ? mmHg"
 * #DNK05473 "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
 * #NPU21692 "Hjerte—Systole; frekv. = ? × 1/min"
+* #NPU03011 "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"
+* #NPU27281 "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"
 
-CodeSystem: MedComIHE_AnalysisCodes
-Id: MedCom-ihe-analysis-codes-CS
-Title: "DK MedCom analysis codes"
-Description: "CodeSystem for MedCom analysis codes"
-* ^experimental = true
+CodeSystem: MedComIHE_Measurement_Codes_subset
+Id: MedCom-ihe-measurement-codes-CS-subset
+Title: "MedCom Measurement CodeSystem"
+Description: "MedCom Measurement Codes"
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
-* ^date = "2015-01-01"
+* ^date = "2024-11-28"
 * ^caseSensitive = false
+* ^url = "urn:oid:1.2.208.184.100.8"
 * ^identifier.value = "1.2.208.184.100.8"
+* ^content = #fragment
 * #MCS88100 "Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L"
 * #MCS88015 "Lunge—Lungefunktionsundersøgelse FEV1; vol. = ? L"
+* #MCS88019 "Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg"
+* #MCS88020 "Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg"
+* #MCS88050	"Pt—Rejse sætte sig testen; antal (værdi 0-50) = × 1/30s"
+* #MCS88137	"Pt—COPD Assessment Test (CAT) score; antal(værdi 0-40) = ?"
+* #MCS88021	"Pt(KOL) —MRC skala; arb.antal(værdi 1-5) = ?"
 
-CodeSystem: MedComIHE_PRODKQuestionnaire
-Id: MedCom-ihe-prodk-questionnaire-CS
+
+CodeSystem: MedComIHE_PRODKQuestionnaire_subset
+Id: MedCom-ihe-prodk-questionnaire-CS-subset
 Title: "Questionnaires used in the Danish Patient Reported Outcome (PRO), by PRO-sekretariatet."
 Description: "Standards and profiles used for the Patient Reported Outcome (PRO) in Danish Health; https://spgdef.dk/qfdd"
-* ^experimental = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-08-31"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.176.7.3.1"
+* ^url = "urn:oid:1.2.208.176.7.3.1"
+* ^content = #fragment
 * #3d3d6f46-ea42-4d64-a2bb-52646dcd6513 "Psoriasis v.3"
 * #1de279ff-99fd-4544-9e41-300f56bc08e4 "Diabetes v.10"
 * #898cba44-c668-41e8-ac25-c2b880ac7090 "Hjerterehabilitering uddrag start v.3"
@@ -135,3 +132,19 @@ Description: "Standards and profiles used for the Patient Reported Outcome (PRO)
 * #71bf7507-ad29-467f-bb28-83b9ab6ddaf1 "Hofteartrose 3mdr. opfølgning - Højre v.1"
 * #f565d850-7ef1-4859-8944-f485425d6168 "Hofteartrose 3mdr. opfølgning - Venstre v.1"
 */
+CodeSystem: MedComIHE_Hoer
+Id: MedCom-ihe-hoer-CS
+Title: "Codes for HEAR/FAIR project"
+Description: "A FHIR representation of the codes used for the HEAR (Danish:HØR)/FAIR project"
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2025-01-01"
+* ^caseSensitive = false
+* ^identifier.value = "dk:medcom:noah:action-categories"
+* ^url = "urn:ad:dk:medcom:noah:action-categories"
+* #1 "Audiogram"
+* #15 "Impedance (left ear)"
+* #16 "Impedance (right ear)"
+* #129 "Hearing Instrument Selection (left ear)"
+* #130 "Hearing Instrument Selection (right ear)"

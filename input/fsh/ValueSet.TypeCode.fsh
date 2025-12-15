@@ -20,12 +20,12 @@ Description: "ValueSet containing TypeCode."
 * $LoincOID#57059-8 "Pregnancy visit summary note Narrative"
 * $LoincOID#28615-3 "Audiology Study"
 * $LoincOID#11524-6 "EKG Study"
-* #CMR from system MedCom-ihe-typecode-CS
-* #PDC from system MedCom-ihe-typecode-CS
-* #MADC from system MedCom-ihe-typecode-CS
-* #PRF from system MedCom-ihe-typecode-CS
-* #PSCR from system MedCom-ihe-typecode-CS
-* #PMR from system MedCom-ihe-typecode-CS
+* #CMR from system urn:oid:1.2.208.184.100.1
+* #PDC from system urn:oid:1.2.208.184.100.1
+* #MADC from system urn:oid:1.2.208.184.100.1
+* #PRF from system urn:oid:1.2.208.184.100.1
+* #PSCR from system urn:oid:1.2.208.184.100.1
+* #PMR from system urn:oid:1.2.208.184.100.1
 
 
 /*

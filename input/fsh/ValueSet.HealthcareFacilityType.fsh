@@ -5,7 +5,7 @@ Description: "Value set for healthcare facility type code represents the type of
 * ^experimental = false
 * ^version = "1.0.2"
 * ^status = #active
-* ^date = "2026-01-01"
+* ^date = "2024-01-19"
 * $SnomedctOID#557511000005107 "akupunkturklinik"
 * $SnomedctOID#550871000005101 "akutmodtageenhed"
 * $SnomedctOID#394761003 "almen lægepraksis"

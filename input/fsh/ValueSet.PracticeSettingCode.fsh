@@ -3,9 +3,9 @@ Id: MedCom-ihe-core-PracticeSettingCode-VS
 Title: "IHE PracticeSettingCode"
 Description: "Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED codes. "
 * ^experimental = false
-* ^version = "1.020"
+* ^version = "1.0.1"
 * ^status = #active
-* ^date = "2026-01-01"
+* ^date = "20-06-2024"
 * $SnomedctOID#773568002 "akutmedicin"
 * $SnomedctOID#408443003 "almen medicin"
 * $SnomedctOID#394577000 "anæstesiologi"
