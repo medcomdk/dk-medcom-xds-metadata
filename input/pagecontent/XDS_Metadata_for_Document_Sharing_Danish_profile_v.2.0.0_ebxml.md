@@ -12,7 +12,7 @@
 |---|---|---|---|
 | 0.96    | 01-01-2018 | Thor Schliemann, Danish Health Data Authority | Revisions of initial version                                                                 |
 | 1.0.0   | 04-04-2024 | Ole Vilstrup Møller. MedCom                   | Revisions regarding further use of code systems added. Added MedCom logo and responsibility. |
-| 1.1.0   | 31-12-2025 | Ole Vilstrup Møller. MedCom                   | Revisions regarding xxxx |
+| 2.0.0   | 01-01-2026 | Ole Vilstrup Møller. MedCom                   | Revisions regarding version 2.0.0 |
 
 ## Purpose, Audience and Introduction
 
@@ -722,7 +722,7 @@ There **SHALL** be one ebRIM Classification containing a formatCode. For the for
         $codeSystem = ”urn:ad:dk:medcom:phmr:full”  
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:Classification
             classificationScheme=  "urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
@@ -1188,7 +1188,7 @@ The value is coded as a single value within an ebRIM Slot Attribute in the Docum
         December 25, 2014 21:20:10 UTC 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:Slot name="serviceStopTime">  
             <rim:ValueList>  

@@ -41,4 +41,4 @@ Description: "CodeSystem for FormatCode"
 * #urn:ad:dk:medcom:phmr-v2.1:full "DK PHMR schema"
 * #urn:ad:dk:medcom:prf-v3.0:full "DK PRF schema"
 * #urn:ad:dk:medcom:phn-v1.0:full "DK Patient’s Home Note"
-* #urn:ad:dk:medcom:hcom-v1.0:full "DK HomeCareObservation message
+* #urn:ad:dk:medcom:hcom-v1.0:full "DK HomeCareObservation message"

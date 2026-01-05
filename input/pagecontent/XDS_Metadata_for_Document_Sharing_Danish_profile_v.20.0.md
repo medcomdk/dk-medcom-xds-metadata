@@ -1,6 +1,6 @@
 # XDS Metadata for Document Sharing
 
-        Danish profile Version 1.0.0 10. April 2024
+        Danish profile Version 1.1.0 31. December 2025
 
         Custodians: MedCom/Danish Health Data Authority
 
@@ -12,11 +12,34 @@
 |---|---|---|---|
 | 0.96    | 01-01-2018 | Thor Schliemann, Danish Health Data Authority | Revisions of initial version                                                                 |
 | 1.0.0   | 04-04-2024 | Ole Vilstrup Møller. MedCom                   | Revisions regarding further use of code systems added. Added MedCom logo and responsibility. |
-| 1.1.0   | 31-12-2025 | Ole Vilstrup Møller. MedCom                   | Revisions regarding xxxx |
+| 1.0.1   | Ole Vilstrup Møller. MedCom                   | 25-06-2025 | Revision of author.authorperson requirements. Now “R2” in both “Table 1. Metadata Attributes optionality and sources”. and concrete description in chapter 2.2.1.2. Before confusingly “R2” in the table and “R” in 2.2.1.2. A few typos.  |
+| 2.0.0   | 01-01-2026 | Ole Vilstrup Møller. MedCom                   | Revisions regarding version 2.0.0 |
 
-## Purpose, Audience and Introduction
+# Introduction
 
-### Purpose
+The Danish Document Sharing Service is based on IHE XDS specifications. The aim is that the document can be used for implementing XDS Metadata across Danish IHE Affinity Domains. Metadata is information about documents or records that is used when searching to find the right item. This metadata has to be supplied by the document source and is generally limited to what can be provided by source information systems.
+
+Each XDS system requires an XDS Affinity Domain (XAD), which establishes the rules and conventions about the type of clinical documents, metadata codes, security constraints and other policies that shall be used. One of the tasks in setting up an affinity domain is to specify the metadata code sets that are allowed. In Denmark this work is ongoing and not yet finalized.
+
+This document specifies (for trial purposes) metadata to be used in Denmark. The metadata specification has until now had a focus on the use of HL7 CDA, especially the Danish profile of the CDA PHMR, Questionnaires and the Danish CDA header profile, but will from now on focus broader on XDS metadata for all kinds of documents, since IHE XDS is not limited to HL7 CDA documents. The metadata set in this document has been derived from and mapped to IHE XDS and includes information about the patient, the document, the author and the service being documented.
+
+The metadata was originally used and assessed in pilot projects in 2018. The experiences from the pilot project and other later projects will systematically be collected and used for updates of this document.
+
+Initial assumptions and assessments were made for establishing the foundational code systems for the Danish XDS Metadata ValueSet. Due to a broader use of this standard in relation to the ongoing work of sharing documents through the XDS infrastructure, these initial assessments and assumptions have now been superseded by practice and therefore new code systems will be added and existing systems extended, when need be.
+
+The IBI[^1] project for the registration of image data on XDS-I was part of this work but need some more work to be finalized.
+
+[^1]: IBI – Interregional Billedindeks (Interregional Image Index) (2016)
+
+The requirements for the XDS registry transactions (as ebXML Registry Package) are not part of this specification.
+
+This version of the document is produced by MedCom, who has taken the responsibility role as custodian of this standard. This document will still reflect most of the style from the initial work done by the Danish Health Data Authority.
+
+## Audience
+
+The audience for this document includes software developers and implementers of products and services for the Danish Document Sharing Service (DDS).
+
+## Purpose
 
 This document defines XDS Metadata for the use of documents, and hereunder HL7 CDA documents, in IHE XDS-based clinical documents exchange in Denmark, for example as provided by the Danish Document Sharing Service. The main background documents for the definition of the Danish profile are listed below:
 
@@ -32,35 +55,11 @@ The first version of this document was prepared by the National Sundheds-it now 
 
 The work group held 2 workshops in the period from November 2014 to December 2014. The work group included:
 
-### Audience
-
-The audience for this document includes software developers and implementers of products and services for the Danish Document Sharing Service (DDS).
-
-### Introduction
-
-The Danish Document Sharing Service is based on IHE XDS specifications. The aim is that the document can be used for implementing XDS Metadata across Danish IHE Affinity Domains. Metadata is information about documents or records that is used when searching to find the right item. This metadata has to be supplied by the document source and is generally limited to what can be provided by source information systems.
-
-Each XDS system requires an XDS Affinity Domain (XAD), which establishes the rules and conventions about the type of clinical documents, metadata codes, security constraints and other policies that **SHALL** be used. One of the tasks in setting up an affinity domain is to specify the metadata code sets that are allowed. In Denmark this work is ongoing and not yet finalized.
-
-This document specifies (for trial purposes) metadata to be used in Denmark. The metadata specification has until now had a focus on the use of HL7 CDA, especially the Danish profile of the CDA PHMR, Questionnaires and the Danish CDA header profile, but will from now on focus broader on XDS metadata for all kinds of documents, since IHE XDS is not limited to HL7 CDA documents. The metadata set in this document has been derived from and mapped to IHE XDS and includes information about the patient, the document, the author and the service being documented.
-
-The metadata was originally used and assessed in pilot projects in 2018. The experiences from the pilot project and other later projects will systematically be collected and used for updates of this document.
-
-Initial assumptions and assessments were made for establishing the foundational code systems for the Danish XDS Metadata ValueSet. Due to a broader use of this standard in relation to the ongoing work of sharing documents through the XDS infrastructure, these initial assessments and assumptions have now being superseded by practice and therefore new code systems will be added and existing systems extended, when need be.
-
-The IBI[^1] project for the registration of image data on XDS-I was part of this work but need some more work to be finalized.
-
-[^1]: IBI – Interregional Billedindeks (Interregional Image Index) (2016)
-
-The requirements for the XDS registry transactions (as ebXML Registry Package) are not part of this specification.
-
-This version of the document is produced by MedCom, who has taken the responsibility role as custodian of this standard. This document will still reflect most of the style from the initial work done by the Danish Health Data Authority.
-
 ## Document Sharing
 
 ### Cross-Enterprise Document Sharing (XDS)
 
-IHE XDS enables healthcare documents to be shared over a wide area network, between hospitals, primary care providers, social services and others in the patients’ circle or web of care. Rather than having one big database at the centre, IHE XDS fits the distributed collaborative approach to sharing clinical documents where they are held in different organizations. The primary components in XDS are a centralized Registry and one or more local Repositories. The XDS Registry stores metadata, which is queried to retrieve documents, while local XDS Repositories store the actual documents. The Registry and Repositories are logically and physically separate. A book library provides an analogy for explaining how XDS works: A library has books and a central index. An index entry for each book points to where to find the book on the library shelves together with brief details of the content. In the same way, the XDS Registry contains standardized metadata describing the content of each item and where to find it. The Repository **MAY** contain any type of electronic content much like the library shelves **MAY** contain any type of book or other media. Every item in the Repository has corresponding metadata in the Registry just as every book in the library has an entry in the index. XDS enables external user applications to retrieve documents from one or more repositories in a quick and consistent way. Each document is retrieved in its original form, which **MAY** be structured or unstructured. Every XDS implementation has five actors: Document Source, Document Repository, Document Registry, Document Consumer and Patient Identity Source.
+IHE XDS enables healthcare documents to be shared over a wide area network, between hospitals, primary care providers, social services and others in the patients’ circle or web of care. Rather than having one big database at the centre, IHE XDS fits the distributed collaborative approach to sharing clinical documents where they are held in different organizations. The primary components in XDS are a centralized Registry and one or more local Repositories. The XDS Registry stores metadata, which is queried to retrieve documents, while local XDS Repositories store the actual documents. The Registry and Repositories are logically and physically separate. A book library provides an analogy for explaining how XDS works: A library has books and a central index. An index entry for each book points to where to find the book on the library shelves together with brief details of the content. In the same way, the XDS Registry contains standardized metadata describing the content of each item and where to find it. The Repository may contain any type of electronic content much like the library shelves may contain any type of book or other media. Every item in the Repository has corresponding metadata in the Registry just as every book in the library has an entry in the index. XDS enables external user applications to retrieve documents from one or more repositories in a quick and consistent way. Each document is retrieved in its original form, which may be structured or unstructured. Every XDS implementation has five actors: Document Source, Document Repository, Document Registry, Document Consumer and Patient Identity Source.
 
 <br/>
 
@@ -76,17 +75,17 @@ The Patient Identity Source provides a unique XDS identifier for each and every 
 
 #### Document Source
 
-The Document Source submits HL7 CDA documents (or other documents) to a (local) Document Repository. Each organization **MAY** maintain its own Repository.
+The Document Source submits HL7 CDA documents (or other documents) to a (local) Document Repository. Each organization may maintain its own Repository.
 
 #### Document Repository
 
 The Document Repository provides a persistent store for each document. It assigns a unique Identifier (uniqueId) to each document for subsequent retrieval by a Document Consumer.
 
-In case of an updated version of the document will provide a new uniqueId and replacing the previous document, and updating metadata in Document Registry.
+In case of an updated version of the document, it will provide a new uniqueId and replacing the previous document and updating metadata in Document Registry.
 
 #### Document Registry
 
-The Document Registry provides an index to all registered documents in the repositories about each patient using the patient identifier as the key. One Registry can index documents in any number of Repositories. It maintains a link (pointer) back to the Repository where each document is stored. The Registry supports queries to find metadata about documents irrespective of where they are actually stored. To maintain security, the Registry has no access to the content of any document, but relies only on standardized metadata to retrieve relevant documents.
+The Document Registry provides an index to all registered documents in the repositories about each patient using the patient identifier as the key. One Registry can index documents in any number of Repositories. It maintains a link (pointer) back to the Repository where each document is stored. The Registry supports queries to find metadata about documents irrespective of where they are actually stored. To maintain security, the Registry has no access to the content of any document but relies only on standardized metadata to retrieve relevant documents.
 
 #### Document Consumer
 
@@ -102,10 +101,10 @@ More of the metadata attributes are derived from national and international clas
 
 The table below shows the classification systems used in this document including the used OID’s. The table is consistent with the OID’s and classifications used in the Danish PHMR profile.
 
-Table 1. OID used in IHE Metadata
+Table 2. OID used in IHE Metadata
 
 | **Description**                                                                                         | **OID**                 | **Responsible organization**                                                                                                       |
-|---|---|---|
+|---------------------------------------------------------------------------------------------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | LOINC                                                                                                   | 2.16.840.1.113883.6.1   | Regenstrief                                                                                                                        |
 | **CPR-number** Danish civil registration system ("CPR"). Personal identification for Citizen in Denmark | 1.2.208.176.1.2         | Administered by Sundhedsdatastyrelsen (Danish Health Data Authority) for the owner Indenrigsministeriet (Ministry of the Interior) |
 | **SOR** Register of Danish Health Organisations                                                         | 1.2.208.176.1.1         | Administered and owned by Sundhedsdatastyrelsen (Danish Health Data Authority)                                                     |
@@ -131,15 +130,16 @@ A table shows the basic information for the attributes:
 
 <img src="xds-basic-entities.png" alt="xds-basic-entities table" style="vertical-align:left;margin:15px 700px 15px 15px"/>
 
+
 Entity: The entity/entities, where the attribute are used.
 
-Optionality: The optionality for the attribute according to optionality code definitions given in Table 3.
+Optionality: The optionality for the attribute according to optionality code definitions given in Table 4.
 
 Data type: The data type for the attribute (HL7 v2 data types).
 
 Source: The data source for the attribute according to
 
-Table 4. The text (transformation) informs that the CDA data, which are based on HL7 v3 data types, **SHALL** be transformed to HL7 v2 data types.
+Table 5. The text (transformation) informs that the CDA data, which are based on HL7 v3 data types, shall be transformed to HL7 v2 data types.
 
 #### Attribute – Description
 
@@ -147,7 +147,7 @@ The section *description* is describing the use of the attribute in a Danish hea
 
 #### Attribute – Coding
 
-The section *Coding* describes how the coding of the attributes **SHALL** be performed.
+The section *Coding* describes how the coding of the attributes shall be performed.
 
 The section also includes (when applicable) colored boxes with examples on mapping to HL7 CDA, other requirements (RDK) and an XML metadata example.
 
@@ -159,7 +159,9 @@ For some of the metadata attributes the corresponding value set is comprised of 
 
 #### [DK-IHE_Metadata Value_sets]
 
-The allowed values in the value set, are listed in the Excel document placed at a public website at MedCom: DK-IHE_Metadata-Common_Code_systems-Value_sets [^4]
+The allowed values in the value set, are listed in the Excel document placed at a public website at MedCom:
+
+https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx
 
 Go to the tab for a given metadata attribute to look up allowed values for the given metadata attribute. Further instructions are written in the first tab “Instruction” of the Excel file.
 
@@ -167,34 +169,34 @@ Go to the tab for a given metadata attribute to look up allowed values for the g
 
 ## Overview of Danish XDS Metadata for clinical documents for cross document sharing.
 
-The three tables below shows an overview of the Danish Metadata for CDA documents.
+The three tables below show an overview of the Danish Metadata for CDA documents.
 
-Table 2 shows the sources to be used for the metadata attributes.
+Table 3 shows the sources to be used for the metadata attributes.
 
-Table 2. Metadata Attribute Code Definitions for Source
+Table 3. Metadata Attribute Code Definitions for Source
 
 | Code | Data source                                                           |
----|---|
+|------|-----------------------------------------------------------------------|
 | CDA  | The data can be retrieved directly from a CDA document.               |
 | RDK  | Relevant for use in Denmark                                           |
 | AUT  | Automatic generated Metadata assigned by either source or repository. |
 
-Table 3 shows the optionality for the metadata attributes.
+Table 4 shows the optionality for the metadata attributes.
 
-Table 3. Metadata Attribute Optionality Code Definitions
+Table 4. Metadata Attribute Optionality Code Definitions
 
 | Code | Optionality           |
----|---|
+|------|-----------------------|
 | R    | Mandatory             |
 | R2   | Required (when known) |
 | O    | Optional              |
 
-Table 4 shows the metadata attributes, their optionality, and data sources. For this profile, the optionality in force is given in the column DK, while the optionality in the column IHE is for reference only.
+Table 5 shows the metadata attributes, their optionality, and data sources. For this profile, the optionality in force is given in the column DK, while the optionality in the column IHE is for reference only.
 
-Table 4. Metadata Attributes optionality and sources.
+Table 5. Metadata Attributes optionality and sources.
 
 | Metadata Attribute         | DocumentEntry | SubmissionSet | Optionality | Source |     |
-|---|---|---|---|---|---|
+|----------------------------|---------------|---------------|-------------|--------|-----|
 |                            |               |               | IHE         | DK     |     |
 | Author                     | X             | X             | R           | R      |     |
 |  author.authorInstitution  | X             | X             |             | R      | CDA |
@@ -235,14 +237,14 @@ Table 4. Metadata Attributes optionality and sources.
 
 ### Overview of Danish IHE XDS Metadata refinement and localization.
 
-Table 5 Danish localization and refinement of Metadata shows which metadata attributes has been specially treated and narrowed for Danish document and image sharing (column ‘Refined for Danish use’) and which is either not in use or is as-is in the international IHE metadata profile without any Danish specialization needs.
+Table 6 Danish localization and refinement of Metadata shows which metadata attributes has been specially treated and narrowed for Danish document and image sharing (column ‘Refined for Danish use’) and which is either not in use or is as-is in the international IHE metadata profile without any Danish specialization needs.
 
 The column ‘Danish Value Sets’ shows which metadata attribute has a limited allowed value set. See this reference for further information see section 1.3.4.1 [DK-IHE_Metadata Value_sets].
 
-Table 5 Danish localization and refinement of Metadata
+Table 6 Danish localization and refinement of Metadata
 
 | **  DocumentEntry Metadata   Attribute (Rev. 13.0)** |  **Refined for Danish use** |  **Not in Use** |  **No refinement** |  **Danish Value Sets** |
-|---|---|---|---|---|
+|------------------------------------------------------|-----------------------------|-----------------|--------------------|------------------------|
 | author                                               | X                           |                 |                    |                        |
 |  authorInstitution                                   | X                           |                 |                    |                        |
 |  authorPerson                                        | X                           |                 |                    |                        |
@@ -323,10 +325,12 @@ This specification restricts the coding to include the following fields:
 
 No other fields **SHALL** be specified.
 
-#### authorInstitution 
-
 **FHIR Reference:**
-        
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#authorinstitution)
+
+**CDA Reference:**
+[Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#authorinstitution)
+
         The mapping **SHALL** include the following values from the CDA as listed below.  
         
         The name of the institution: 
@@ -345,7 +349,7 @@ No other fields **SHALL** be specified.
         $codeSystem = ”1.2.208.176.1.1” |
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#authorinstitution)
 
         <rim:Slot name="authorInstitution">  
             <rim:ValueList>  
@@ -380,6 +384,11 @@ This specification restricts the coding to include the following fields:
 No other fields **SHALL** be specified.
 
 **FHIR Reference:**
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#authorperson)
+
+**CDA Reference:**
+[Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#authorperson)
+
 
         The name requires a last (family) name and a first (given) name. 
         One or more middle names can be inserted after the first name. 
@@ -396,7 +405,7 @@ No other fields **SHALL** be specified.
         $middle_name = “Frederik Ingolf” 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#authorperson)
   
         <rim:Slot name="authorPerson">  
             <rim:ValueList>  
@@ -448,7 +457,7 @@ In a query response the value is coded in the status attribute of the ExtrinsicO
         The example below shows the status attribute.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#availabilitystatus)
 
       <ExtrinsicObject  
         id="urn:uuid:fbeacdb7-5421-4474-9267-985007cd8855"
@@ -478,7 +487,7 @@ This metadata attribute has a limited allowed value set. See this reference for 
 There **SHALL** be exactly one ebRIM Classification containing a classCode for any DocumentEntry. For the classCode metadata attribute, the classificationScheme **SHALL** be urn: urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a.
 
 **RDK reference:**
-[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#classcode)
 
         The code **SHALL** be a valid value for the document type.  
         The codeSystem **SHALL** be the associated OID for “DK IHE classCodes”  
@@ -490,7 +499,7 @@ There **SHALL** be exactly one ebRIM Classification containing a classCode for a
         $codeSystem = ” 1.2.208.184.100.9”  
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#classcode)
         
         <rim:Classification  
             classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"  
@@ -533,6 +542,10 @@ The confidentialityCode **SHALL** contain exactly one value from the HL7 code sy
 For the confidentialityCode metadata attribute, the classificationScheme **SHALL** be urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f.
 
 **FHIR Reference:**
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#confidentialitycode)
+
+**CDA Reference:**
+[Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#confidentialitycode)
 
         $code = ClinicalDocument/confidentialityCode/@code 
         $displayName = ClinicalDocument/confidentialityCode/@displayName 
@@ -544,7 +557,7 @@ For the confidentialityCode metadata attribute, the classificationScheme **SHALL
         $codeSystem = “2.16.840.1.113883.5.25” 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#confidentialitycode)
         
         <rim:Classification
           classificationScheme=  "urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
@@ -587,6 +600,10 @@ The format of the creationTime value is data type DTM.
 The value is coded as a single value within an ebRIM Slot in the DocumentEntry. The creationTime **SHALL** be precise to the second.
 
 **FHIR Reference:**
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#creationtime)
+
+**CDA Reference:**
+[Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#creationtime)
 
         $value = ClinicalDocument/effectiveTime/@value  
         
@@ -598,7 +615,7 @@ The value is coded as a single value within an ebRIM Slot in the DocumentEntry. 
         December 25, 2014 21:20:10 UTC 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#creationtime)
 
         <rim:Slot name="creationTime">  
             <rim:ValueList>  
@@ -629,7 +646,7 @@ At time of registration, certain Document Sharing transactions **MAY** allow sym
 The value of the entryUUID is coded in the id XML attribute on the ExtrinsicObject representing the DocumentEntry. In the example below, the entryUUID is urn:uuid:a6e06ca8-0c75-4064-9e5c-88b9045a96f6.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#entryuuid)
 
     <rim:ExtrinsicObject 
         mimeType="text/xml"
@@ -664,6 +681,11 @@ This metadata attribute has a value set *comprised of a sub-set of values define
 The eventCodeList is coded with ebRIM Classification objects. There **MAY** be zero, one, or more ebRIM Classifications containing a code and additional eventCode entries are coded by specifying multiple classification objects. For the eventCodeList metadata attribute, the classificationScheme **SHALL** be urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4.
 
 **FHIR Reference:**
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#eventcodelist)
+
+**CDA Reference:**
+[Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#eventcodelist)
+
 
         The mapping includes the following values from the CDA as listed below.  
         
@@ -680,7 +702,7 @@ The eventCodeList is coded with ebRIM Classification objects. There **MAY** be z
         $codeSystem = “” 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#eventcodelist)
 
         <rim:Classification
             classificationScheme=  "urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
@@ -722,7 +744,7 @@ This metadata attribute have a limited allowed value set. See this reference for
 There **SHALL** be one ebRIM Classification containing a formatCode. For the formatCode metadata attribute, the classificationScheme **SHALL** be urn: uuid: a09d5840-386c-46f2-b5ad-9c3699a4309d. Any valid URN **MAY** be used as a formatCode.
 
 **RDK reference:**
-[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#formatcode)
 
         The code **SHALL** be a valid value for the formatCode.  
         The codeSystem **SHALL** be the associated OID for the list of “DK IHE formatCodes”  
@@ -734,7 +756,7 @@ There **SHALL** be one ebRIM Classification containing a formatCode. For the for
         $codeSystem = ”urn:ad:dk:medcom:phmr:full”  
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#formatcode)
 
         <rim:Classification
             classificationScheme=  "urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
@@ -800,7 +822,7 @@ There **SHALL** be one ebRIM Classification containing a healthcareFacilityTypeC
 In this profile, the healthcareFacilityCode is given by values from the value set DK IHE healthcareFacilityCodes described in section 3.9.
 
 **RDK reference:**
-[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#healthcarefacilitytypecode)
 
         The code **SHALL** be a valid value for the health care facility type.  
         The codeSystem **SHALL** be the OID associated with the code value in the value set “DK IHE healthCareFacilityTypeCodes”  
@@ -812,7 +834,7 @@ In this profile, the healthcareFacilityCode is given by values from the value se
         $codeSystem = ”2.16.840.1.113883.6.96”  
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#healthcarefacilitytypecode)
 
         <rim:Classification
             classificationScheme=  "urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
@@ -849,19 +871,51 @@ This metadata attribute has a limited allowed value set. See this reference for 
 Max length is unbounded. Contained in the ebRS ExtrinsicObject home attribute for the ExtrinsicObject that corresponds to the DocumentEntry.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#homecommunityid)
 
         <rim:ExtrinsicObject home="urn:oid:1.2.208.176.8.1>  ...  </rim:ExtrinsicObject\
 
-### intendedRecipient
+### intendedRecipient 
+
+**General information:**
 
 | Entity         | Optionality | Data type     | Source |
 |---|---|---|---|
 | SubmissionSet  | O           | XON, XCN, XTN | -      |
 
+**Description:**
+
+Represents the organization(s) or person(s) for whom the SubmissionSet is intended at time of submission. Each slot value shall include at least one of the organization, person, or telecommunications address fields described below. It is highly recommended to define the organization for all the persons, avoiding errors in the transmission of the documents.
+
 For use with Cross Enterprise Document Workflow (XDW).
 
-Currently not used in this profile.
+**Coding:**
+
+The format of the intendedRecipient value is XON|XCN|XTN where XON identifies the organization, XCN identifies a person and XTN identifies the telecommunications, see Table 4.2.3.1.7-2 for description of XON, XCN and XTN format. There is a "|" character separator between the organization and the person, and between the person and the telecommunications address, which is required when the person or the telecommunications address information is present.
+
+The value is coded as zero or more rim:Value within a single ebRIM Slot in the SubmissionSet.
+
+Maximum length of each rim:Value is 256 characters.
+
+**ebXML example:**
+
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#intendedrecipient)
+
+The following example shows two doctors from the same organization, another doctor without the organization details and another organization without the person details, and just a telecommunications address.
+
+        <rim:Slot name="intendedRecipient">
+        <rim:ValueList>
+            <rim:Value>
+            Some Hospital^^^^^^^^^1.2.3.9.1789.45|^Wel^Marcus^^^Dr^MD|^^Internet^mwel@healthcare.example.org
+            </rim:Value>
+            <rim:Value>
+            Some Hospital^^^^^^^^^1.2.3.9.1789.45|^Peirre^LaPointe^^^Dr^MD
+            </rim:Value>
+            <rim:Value>|12345^LaShawn^James^^Dr^MD</rim:Value>
+            <rim:Value>MainHospital^^^^^^^^^1.2.3.4.5.6.7.8.9.1789.2364</rim:Value>
+        <rim:Value>||^^Internet^dr.oz@healthcare.example.org</rim:Value>
+        </rim:ValueList>
+        </rim:Slot>
 
 ### languageCode
 
@@ -884,12 +938,16 @@ The languageCode **SHALL** be in the form nn-CC.
 The nn portion **SHALL** be a legal ISO=-639-1 language code in lower case. The CC portion, if present, **SHALL** be an ISO-3166 Alpha-Code 2 country code in upper case.
 
 **FHIR Reference:**
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#languagecode)
+
+**CDA Reference:**
+[Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#languagecode)
 
         $code = ClinicalDocument/languageCode/@code  Example values in the DK PHMR CDA is: 
         $code = “da-DK”  
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#languagecode)
 
         <rim:Slot name="languageCode">  
             <rim:ValueList>  
@@ -922,6 +980,10 @@ This specification restricts the coding to include the following fields:
 No other fields **SHALL** be specified.
 
 **FHIR Reference:**
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#legalauthenticator)
+
+**CDA Reference:**
+[Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#legalauthenticator)
 
         The name requires a last (family) name and a first (given) name. 
         One or more middle names can be inserted after the first name. 
@@ -944,7 +1006,8 @@ No other fields **SHALL** be specified.
         $first_name = “Anders” 
         $middle_name =”Frederik Ingolf” 
 
-**XML example**  
+**ebXML example**
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#legalauthenticator)
 
         <rim:Slot name="legalAuthenticator">  
             <rim:ValueList>  
@@ -960,7 +1023,7 @@ No other fields **SHALL** be specified.
 
 This attribute is not used in this profile.
 
-### mimeType
+### mimeType [HAVE TO BE worked with]
 
 **General information:**
 
@@ -979,12 +1042,12 @@ This metadata attribute has a limited allowed value set. See this reference for 
 The maximum length is unbounded. **SHALL** have only a single value. Encoded in the ebRS ExtrinsicObject mimeType attribute for the ExtrinsicObject that corresponds to the DocumentEntry.
 
 **RDK reference:**
-[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#mimetype)
 
-          In the case of CDA R2 documents, the MimeType according to IHE is always fixed to "text/xml".  
+        In the case of CDA R2 documents, the MimeType according to IHE is always fixed to "text/xml".  
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#mimetype)
 
         <rim:ExtrinsicObject 
             mimeType="text/xml"
@@ -1014,7 +1077,7 @@ Max length is unbounded. The format of the objectType value is UUID.
 The value of the objectType is coded in the objectType XML attribute on the ExtrinsicObject representing the DocumentEntry. In the example below, the objectType is urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1 and reflects a stable DocumentEntry.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#objecttype)
 
         <rim:ExtrinsicObject mimeType="text/xml"
         id="urn:uuid:a6e06ca8-0c75-4064-9e5c-88b9045a96f6"
@@ -1043,7 +1106,7 @@ The value set for practiceSettingCode represents the type of clinical setting of
 This metadata attribute has a limited allowed value set. See this reference for further information see section 1.3.4.1 [DK-IHE_Metadata Value_sets].
 
 **RDK reference:**
-[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#practicesettingcode)
 
         (**To be discussed**)  
         $code = ”394588006"
@@ -1053,7 +1116,7 @@ This metadata attribute has a limited allowed value set. See this reference for 
         
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#practicesettingcode)
         
         <rim:Classification
           classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
@@ -1089,9 +1152,8 @@ XDS Document Registry Actors supporting the ReferenceId Option **SHALL** preserv
 Coded as an ebRIM Slot. **MAY** have multiple values. Max length for each value is 256 characters. The name of the slot in the metadata **SHALL** be “urn:ihe:iti:xds:2013:referenceIdList”.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#referenceidlist)
 
-      
     <rim:Slot name="urn:ihe:iti:xds:2013:referenceIdList">  
         <rim:ValueList>  
             <rim:Value>  2013001^^^&amp;1.2.3.4.5.6&amp;ISO^urn:ihe:iti:xds:2013:accession  </rim:Value>  
@@ -1118,7 +1180,7 @@ Maximum length is 64 characters. The format of the repositoryUniqueId value is O
 The value is coded as a single value within an ebRIM Slot in the DocumentEntry.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#repositoryuniqueid)
 
         <rim:Slot name="repositoryUniqueId">  
             <rim:ValueList>  
@@ -1147,6 +1209,10 @@ The format of the serviceStartTime value is DTM. The creationTime **SHALL** be p
 The value is coded as a single value within an ebRIM Slot Attribute in the DocumentEntry.
 
 **FHIR Reference:**
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#servicestarttime)
+
+**CDA Reference:**
+[Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#servicestarttime)
 
         $value = ClinicalDocument/documentationOf/serviceEvent/effectiveTime/low/@value  
         
@@ -1184,6 +1250,10 @@ The format of the serviceStopTime value is DTM. The creationTime **SHALL** be pr
 The value is coded as a single value within an ebRIM Slot Attribute in the DocumentEntry.
 
 **FHIR Reference:**
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#servicestoptime)
+
+**CDA Reference:**
+[Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#servicestoptime)
 
         $value = ClinicalDocument/documentationOf/serviceEvent/effectiveTime/high/@value  
         
@@ -1195,7 +1265,7 @@ The value is coded as a single value within an ebRIM Slot Attribute in the Docum
         December 25, 2014 21:20:10 UTC 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#servicestoptime)
 
         <rim:Slot name="serviceStopTime">  
             <rim:ValueList>  
@@ -1220,7 +1290,7 @@ Size in bytes of the byte stream that comprises the document.
 Max length of the encoded size is 256 characters. Coded as an ebRIM Slot. **SHALL** have only a single value.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#size)
 
         <rim:Slot name="size">  
             <rim:ValueList>  
@@ -1256,6 +1326,10 @@ Max length is 256 characters. Coded as an ebRIM Slot with the value encoded acco
 All other CX components **SHALL** be omitted.
 
 **FHIR Reference:**
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#sourcepatientid)
+
+**CDA Reference:**
+[Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#sourcepatientid)
 
         The Danish patient identification (cpr-nummer): 
         $code = ClinicalDocument/recordTarget/patientRole/Id/@extension  
@@ -1269,7 +1343,7 @@ All other CX components **SHALL** be omitted.
         $codeSystem = 1.2.208.176.1.2 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#sourcepatientid)
         
         <rim:Slot name="sourcePatientId">  
             <rim:ValueList>  
@@ -1300,6 +1374,10 @@ The sourcePatientInfo **SHALL** include values for:
 Max length is 256 characters. Coded as an ebRIM Slot.
 
 **FHIR Reference:**
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#sourcepatientinfo)
+
+**CDA Reference:**
+[Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#sourcepatientinfo)
 
         The mapping includes the following values from the CDA as listed below.  
         
@@ -1312,7 +1390,7 @@ Max length is 256 characters. Coded as an ebRIM Slot.
         $gender = ”F” 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#sourcepatientinfo)
         
         <rim:Slot name="sourcePatientInfo">
             <rim:ValueList>
@@ -1339,7 +1417,7 @@ Represents the point in time at the creating entity when the SubmissionSet was s
 The format of the submissionTime value is DTM. The submissionTime **SHALL** be precise to the second.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#submissiontime)
 
         The following example shows a submissionTime of December 25, 2004 21:20:10 Coordinated Universal Time (UTC).  \<rim:Slot name="submissionTime">  
 
@@ -1367,6 +1445,10 @@ The format of the title attribute **SHALL** be any string of length less than 12
 The title attribute is represented in ebXML as the "value" attribute of the LocalizedString element within the ebRIM Name structure. There can be only one ebRIM Name structure per DocumentEntry.
 
 **FHIR Reference:**
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#title)
+
+**CDA Reference:**
+[Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#title)
 
         $title = ClinicalDocument/title  
         
@@ -1374,7 +1456,7 @@ The title attribute is represented in ebXML as the "value" attribute of the Loca
         $title = ”Hjemmemonitorering for 2303439995” 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#title)
         
         <rim:ExtrinsicObject  
           id="ExampleDocument"
@@ -1405,6 +1487,11 @@ This metadata attribute has a limited allowed value set. See this reference for 
 Coded as an ebRIM classification. **SHALL** have one value.
 
 **FHIR Reference:**
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#typecode)
+
+**CDA Reference:**
+[Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#typecode)
+
 
         The mapping includes the following values from the CDA as listed below.  
         
@@ -1423,7 +1510,7 @@ Coded as an ebRIM classification. **SHALL** have one value.
         $codeSystem = “2.16.840.1.113883.6.1” 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#typecode)
         
         <rim:Classification
           classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
@@ -1462,6 +1549,11 @@ This unique identifier **MAY** be used in other documents to reference this docu
 The format of the DocumentEntry.uniqueId value is OID. Coded as an ebRIM ExternalIdentifier which references, and is contained in, the ExtrinsicObject representing the DocumentEntry. There **SHALL** be only a single uniqueId value.
 
 **FHIR Reference:**
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#uniqueId)
+
+**CDA Reference:**
+[Link to CDA Reference][Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#uniqueid)
+
 
         $uniqueId = ClinicalDocument/id/@root + ^ + ClinicalDocument/id/@extension  
         
@@ -1470,7 +1562,7 @@ The format of the DocumentEntry.uniqueId value is OID. Coded as an ebRIM Externa
         ClinicalDocument/id/@root="1.2.208.184"  
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#uniqueid)
 
         <rim:ExternalIdentifier  
          identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"  
@@ -1504,7 +1596,7 @@ The value is coded within a single ebRIM ExternalIdentifier element which refere
 The following example shows a uniqueId of 1.2.208.184.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#submissionset.uniqueid)
         
         <rim:ExternalIdentifier  
          identificationScheme="urn:uuid:96fdda7c-d067-4183-912e-bf5ee74998a8"   
@@ -1534,7 +1626,7 @@ The URI attribute contains the URI for the document.
 Coded as an ebRIM Slot. **SHALL** have only a single value. Max length is 256 characters.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#uri)
   
         <rim:Slot name="URI">  
             <rim:ValueList>

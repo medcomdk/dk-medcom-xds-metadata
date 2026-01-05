@@ -12,7 +12,7 @@
 |---|---|---|---|
 | 0.96    | 01-01-2018 | Thor Schliemann, Danish Health Data Authority | Revisions of initial version                                                                 |
 | 1.0.0   | 04-04-2024 | Ole Vilstrup Møller. MedCom                   | Revisions regarding further use of code systems added. Added MedCom logo and responsibility. |
-| 1.1.0   | 31-12-2025 | Ole Vilstrup Møller. MedCom                   | Revisions regarding xxxx |
+| 2.0.0   | 01-01-2026 | Ole Vilstrup Møller. MedCom                   | Revisions regarding version 2.0.0 |
 
 ## Purpose, Audience and Introduction
 
@@ -323,7 +323,9 @@ This specification restricts the coding to include the following fields:
 
 No other fields **SHALL** be specified.
 
-#### authorInstitution **CDA Reference:**
+#### authorInstitution 
+
+**FHIR Reference:**
         
         The mapping **SHALL** include the following values from the CDA as listed below.  
         
@@ -343,7 +345,7 @@ No other fields **SHALL** be specified.
         $codeSystem = ”1.2.208.176.1.1” |
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:Slot name="authorInstitution">  
             <rim:ValueList>  
@@ -377,7 +379,7 @@ This specification restricts the coding to include the following fields:
 
 No other fields **SHALL** be specified.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         The name requires a last (family) name and a first (given) name. 
         One or more middle names can be inserted after the first name. 
@@ -394,7 +396,7 @@ No other fields **SHALL** be specified.
         $middle_name = “Frederik Ingolf” 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
   
         <rim:Slot name="authorPerson">  
             <rim:ValueList>  
@@ -446,7 +448,7 @@ In a query response the value is coded in the status attribute of the ExtrinsicO
         The example below shows the status attribute.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
       <ExtrinsicObject  
         id="urn:uuid:fbeacdb7-5421-4474-9267-985007cd8855"
@@ -476,7 +478,7 @@ This metadata attribute has a limited allowed value set. See this reference for 
 There **SHALL** be exactly one ebRIM Classification containing a classCode for any DocumentEntry. For the classCode metadata attribute, the classificationScheme **SHALL** be urn: urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a.
 
 **RDK reference:**
-[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         The code **SHALL** be a valid value for the document type.  
         The codeSystem **SHALL** be the associated OID for “DK IHE classCodes”  
@@ -488,7 +490,7 @@ There **SHALL** be exactly one ebRIM Classification containing a classCode for a
         $codeSystem = ” 1.2.208.184.100.9”  
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
         
         <rim:Classification  
             classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"  
@@ -530,7 +532,7 @@ The confidentialityCode **SHALL** contain exactly one value from the HL7 code sy
 
 For the confidentialityCode metadata attribute, the classificationScheme **SHALL** be urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         $code = ClinicalDocument/confidentialityCode/@code 
         $displayName = ClinicalDocument/confidentialityCode/@displayName 
@@ -542,7 +544,7 @@ For the confidentialityCode metadata attribute, the classificationScheme **SHALL
         $codeSystem = “2.16.840.1.113883.5.25” 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
         
         <rim:Classification
           classificationScheme=  "urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
@@ -584,7 +586,7 @@ The format of the creationTime value is data type DTM.
 
 The value is coded as a single value within an ebRIM Slot in the DocumentEntry. The creationTime **SHALL** be precise to the second.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         $value = ClinicalDocument/effectiveTime/@value  
         
@@ -596,7 +598,7 @@ The value is coded as a single value within an ebRIM Slot in the DocumentEntry. 
         December 25, 2014 21:20:10 UTC 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:Slot name="creationTime">  
             <rim:ValueList>  
@@ -627,7 +629,7 @@ At time of registration, certain Document Sharing transactions **MAY** allow sym
 The value of the entryUUID is coded in the id XML attribute on the ExtrinsicObject representing the DocumentEntry. In the example below, the entryUUID is urn:uuid:a6e06ca8-0c75-4064-9e5c-88b9045a96f6.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
     <rim:ExtrinsicObject 
         mimeType="text/xml"
@@ -661,7 +663,7 @@ This metadata attribute has a value set *comprised of a sub-set of values define
 
 The eventCodeList is coded with ebRIM Classification objects. There **MAY** be zero, one, or more ebRIM Classifications containing a code and additional eventCode entries are coded by specifying multiple classification objects. For the eventCodeList metadata attribute, the classificationScheme **SHALL** be urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         The mapping includes the following values from the CDA as listed below.  
         
@@ -678,7 +680,7 @@ The eventCodeList is coded with ebRIM Classification objects. There **MAY** be z
         $codeSystem = “” 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:Classification
             classificationScheme=  "urn:uuid:2c6b8cb7-8b2a-4051-b291-b1ae6a575ef4"
@@ -720,7 +722,7 @@ This metadata attribute have a limited allowed value set. See this reference for
 There **SHALL** be one ebRIM Classification containing a formatCode. For the formatCode metadata attribute, the classificationScheme **SHALL** be urn: uuid: a09d5840-386c-46f2-b5ad-9c3699a4309d. Any valid URN **MAY** be used as a formatCode.
 
 **RDK reference:**
-[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         The code **SHALL** be a valid value for the formatCode.  
         The codeSystem **SHALL** be the associated OID for the list of “DK IHE formatCodes”  
@@ -732,7 +734,7 @@ There **SHALL** be one ebRIM Classification containing a formatCode. For the for
         $codeSystem = ”urn:ad:dk:medcom:phmr:full”  
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:Classification
             classificationScheme=  "urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
@@ -798,7 +800,7 @@ There **SHALL** be one ebRIM Classification containing a healthcareFacilityTypeC
 In this profile, the healthcareFacilityCode is given by values from the value set DK IHE healthcareFacilityCodes described in section 3.9.
 
 **RDK reference:**
-[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         The code **SHALL** be a valid value for the health care facility type.  
         The codeSystem **SHALL** be the OID associated with the code value in the value set “DK IHE healthCareFacilityTypeCodes”  
@@ -810,7 +812,7 @@ In this profile, the healthcareFacilityCode is given by values from the value se
         $codeSystem = ”2.16.840.1.113883.6.96”  
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:Classification
             classificationScheme=  "urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
@@ -847,7 +849,7 @@ This metadata attribute has a limited allowed value set. See this reference for 
 Max length is unbounded. Contained in the ebRS ExtrinsicObject home attribute for the ExtrinsicObject that corresponds to the DocumentEntry.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:ExtrinsicObject home="urn:oid:1.2.208.176.8.1>  ...  </rim:ExtrinsicObject\
 
@@ -881,13 +883,13 @@ The languageCode **SHALL** be in the form nn-CC.
 
 The nn portion **SHALL** be a legal ISO=-639-1 language code in lower case. The CC portion, if present, **SHALL** be an ISO-3166 Alpha-Code 2 country code in upper case.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         $code = ClinicalDocument/languageCode/@code  Example values in the DK PHMR CDA is: 
         $code = “da-DK”  
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:Slot name="languageCode">  
             <rim:ValueList>  
@@ -919,7 +921,7 @@ This specification restricts the coding to include the following fields:
 
 No other fields **SHALL** be specified.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         The name requires a last (family) name and a first (given) name. 
         One or more middle names can be inserted after the first name. 
@@ -977,12 +979,12 @@ This metadata attribute has a limited allowed value set. See this reference for 
 The maximum length is unbounded. **SHALL** have only a single value. Encoded in the ebRS ExtrinsicObject mimeType attribute for the ExtrinsicObject that corresponds to the DocumentEntry.
 
 **RDK reference:**
-[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
           In the case of CDA R2 documents, the MimeType according to IHE is always fixed to "text/xml".  
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:ExtrinsicObject 
             mimeType="text/xml"
@@ -1012,7 +1014,7 @@ Max length is unbounded. The format of the objectType value is UUID.
 The value of the objectType is coded in the objectType XML attribute on the ExtrinsicObject representing the DocumentEntry. In the example below, the objectType is urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1 and reflects a stable DocumentEntry.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:ExtrinsicObject mimeType="text/xml"
         id="urn:uuid:a6e06ca8-0c75-4064-9e5c-88b9045a96f6"
@@ -1041,7 +1043,7 @@ The value set for practiceSettingCode represents the type of clinical setting of
 This metadata attribute has a limited allowed value set. See this reference for further information see section 1.3.4.1 [DK-IHE_Metadata Value_sets].
 
 **RDK reference:**
-[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         (**To be discussed**)  
         $code = ”394588006"
@@ -1051,7 +1053,7 @@ This metadata attribute has a limited allowed value set. See this reference for 
         
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
         
         <rim:Classification
           classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
@@ -1087,7 +1089,7 @@ XDS Document Registry Actors supporting the ReferenceId Option **SHALL** preserv
 Coded as an ebRIM Slot. **MAY** have multiple values. Max length for each value is 256 characters. The name of the slot in the metadata **SHALL** be “urn:ihe:iti:xds:2013:referenceIdList”.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
       
     <rim:Slot name="urn:ihe:iti:xds:2013:referenceIdList">  
@@ -1116,7 +1118,7 @@ Maximum length is 64 characters. The format of the repositoryUniqueId value is O
 The value is coded as a single value within an ebRIM Slot in the DocumentEntry.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:Slot name="repositoryUniqueId">  
             <rim:ValueList>  
@@ -1144,7 +1146,7 @@ The format of the serviceStartTime value is DTM. The creationTime **SHALL** be p
 
 The value is coded as a single value within an ebRIM Slot Attribute in the DocumentEntry.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         $value = ClinicalDocument/documentationOf/serviceEvent/effectiveTime/low/@value  
         
@@ -1181,7 +1183,7 @@ The format of the serviceStopTime value is DTM. The creationTime **SHALL** be pr
 
 The value is coded as a single value within an ebRIM Slot Attribute in the DocumentEntry.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         $value = ClinicalDocument/documentationOf/serviceEvent/effectiveTime/high/@value  
         
@@ -1193,7 +1195,7 @@ The value is coded as a single value within an ebRIM Slot Attribute in the Docum
         December 25, 2014 21:20:10 UTC 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:Slot name="serviceStopTime">  
             <rim:ValueList>  
@@ -1218,7 +1220,7 @@ Size in bytes of the byte stream that comprises the document.
 Max length of the encoded size is 256 characters. Coded as an ebRIM Slot. **SHALL** have only a single value.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:Slot name="size">  
             <rim:ValueList>  
@@ -1253,7 +1255,7 @@ Max length is 256 characters. Coded as an ebRIM Slot with the value encoded acco
 
 All other CX components **SHALL** be omitted.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         The Danish patient identification (cpr-nummer): 
         $code = ClinicalDocument/recordTarget/patientRole/Id/@extension  
@@ -1267,7 +1269,7 @@ All other CX components **SHALL** be omitted.
         $codeSystem = 1.2.208.176.1.2 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
         
         <rim:Slot name="sourcePatientId">  
             <rim:ValueList>  
@@ -1297,7 +1299,7 @@ The sourcePatientInfo **SHALL** include values for:
 
 Max length is 256 characters. Coded as an ebRIM Slot.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         The mapping includes the following values from the CDA as listed below.  
         
@@ -1310,7 +1312,7 @@ Max length is 256 characters. Coded as an ebRIM Slot.
         $gender = ”F” 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
         
         <rim:Slot name="sourcePatientInfo">
             <rim:ValueList>
@@ -1337,7 +1339,7 @@ Represents the point in time at the creating entity when the SubmissionSet was s
 The format of the submissionTime value is DTM. The submissionTime **SHALL** be precise to the second.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         The following example shows a submissionTime of December 25, 2004 21:20:10 Coordinated Universal Time (UTC).  \<rim:Slot name="submissionTime">  
 
@@ -1364,7 +1366,7 @@ The format of the title attribute **SHALL** be any string of length less than 12
 
 The title attribute is represented in ebXML as the "value" attribute of the LocalizedString element within the ebRIM Name structure. There can be only one ebRIM Name structure per DocumentEntry.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         $title = ClinicalDocument/title  
         
@@ -1372,7 +1374,7 @@ The title attribute is represented in ebXML as the "value" attribute of the Loca
         $title = ”Hjemmemonitorering for 2303439995” 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
         
         <rim:ExtrinsicObject  
           id="ExampleDocument"
@@ -1402,7 +1404,7 @@ This metadata attribute has a limited allowed value set. See this reference for 
 
 Coded as an ebRIM classification. **SHALL** have one value.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         The mapping includes the following values from the CDA as listed below.  
         
@@ -1421,7 +1423,7 @@ Coded as an ebRIM classification. **SHALL** have one value.
         $codeSystem = “2.16.840.1.113883.6.1” 
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
         
         <rim:Classification
           classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
@@ -1459,7 +1461,7 @@ This unique identifier **MAY** be used in other documents to reference this docu
 
 The format of the DocumentEntry.uniqueId value is OID. Coded as an ebRIM ExternalIdentifier which references, and is contained in, the ExtrinsicObject representing the DocumentEntry. There **SHALL** be only a single uniqueId value.
 
-**CDA Reference:**
+**FHIR Reference:**
 
         $uniqueId = ClinicalDocument/id/@root + ^ + ClinicalDocument/id/@extension  
         
@@ -1468,7 +1470,7 @@ The format of the DocumentEntry.uniqueId value is OID. Coded as an ebRIM Externa
         ClinicalDocument/id/@root="1.2.208.184"  
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         <rim:ExternalIdentifier  
          identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"  
@@ -1502,7 +1504,7 @@ The value is coded within a single ebRIM ExternalIdentifier element which refere
 The following example shows a uniqueId of 1.2.208.184.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
         
         <rim:ExternalIdentifier  
          identificationScheme="urn:uuid:96fdda7c-d067-4183-912e-bf5ee74998a8"   
@@ -1532,7 +1534,7 @@ The URI attribute contains the URI for the document.
 Coded as an ebRIM Slot. **SHALL** have only a single value. Max length is 256 characters.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.1.0_ebxml.html#)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
   
         <rim:Slot name="URI">  
             <rim:ValueList>

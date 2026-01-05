@@ -6,7 +6,7 @@ Description: "ValueSet containing FormatCode."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
-* include codes from system MedCom-ihe-formatcode-CS
+* include codes from system MedCom-xds-formatcode-CS
 
 
 /* ValueSet: MedCom_XDS_APDDkFormatCode
