@@ -57,7 +57,7 @@ The codes in the ValueSet originate from different CodeSystems that are owned by
     <td class="tg-c3ow">mediaType</td>
     <td class="tg-0pky">mediaType</td>
     <td class="tg-c3ow">HL7</td>
-    <td class="tg-0pky">http://terminology.hl7.org/CodeSystem/v3-mediaType</td>
+    <td class="tg-0pky">urn:ietf:bcp:13</td>
   </tr>
   <tr>
     <td class="tg-0pky">2.16.840.1.113883.6.121</td>
