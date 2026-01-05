@@ -1,5 +1,5 @@
-/* CodeSystem: MedComIHE_SnomedCT
-Id: MedCom-ihe-snomed-CS
+/* CodeSystem: MedCom_XDS_SnomedCT
+Id: MedCom-xds-snomed-CS
 Title: "DK-subset SNOMED CT"
 Description: "Subset of the SNOMED CT CodeSystem"
 * ^experimental = true

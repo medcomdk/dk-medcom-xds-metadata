@@ -1,5 +1,5 @@
-CodeSystem: MedComIHE_MediaTypes
-Id: MedCom-ihe-mimeType-CS
+CodeSystem: MedCom_XDS_MediaTypes
+Id: MedCom-xds-mimeType-CS
 Title: "DK Mime Type"
 Description: "Identifies the type of the encapsulated data and identifies a method to interpret or render the data. The IANA defined domain of media types is established by the Internet standard RFC 2045 [http://www.ietf.org/rfc/rfc2045.txt] and 2046 [http://www.ietf.org/rfc/rfc2046.txt]. RFC 2046 defines the media type to consist of two parts:
 1. top level media type and

@@ -1,5 +1,5 @@
-ValueSet: MedComIHE_CorePracticeSettingCode
-Id: MedCom-ihe-core-PracticeSettingCode-VS
+ValueSet: MedCom_XDS_CorePracticeSettingCode
+Id: MedCom-xds-core-PracticeSettingCode-VS
 Title: "IHE PracticeSettingCode"
 Description: "Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED codes. "
 * ^experimental = true
@@ -62,8 +62,8 @@ Description: "Values used for the document metadata attribute practiceSettingCod
 * $SnomedctOID#658181000005104 "hjælpemiddelområdet"
 
 /* 
-ValueSet: MedComIHE_APDDkPracticeSettingCode
-Id: MedCom-ihe-apd-PracticeSettingCode-VS
+ValueSet: MedCom_XDS_APDDkPracticeSettingCode
+Id: MedCom-xds-apd-PracticeSettingCode-VS
 Title: "APD_DK IHE PracticeSettingCode"
 Description: "APD_DK: ValueSet containing PracticeSettingCode."
 * ^experimental = true
@@ -118,8 +118,8 @@ Description: "APD_DK: ValueSet containing PracticeSettingCode."
 * $SnomedctOID#408448007 "tropemedicin"
 * $SnomedctOID#394612005 "urologi"
 
-ValueSet: MedComIHE_QRDDkPracticeSettingCode
-Id: MedCom-ihe-qrd-PracticeSettingCode-VS
+ValueSet: MedCom_XDS_QRDDkPracticeSettingCode
+Id: MedCom-xds-qrd-PracticeSettingCode-VS
 Title: "QRD_DK IHE PracticeSettingCode"
 Description: "QRD_DK: ValueSet containing PracticeSettingCode."
 * ^experimental = true

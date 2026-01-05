@@ -1,6 +1,6 @@
-/* CodeSystem: MedComIHE_EpisodeOfCare
-Id: MedCom-ihe-episodeOfCare-CS
-Title: "DK IHE Episode of care label"
+/* CodeSystem: MedCom_XDS_EpisodeOfCare
+Id: MedCom-xds-episodeOfCare-CS
+Title: "MedCom XDS Episode of care label"
 Description: "CodeSystem for Danish episode of care - defined by SKS Danish Collection og codesystems"
 * ^experimental = true
 * ^version = "1.0.0"
@@ -17,9 +17,9 @@ Description: "CodeSystem for Danish episode of care - defined by SKS Danish Coll
 * #ALAL51 "Graviditet, fødsel og barsel"
 * #ALAL52 "Nyfødte"
 
-CodeSystem: MedComIHE_NPU
-Id: MedCom-ihe-npu-CS
-Title: "DK IHE NPU"
+CodeSystem: MedCom_XDS_NPU
+Id: MedCom-xds-npu-CS
+Title: "MedCom XDS NPU"
 Description: "CodeSystem for Danish NPU"
 * ^experimental = true
 * ^version = "1.0.0"
@@ -35,8 +35,8 @@ Description: "CodeSystem for Danish NPU"
 * #DNK05473 "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
 * #NPU21692 "Hjerte—Systole; frekv. = ? × 1/min"
 
-CodeSystem: MedComIHE_AnalysisCodes
-Id: MedCom-ihe-analysis-codes-CS
+CodeSystem: MedCom_XDS_AnalysisCodes
+Id: MedCom-xds-analysis-codes-CS
 Title: "DK MedCom analysis codes"
 Description: "CodeSystem for MedCom analysis codes"
 * ^experimental = true
@@ -48,8 +48,8 @@ Description: "CodeSystem for MedCom analysis codes"
 * #MCS88100 "Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L"
 * #MCS88015 "Lunge—Lungefunktionsundersøgelse FEV1; vol. = ? L"
 
-CodeSystem: MedComIHE_PRODKQuestionnaire
-Id: MedCom-ihe-prodk-questionnaire-CS
+CodeSystem: MedCom_XDS_PRODKQuestionnaire
+Id: MedCom-xds-prodk-questionnaire-CS
 Title: "Questionnaires used in the Danish Patient Reported Outcome (PRO), by PRO-sekretariatet."
 Description: "Standards and profiles used for the Patient Reported Outcome (PRO) in Danish Health; https://spgdef.dk/qfdd"
 * ^experimental = true

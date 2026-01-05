@@ -1,5 +1,5 @@
- ValueSet: MedComIHE_CoreEventCodeLists
-Id: MedCom-ihe-core-eventcodelist-VS
+ ValueSet: MedCom_XDS_CoreEventCodeLists
+Id: MedCom-xds-core-eventcodelist-VS
 Title: "IHE EventCodeLists"
 Description: "ValueSet containing EventCodeLists."
 * ^experimental = true
@@ -35,7 +35,7 @@ Description: "ValueSet containing EventCodeLists."
 
 
 /* 
-ValueSet: MedComIHE_APDDkEventCodeLists
+ValueSet: MedCom_XDS_APDDkEventCodeLists
 Id: MedCom-dk-ihe-apd-eventcodelist-VS
 Title: "APD-DK IHE EventCodeLists"
 Description: "APD-DK: Event codes used in DK IHE Document sharing. The codes for Documenttype PHMR shall be selected NPU codes used in the Danish health care systems. http://www.labterm.dk/ https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/om-terminologi/npu. The codes for episode of care shall be selected SKS used in the Danish health care systems"
@@ -52,7 +52,7 @@ Description: "APD-DK: Event codes used in DK IHE Document sharing. The codes for
 * $SKSOID#ALAL51 "Graviditet, fødsel og barsel"
 * $SKSOID#ALAL52 "Nyfødte"
 
-ValueSet: MedComIHE_PHADDkEventCodeLists
+ValueSet: MedCom_XDS_PHADDkEventCodeLists
 Id: MedCom-dk-ihe-phad-eventcodelist-VS
 Title: "PHAD-DK IHE EventCodeLists"
 Description: "PHAD-DK: Event codes used in DK IHE Document sharing. The codes for Documenttype PHMR shall be selected NPU codes used in the Danish health care systems. http://www.labterm.dk/ https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/om-terminologi/npu. The codes for episode of care shall be selected SKS used in the Danish health care systems"
@@ -62,7 +62,7 @@ Description: "PHAD-DK: Event codes used in DK IHE Document sharing. The codes fo
 * ^date = "2021-01-01"
 * $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
 
-ValueSet: MedComIHE_QRDDkEventCodeLists
+ValueSet: MedCom_XDS_QRDDkEventCodeLists
 Id: MedCom-dk-ihe-qrd-prodk-questionnaire-VS
 Title: "QRD-DK IHE EventCodeLists"
 Description: "QRD-DK: Event codes used in DK IHE Document sharing. The codes for Documenttype PHMR shall be selected NPU codes used in the Danish health care systems. http://www.labterm.dk/ https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/om-terminologi/npu. The codes for episode of care shall be selected SKS used in the Danish health care systems"
@@ -79,7 +79,7 @@ Description: "QRD-DK: Event codes used in DK IHE Document sharing. The codes for
 * $SKSOID#ALAL51 "Graviditet, fødsel og barsel"
 * $SKSOID#ALAL52 "Nyfødte"
 
-ValueSet: MedComIHE_HCODkEventCodeLists
+ValueSet: MedCom_XDS_HCODkEventCodeLists
 Id: MedCom-dk-ihe-hco-eventcodelist-VS
 Title: "HCO-DK IHE EventCodeLists"
 Description: "HCO-DK: Event codes used in DK IHE Document sharing. The codes for Documenttype PHMR shall be selected NPU codes used in the Danish health care systems. http://www.labterm.dk/ https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/om-terminologi/npu. The codes for episode of care shall be selected SKS used in the Danish health care systems"

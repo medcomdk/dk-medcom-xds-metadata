@@ -1,6 +1,6 @@
-CodeSystem: MedComIHE_ClassCode
-Id: MedCom-ihe-classcode-CS
-Title: "DK IHE ClassCode"
+CodeSystem: MedCom_XDS_ClassCode
+Id: MedCom-xds-classcode-CS
+Title: "MedCom XDS ClassCode"
 Description: "CodeSystem for ClassCode"
 * ^experimental = true
 * ^version = "1.0.0"

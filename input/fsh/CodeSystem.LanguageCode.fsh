@@ -1,5 +1,5 @@
-/* CodeSystem: MedComIHE_IdentificationOfLanguages
-Id: MedCom-ihe-LanguageCode-CS
+/* CodeSystem: MedCom_XDS_IdentificationOfLanguages
+Id: MedCom-xds-LanguageCode-CS
 Title: "Identification of Languages"
 Description: "Tags for the Identification of Languages"
 * ^experimental = true

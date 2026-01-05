@@ -1,5 +1,5 @@
-ValueSet: MedComIHE_CoreFormatCode
-Id: MedCom-ihe-core-formatcode-VS
+ValueSet: MedCom_XDS_CoreFormatCode
+Id: MedCom-xds-core-formatcode-VS
 Title: "IHE FormatCode"
 Description: "ValueSet containing FormatCode."
 * ^experimental = true
@@ -9,8 +9,8 @@ Description: "ValueSet containing FormatCode."
 * include codes from system MedCom-ihe-formatcode-CS
 
 
-/* ValueSet: MedComIHE_APDDkFormatCode
-Id: MedCom-ihe-apd-formatcode-VS
+/* ValueSet: MedCom_XDS_APDDkFormatCode
+Id: MedCom-xds-apd-formatcode-VS
 Title: "APD-DK IHE FormatCode"
 Description: "APD-DK: Code system for document format code used in national Document sharing. The value set for format code is based on code system DK_IHE_FormatCode. New formatCode will be added, when created."
 * ^version = "1.0.0"
@@ -18,8 +18,8 @@ Description: "APD-DK: Code system for document format code used in national Docu
 * ^date = "2020-05-16"
 * $MedComFormatOID#urn:ad:dk:medcom:apd-v2.0.1:full // "DK APD schema" //12-05-2020
 
-ValueSet: MedComIHE_PHADDkFormatCode
-Id: MedCom-ihe-phad-formatcode-VS
+ValueSet: MedCom_XDS_PHADDkFormatCode
+Id: MedCom-xds-phad-formatcode-VS
 Title: "PHAD-DK IHE FormatCode"
 Description: "PHAD-DK: Code system for document format code used in national Document sharing. The value set for format code is based on code system DK_IHE_FormatCode. New formatCode will be added, when created."
 * ^version = "1.0.0"
@@ -27,8 +27,8 @@ Description: "PHAD-DK: Code system for document format code used in national Doc
 * ^date = "2024-01-01"
 * $MedComFormatOID#urn:ad:dk:medcom:phad-v1.0:full // "DK CPD schema" //12-05-2020
 
-ValueSet: MedComIHE_QRDDkFormatCode
-Id: MedCom-ihe-qrd-formatcode-VS
+ValueSet: MedCom_XDS_QRDDkFormatCode
+Id: MedCom-xds-qrd-formatcode-VS
 Title: "QRD-DK IHE FormatCode"
 Description: "QRD-DK: Code system for document format code used in national Document sharing. The value set for format code is based on code system DK_IHE_FormatCode. New formatCode will be added, when created."
 * ^version = "1.0.0"
@@ -39,8 +39,8 @@ Description: "QRD-DK: Code system for document format code used in national Docu
 * $MedComFormatOID#urn:ad:dk:medcom:qrd-v1.3:full // "DK QRD schema" //11-02-2022 
 */
 
-ValueSet: MedComIHE_PLR_DK_FormatCode
-Id: MedCom-ihe-plr-formatcode-VS
+ValueSet: MedCom_XDS_PLR_DK_FormatCode
+Id: MedCom-xds-plr-formatcode-VS
 Title: "PLR-DK IHE FormatCode"
 Description: "PLR-DK: Code system for document format code used in national Document sharing. The value set for format code is based on code system DK_IHE_FormatCode."
 * ^version = "1.0.0"

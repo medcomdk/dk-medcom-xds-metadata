@@ -1,6 +1,6 @@
-CodeSystem: MedComIHE_FormatCode
-Id: MedCom-ihe-formatcode-CS
-Title: "DK IHE FormatCode"
+CodeSystem: MedCom_XDS_FormatCode
+Id: MedCom-xds-formatcode-CS
+Title: "MedCom XDS FormatCode"
 Description: "CodeSystem for FormatCode"
 * ^experimental = true
 * ^version = "1.0.0"
@@ -35,3 +35,10 @@ Description: "CodeSystem for FormatCode"
 * #urn:ad:dk:medcom:pscr-v1.0:full "DK PSCR schema"
 * #urn:ad:dk:medcom:pmr-v1.0:full "DK PMR schema"
 * #urn:ad:dk:medcom:msg:hco-v1.1:full "DK HCO message"
+* #urn:ad:dk:medcom:prf-v2.0:full "DK PRF schema"
+* #urn:ad:dk:medcom:pscr-v2.0:full "DK PSCR schema"
+* #urn:ad:dk:medcom:pmr-v2.0:full "DK PMR schema"
+* #urn:ad:dk:medcom:phmr-v2.1:full "DK PHMR schema"
+* #urn:ad:dk:medcom:prf-v3.0:full "DK PRF schema"
+* #urn:ad:dk:medcom:phn-v1.0:full "DK Patient’s Home Note"
+* #urn:ad:dk:medcom:hcom-v1.0:full "DK HomeCareObservation message

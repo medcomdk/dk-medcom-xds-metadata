@@ -1,5 +1,5 @@
-/* ValueSet: MedComIHE_CoreHomeCommunityId
-Id: MedCom-ihe-core-homeCommunityId-VS
+/* ValueSet: MedCom_XDS_CoreHomeCommunityId
+Id: MedCom-xds-core-homeCommunityId-VS
 Title: "IHE HomeCommunityId"
 Description: "List of operational and in production home communities (XCA) in Danish Document Sharing"
 * ^experimental = true
@@ -13,8 +13,8 @@ Description: "List of operational and in production home communities (XCA) in Da
 * $DanishxdsOID#1.2.208.176.43210.8.50 "STAGING"
 * $DanishxdsOID#1.2.208.176.8.1 "PROD" */
 
-ValueSet: MedComIHE_CoreDkHomeCommunityId
-Id: MedCom-ihe-core-homeCommunityId-VS
+ValueSet: MedCom_XDS_CoreDkHomeCommunityId
+Id: MedCom-xds-core-homeCommunityId-VS
 Title: "IHE HomeCommunityId"
 Description: "List of operational and in production home communities (XCA) in Danish Document Sharing"
 * ^version = "1.0.0"
@@ -24,8 +24,8 @@ Description: "List of operational and in production home communities (XCA) in Da
 * $DanishxdsOID#1.2.208.193.100 "Primary healthcare domain"
 
 
-/* ValueSet: MedComIHE_APDDkHomeCommunityId
-Id: MedCom-ihe-apd-homeCommunityId-VS
+/* ValueSet: MedCom_XDS_APDDkHomeCommunityId
+Id: MedCom-xds-apd-homeCommunityId-VS
 Title: "APD-DK IHE HomeCommunityId"
 Description: "APD-DK: List of operational and in production home communities (XCA) in Danish Document Sharing"
 * ^version = "1.0.0"
@@ -35,8 +35,8 @@ Description: "APD-DK: List of operational and in production home communities (XC
 * $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
 * $DanishxdsOID#1.2.208.176.8.1 "PROD"
 
-ValueSet: MedComIHE_PHADDkHomeCommunityId
-Id: MedCom-ihe-phad-homeCommunityId-VS
+ValueSet: MedCom_XDS_PHADDkHomeCommunityId
+Id: MedCom-xds-phad-homeCommunityId-VS
 Title: "PHAD-DK IHE HomeCommunityId"
 Description: "PHAD-DK: List of operational and in production home communities (XCA) in Danish Document Sharing"
 * ^version = "1.0.0"
@@ -46,8 +46,8 @@ Description: "PHAD-DK: List of operational and in production home communities (X
 * $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
 * $DanishxdsOID#1.2.208.176.8.1 "PROD"
 
-ValueSet: MedComIHE_QRDDkHomeCommunityId
-Id: MedCom-ihe-qrd-homeCommunityId-VS
+ValueSet: MedCom_XDS_QRDDkHomeCommunityId
+Id: MedCom-xds-qrd-homeCommunityId-VS
 Title: "QRD-DK IHE HomeCommunityId"
 Description: "QRD-DK: List of operational and in production home communities (XCA) in Danish Document Sharing"
 * ^version = "1.0.0"
@@ -57,8 +57,8 @@ Description: "QRD-DK: List of operational and in production home communities (XC
 * $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
 * $DanishxdsOID#1.2.208.176.8.1 "PROD"
 
-ValueSet: MedComIHE_HCODkHomeCommunityId
-Id: MedCom-ihe-hco-homeCommunityId-VS
+ValueSet: MedCom_XDS_HCODkHomeCommunityId
+Id: MedCom-xds-hco-homeCommunityId-VS
 Title: "HCO-DK IHE HomeCommunityId"
 Description: "HCO-DK: List of operational and in production home communities (XCA) in Danish Document Sharing"
 * ^version = "1.0.0"

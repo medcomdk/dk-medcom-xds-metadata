@@ -1,5 +1,5 @@
-ValueSet: MedComIHE_CoreMimeType_CDA
-Id: MedCom-ihe-core-mimetype-cda-VS
+ValueSet: MedCom_XDS_CoreMimeType_CDA
+Id: MedCom-xds-core-mimetype-cda-VS
 Title: "IHE MimeType"
 Description: "Values for the document metadata attribute mimeType"
 * ^experimental = true
@@ -8,8 +8,8 @@ Description: "Values for the document metadata attribute mimeType"
 * ^date = "2015-01-04"
 * $IANAMediaOID#text/xml "MimeType-text/xml"
 
-ValueSet: MedComIHE_CoreMimeType_FHIR
-Id: MedCom-ihe-core-mimetype-fhir-VS
+ValueSet: MedCom_XDS_CoreMimeType_FHIR
+Id: MedCom-xds-core-mimetype-fhir-VS
 Title: "IHE MimeType for FHIR documents"
 Description: "Values for the document metadata attribute mimeType"
 * ^experimental = true
@@ -21,21 +21,21 @@ Description: "Values for the document metadata attribute mimeType"
 //* $IANAMediaOID#"All Mime Media Types" "MimeType-text/subType-text"
 
 /*
-ValueSet: MedComIHE_APDDkMimeType
-Id: MedCom-ihe-apd-mimetype-VS
+ValueSet: MedCom_XDS_APDDkMimeType
+Id: MedCom-xds-apd-mimetype-VS
 Title: "APD-DK IHE MimeType"
 Description: "APD-DK: Values for the document metadata attribute mimeType"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-04"
-* include codes from system MedComIHE_MediaTypes
+* include codes from system MedCom_XDS_MediaTypes
 
-ValueSet: MedComIHE_QRDDkMimeType
-Id: MedCom-ihe-qrd-mimetype-VS
+ValueSet: MedCom_XDS_QRDDkMimeType
+Id: MedCom-xds-qrd-mimetype-VS
 Title: "ARD-DK IHE MimeType"
 Description: "QRD-DK: Values for the document metadata attribute mimeType"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-04"
-* include codes from system MedComIHE_MediaTypes
+* include codes from system MedCom_XDS_MediaTypes
 */

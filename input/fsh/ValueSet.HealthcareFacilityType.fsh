@@ -1,5 +1,5 @@
-ValueSet: MedComIHE_CoreHealthcareFacilityTypeCode
-Id: MedCom-ihe-core-HealthcareFacilityTypeCode-VS
+ValueSet: MedCom_XDS_CoreHealthcareFacilityTypeCode
+Id: MedCom-xds-core-HealthcareFacilityTypeCode-VS
 Title: "IHE HealthcareFacilityTypeCode"
 Description: "Value set for healthcare facility type code represents the type of organizational setting of the clinical encounter during which the documented act occurred."
 * ^experimental = true
@@ -73,8 +73,8 @@ Description: "Value set for healthcare facility type code represents the type of
 * $SnomedctOID#550811000005108 "administrativ enhed" 
 
 
-/* ValueSet: MedComIHE_APDDkHealthcareFacilityTypeCode
-Id: MedCom-ihe-apd-HealthcareFacilityTypeCode-VS
+/* ValueSet: MedCom_XDS_APDDkHealthcareFacilityTypeCode
+Id: MedCom-xds-apd-HealthcareFacilityTypeCode-VS
 Title: "APD-DK IHE HealthcareFacilityTypeCode"
 Description: "APD-DK: ValueSet containing HealthcareFacilityTypeCode."
 * ^experimental = true
@@ -146,8 +146,8 @@ Description: "APD-DK: ValueSet containing HealthcareFacilityTypeCode."
 * $SnomedctOID#554231000005106 "vaccinationsklinik"
 * $SnomedctOID#554051000005108 "zoneterapiklinik"
 
-ValueSet: MedComIHE_QRDDkHealthcareFacilityTypeCode
-Id: MedCom-ihe-qrd-HealthcareFacilityTypeCode-VS
+ValueSet: MedCom_XDS_QRDDkHealthcareFacilityTypeCode
+Id: MedCom-xds-qrd-HealthcareFacilityTypeCode-VS
 Title: "QRD-DK IHE HealthcareFacilityTypeCode"
 Description: "QRD-DK: ValueSet containing HealthcareFacilityTypeCode."
 * ^experimental = true
