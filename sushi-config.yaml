@@ -4,7 +4,7 @@ name: Terminology for XDS Metadata
 title: Dk Terminology for XDS Metadata
 description: MedCom Terminology for XDS Metadata
 status: active # draft | active | retired | unknown
-version: 1.0.1
+version: 2.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -14,7 +14,7 @@ publisher:
 
 parameters:
   show-inherited-invariants: false
-  special-url: [urn:oid:1.2.208.184.100.9, urn:oid:2.16.840.1.113883.6.96, urn:oid:2.16.840.1.113883.6.1, urn:oid:1.2.208.184.100.1, urn:oid:1.2.208.176.2.4, urn:oid:1.2.208.176.2.1, urn:oid:1.2.208.176.7.3.1, urn:oid:1.2.208.184.100.10, urn:oid:1.2.208.176.8.1, urn:oid:2.16.840.1.113883.6.121, urn:oid:2.16.840.1.113883.5.79]
+  special-url: [urn:oid:1.2.208.184.100.9, urn:oid:2.16.840.1.113883.6.96, urn:ad:dk:medcom:noah:action-categories, urn:oid:1.2.208.184.100.8, urn:oid:2.16.840.1.113883.6.1, urn:oid:1.2.208.184.100.1, urn:oid:1.2.208.176.2.4, urn:oid:1.2.208.176.2.1, urn:oid:1.2.208.176.7.3.1, urn:oid:1.2.208.184.100.10, urn:oid:1.2.208.176.8.1, urn:oid:2.16.840.1.113883.6.121, urn:oid:2.16.840.1.113883.5.79]
   apply-version: false
   default-version: true
 

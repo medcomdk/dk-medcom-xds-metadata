@@ -20,9 +20,9 @@ Description: "List of operational and in production home communities (XCA) in Da
 * ^experimental = false
 * ^version = "1.0.2"
 * ^status = #active
-* ^date = "2026-01-01"
-* $DanishHomeCommunityOID#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
-* $DanishPrimaryHealthcareDomainOID#1.2.208.193.100 "Primary healthcare domain"
+* ^date = "2020-08-21"
+* MedComIHE_HomeCommunityId#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
+* MedComIHE_HomeCommunityId#1.2.208.193.100 "Primary healthcare domain"
 
 
 /* ValueSet: MedComIHE_APDDkHomeCommunityId
