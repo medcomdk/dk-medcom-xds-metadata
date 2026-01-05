@@ -25,13 +25,6 @@ Description: "ValueSet containing EventCodeLists."
 * $NPUOID#DNK05472 "Arm—Blodtryk(systolisk); tryk = ? mmHg"
 * $NPUOID#DNK05473 "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
 * $NPUOID#NPU21692 "Hjerte—Systole; frekv. = ? × 1/min"
-* MedCom-ihe-measurement-codes-CS-subset#MCS88100 "Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L"
-* MedCom-ihe-measurement-codes-CS-subset#MCS88015 "Lunge—Lungefunktionsundersøgelse FEV1; vol. = ? L"
-* MedCom-ihe-measurement-codes-CS-subset#MCS88019 "Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg"
-* MedCom-ihe-measurement-codes-CS-subset#MCS88020 "Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg"
-* MedCom-ihe-measurement-codes-CS-subset#MCS88050	"Pt—Rejse sætte sig testen; antal (værdi 0-50) = × 1/30s"
-* MedCom-ihe-measurement-codes-CS-subset#MCS88137	"Pt—COPD Assessment Test (CAT) score; antal(værdi 0-40) = ?"
-* MedCom-ihe-measurement-codes-CS-subset#MCS88021	"Pt(KOL) —MRC skala; arb.antal(værdi 1-5) = ?"
 * urn:oid:1.2.208.184.100.8#MCS88100 "Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L"
 * urn:oid:1.2.208.184.100.8#MCS88015 "Lunge—Lungefunktionsundersøgelse FEV1; vol. = ? L"
 * $hoer#1 "Audiogram"
@@ -41,11 +34,11 @@ Description: "ValueSet containing EventCodeLists."
 * $hoer#130 "Hearing Instrument Selection (right ear)"
 
 
- 
-ValueSet: MedComIHE_EpisodeOfCare_EventCodeList
-Id: MedCom-dk-ihe-episodepfcare-eventcodelist-VS
-Title: "Danish episode of care EventCodeLists"
-Description: "Danish episode of care: Event codes used in DK IHE Document sharing. The codes for Documenttype PHMR shall be selected NPU codes used in the Danish health care systems. http://www.labterm.dk/ https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/om-terminologi/npu. The codes for episode of care shall be selected SKS used in the Danish health care systems"
+/* 
+ValueSet: MedComIHE_APDDkEventCodeLists
+Id: MedCom-dk-ihe-apd-eventcodelist-VS
+Title: "APD-DK IHE EventCodeLists"
+Description: "APD-DK: Event codes used in DK IHE Document sharing. The codes for Documenttype PHMR shall be selected NPU codes used in the Danish health care systems. http://www.labterm.dk/ https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/om-terminologi/npu. The codes for episode of care shall be selected SKS used in the Danish health care systems"
 * ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
@@ -58,31 +51,16 @@ Description: "Danish episode of care: Event codes used in DK IHE Document sharin
 * $SKSOID#ALAL23 "Osteoporose"
 * $SKSOID#ALAL51 "Graviditet, fødsel og barsel"
 * $SKSOID#ALAL52 "Nyfødte"
-/*
-ValueSet: MedComIHE_PHMR_EventCodeLists
-Id: MedCom-dk-ihe-phmr-eventcodelist-VS
-Title: "PHMR-DK IHE EventCodeLists"
-Description: "PHMR-DK: Event codes used in DK IHE Document sharing. The codes for Documenttype PHMR shall be selected NPU codes used in the Danish health care systems. http://www.labterm.dk/ https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/om-terminologi/npu. The codes for episode of care shall be selected SKS used in the Danish health care systems"
+
+ValueSet: MedComIHE_PHADDkEventCodeLists
+Id: MedCom-dk-ihe-phad-eventcodelist-VS
+Title: "PHAD-DK IHE EventCodeLists"
+Description: "PHAD-DK: Event codes used in DK IHE Document sharing. The codes for Documenttype PHMR shall be selected NPU codes used in the Danish health care systems. http://www.labterm.dk/ https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/om-terminologi/npu. The codes for episode of care shall be selected SKS used in the Danish health care systems"
 * ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
-* ^date = "2024-11-28"
-* MedCom-ihe-npu-codes-CS-subset#NPU03804 "Pt—Legeme; masse = ? kg"
-* MedCom-ihe-npu-codes-CS-subset#NPU19748 "P—C-reaktivt protein; massek. = ? mg/L"
-* MedCom-ihe-npu-codes-CS-subset#NPU22089 "P(kB)—Glucose; stofk. = ? mmol/L"
-* MedCom-ihe-npu-codes-CS-subset#NPU03963 "U—Erythrocytter; arb.k.(proc.) = ?"
-* MedCom-ihe-npu-codes-CS-subset#DNK05472 "Arm—Blodtryk(systolisk); tryk = ? mmHg"
-* MedCom-ihe-npu-codes-CS-subset#DNK05473 "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
-* MedCom-ihe-npu-codes-CS-subset#NPU21692 "Hjerte—Systole; frekv. = ? × 1/min"
-* MedCom-ihe-npu-codes-CS-subset#NPU03011 "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"
-* MedCom-ihe-npu-codes-CS-subset#NPU27281 "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"
-* MedCom-ihe-measurement-codes-CS-subset#MCS88100 "Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L"
-* MedCom-ihe-measurement-codes-CS-subset#MCS88015 "Lunge—Lungefunktionsundersøgelse FEV1; vol. = ? L"
-* MedCom-ihe-measurement-codes-CS-subset#MCS88019 "Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg"
-* MedCom-ihe-measurement-codes-CS-subset#MCS88020 "Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg"
-* MedCom-ihe-measurement-codes-CS-subset#MCS88050	"Pt—Rejse sætte sig testen; antal (værdi 0-50) = × 1/30s"
-* MedCom-ihe-measurement-codes-CS-subset#MCS88137	"Pt—COPD Assessment Test (CAT) score; antal(værdi 0-40) = ?"
-* MedCom-ihe-measurement-codes-CS-subset#MCS88021	"Pt(KOL) —MRC skala; arb.antal(værdi 1-5) = ?"
+* ^date = "2021-01-01"
+* $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
 
 ValueSet: MedComIHE_QRDDkEventCodeLists
 Id: MedCom-dk-ihe-qrd-prodk-questionnaire-VS
