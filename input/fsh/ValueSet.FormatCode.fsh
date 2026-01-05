@@ -1,6 +1,6 @@
-ValueSet: MedCom_XDS_CoreFormatCode
+ValueSet: MedCom_XDS_FormatCode
 Id: MedCom-xds-formatcode-VS
-Title: "IHE FormatCode"
+Title: "MedCom XDS  XDS FormatCode"
 Description: "ValueSet containing FormatCode."
 * ^experimental = true
 * ^version = "1.0.0"
@@ -39,6 +39,7 @@ Description: "QRD-DK: Code system for document format code used in national Docu
 * $MedComFormatOID#urn:ad:dk:medcom:qrd-v1.3:full // "DK QRD schema" //11-02-2022 
 */
 
+/*
 ValueSet: MedCom_XDS_PLR_DK_FormatCode
 Id: MedCom-xds-plr-formatcode-VS
 Title: "PLR-DK IHE FormatCode"
@@ -47,3 +48,4 @@ Description: "PLR-DK: Code system for document format code used in national Docu
 * ^status = #active
 * ^date = "2025-03-01"
 * $MedComFormatOID#urn:ad:dk:medcom:plr-v1.0:full
+*/

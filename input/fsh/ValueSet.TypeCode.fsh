@@ -1,4 +1,4 @@
-ValueSet: MedCom_XDS_CoreTypeCode
+ValueSet: MedCom_XDS_TypeCode
 Id: MedCom-xds-typecode-VS
 Title: "MedCom XDS TypeCode ValueSet"
 Description: "ValueSet containing TypeCode."

@@ -1,6 +1,6 @@
-ValueSet: MedCom_XDS_CoreMimeType_CDA
+ValueSet: MedCom_XDS_MimeType_CDA
 Id: MedCom-xds-mimetype-cda-VS
-Title: "IHE MimeType"
+Title: "MedCom XDS  XDS MimeType"
 Description: "Values for the document metadata attribute mimeType"
 * ^experimental = true
 * ^version = "1.0.0"
@@ -8,9 +8,9 @@ Description: "Values for the document metadata attribute mimeType"
 * ^date = "2015-01-04"
 * $IANAMediaOID#text/xml "MimeType-text/xml"
 
-ValueSet: MedCom_XDS_CoreMimeType_FHIR
+ValueSet: MedCom_XDS_MimeType_FHIR
 Id: MedCom-xds-mimetype-fhir-VS
-Title: "IHE MimeType for FHIR documents"
+Title: "MedCom XDS  XDS MimeType for FHIR documents"
 Description: "Values for the document metadata attribute mimeType"
 * ^experimental = true
 * ^version = "1.0.0"
