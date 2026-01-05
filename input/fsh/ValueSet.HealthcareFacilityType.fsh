@@ -1,5 +1,5 @@
 ValueSet: MedCom_XDS_CoreHealthcareFacilityTypeCode
-Id: MedCom-xds-core-HealthcareFacilityTypeCode-VS
+Id: MedCom-xds-HealthcareFacilityTypeCode-VS
 Title: "IHE HealthcareFacilityTypeCode"
 Description: "Value set for healthcare facility type code represents the type of organizational setting of the clinical encounter during which the documented act occurred."
 * ^experimental = true

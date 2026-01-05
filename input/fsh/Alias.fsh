@@ -1,4 +1,4 @@
-Alias: $DanishiheOID = urn:oid:1.2.208.184.100.9
+Alias: $DanishXdsOID = urn:oid:1.2.208.184.100.9
 Alias: $SnomedctOID = http://snomed.info/sct //urn:oid:2.16.840.1.113883.6.96
 Alias: $LoincOID = http://loinc.org //urn:oid:2.16.840.1.113883.6.1
 Alias: $MedComOID = urn:oid:1.2.208.184.100.1 
