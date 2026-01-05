@@ -1,4 +1,4 @@
-CodeSystem: MedCom_XDS_ClassCode
+CodeSystem: MedCom_XDS_ClassCode_CS
 Id: MedCom-xds-classcode-CS
 Title: "MedCom XDS ClassCode"
 Description: "CodeSystem for ClassCode"

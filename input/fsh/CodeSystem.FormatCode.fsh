@@ -1,4 +1,4 @@
-CodeSystem: MedCom_XDS_FormatCode
+CodeSystem: MedCom_XDS_FormatCode_CS
 Id: MedCom-xds-formatcode-CS
 Title: "MedCom XDS FormatCode"
 Description: "CodeSystem for FormatCode"

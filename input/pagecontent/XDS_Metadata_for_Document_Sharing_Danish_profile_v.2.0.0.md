@@ -1549,7 +1549,7 @@ This unique identifier **MAY** be used in other documents to reference this docu
 The format of the DocumentEntry.uniqueId value is OID. Coded as an ebRIM ExternalIdentifier which references, and is contained in, the ExtrinsicObject representing the DocumentEntry. There **SHALL** be only a single uniqueId value.
 
 **FHIR Reference:**
-[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#uniqueId)
+[Link to FHIR Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html#uniqueid)
 
 **CDA Reference:**
 [Link to CDA Reference][Link to CDA Reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html#uniqueid)
@@ -1596,7 +1596,7 @@ The value is coded within a single ebRIM ExternalIdentifier element which refere
 The following example shows a uniqueId of 1.2.208.184.
 
 **ebXML example:**
-[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#submissionset.uniqueid)
+[Link to ebXML example](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#submissionsetuniqueid)
         
         <rim:ExternalIdentifier  
          identificationScheme="urn:uuid:96fdda7c-d067-4183-912e-bf5ee74998a8"   
