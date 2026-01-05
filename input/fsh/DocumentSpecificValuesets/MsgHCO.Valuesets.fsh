@@ -27,5 +27,4 @@ Description: "HCO-DK: Code system for document format code used in national Docu
 * ^status = #active
 * ^date = "2020-05-16"
 * $MedComFormatOID#urn:ad:dk:medcom:pdd-v1.0.1:full // "DK PDD document" // Danish XDS typecode must be updated
-
 */
