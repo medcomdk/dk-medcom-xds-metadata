@@ -1,6 +1,6 @@
  ValueSet: MedCom_XDS_EventCodeLists
 Id: MedCom-xds-eventcodelist-VS
-Title: "MedCom XDS  XDS EventCodeLists"
+Title: "MedCom XDS EventCodeLists"
 Description: "ValueSet containing EventCodeLists."
 * ^experimental = true
 * ^version = "1.0.0"

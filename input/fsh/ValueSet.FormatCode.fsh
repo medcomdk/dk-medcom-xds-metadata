@@ -1,6 +1,6 @@
 ValueSet: MedCom_XDS_FormatCode
 Id: MedCom-xds-formatcode-VS
-Title: "MedCom XDS  XDS FormatCode"
+Title: "MedCom XDS FormatCode"
 Description: "ValueSet containing FormatCode."
 * ^experimental = true
 * ^version = "1.0.0"

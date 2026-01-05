@@ -1,6 +1,6 @@
 ValueSet: MedCom_XDS_LanguageCode
 Id: MedCom-xds-languagecode-VS
-Title: "MedCom XDS  XDS LanguageCode"
+Title: "MedCom XDS LanguageCode"
 Description: "Tags for the Identification of Languages (RFC 3066)"
 * ^experimental = true
 * ^version = "1.0.0"

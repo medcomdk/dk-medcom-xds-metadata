@@ -1,6 +1,6 @@
 /* ValueSet: MedCom_XDS_HomeCommunityId
 Id: MedCom-xds-homeCommunityId-VS
-Title: "MedCom XDS  XDS HomeCommunityId"
+Title: "MedCom XDS HomeCommunityId"
 Description: "List of operational and in production home communities (XCA) in Danish Document Sharing"
 * ^experimental = true
 * ^version = "1.0.0"
@@ -15,7 +15,7 @@ Description: "List of operational and in production home communities (XCA) in Da
 
 ValueSet: MedCom_XDS_DkHomeCommunityId
 Id: MedCom-xds-homeCommunityId-VS
-Title: "MedCom XDS  XDS HomeCommunityId"
+Title: "MedCom XDS HomeCommunityId"
 Description: "List of operational and in production home communities (XCA) in Danish Document Sharing"
 * ^version = "1.0.0"
 * ^status = #active

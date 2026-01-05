@@ -1,3 +1,4 @@
+/*
 ValueSet: MedCom_XDS_MessageClassCode
 Id: MedCom-xds-message-classcode-VS
 Title: "MedCom_XDS_MessageClassCode"
@@ -27,3 +28,4 @@ Description: "HCO-DK: Code system for document format code used in national Docu
 * ^date = "2020-05-16"
 * $MedComFormatOID#urn:ad:dk:medcom:pdd-v1.0.1:full // "DK PDD document" // Danish XDS typecode must be updated
 
+*/

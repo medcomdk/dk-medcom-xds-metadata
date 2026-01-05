@@ -1,6 +1,6 @@
 ValueSet: MedCom_XDS_ClassCode
 Id: MedCom-xds-classcode-VS
-Title: "MedCom XDS  XDS ClassCode"
+Title: "MedCom XDS ClassCode"
 Description: "Value set for the classCode attribute. classCode used in DK IHE Document sharing"
 * ^experimental = true
 * ^version = "1.0.0"

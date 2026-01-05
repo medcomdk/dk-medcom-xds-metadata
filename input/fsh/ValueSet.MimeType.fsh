@@ -1,6 +1,6 @@
 ValueSet: MedCom_XDS_MimeType_CDA
 Id: MedCom-xds-mimetype-cda-VS
-Title: "MedCom XDS  XDS MimeType"
+Title: "MedCom XDS MimeType"
 Description: "Values for the document metadata attribute mimeType"
 * ^experimental = true
 * ^version = "1.0.0"
@@ -10,7 +10,7 @@ Description: "Values for the document metadata attribute mimeType"
 
 ValueSet: MedCom_XDS_MimeType_FHIR
 Id: MedCom-xds-mimetype-fhir-VS
-Title: "MedCom XDS  XDS MimeType for FHIR documents"
+Title: "MedCom XDS MimeType for FHIR documents"
 Description: "Values for the document metadata attribute mimeType"
 * ^experimental = true
 * ^version = "1.0.0"
