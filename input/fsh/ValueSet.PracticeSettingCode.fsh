@@ -5,7 +5,7 @@ Description: "Values used for the document metadata attribute practiceSettingCod
 * ^experimental = false
 * ^version = "1.0.1"
 * ^status = #active
-* ^date = "20-06-2024"
+* ^date = "2024-06-20"
 * $SnomedctOID#773568002 "akutmedicin"
 * $SnomedctOID#408443003 "almen medicin"
 * $SnomedctOID#394577000 "anæstesiologi"
