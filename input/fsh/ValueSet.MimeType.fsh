@@ -6,9 +6,9 @@ Description: "Values for the document metadata attribute mimeType"
 * ^version = "1.0.2"
 * ^status = #active
 * ^date = "2015-01-04"
-* $IANAMediaOID#text/xml "XML Text"
-* $IANAMediaOID#application/fhir+json "MimeType-application/fhir+json"
-* $IANAMediaOID#application/fhir+xml "MimeType-application/fhir+xml"
+* $IANAMediaOID#text/xml "text/xml"
+* $IANAMediaOID#application/fhir+json "application/fhir+json"
+* $IANAMediaOID#application/fhir+xml "application/fhir+xml"
 
 /* ValueSet: MedComIHE_CoreMimeType_FHIR
 Id: MedCom-ihe-core-mimetype-fhir-VS
