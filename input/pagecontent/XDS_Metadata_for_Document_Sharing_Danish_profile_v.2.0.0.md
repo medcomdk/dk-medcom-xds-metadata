@@ -12,7 +12,7 @@
 |---|---|---|---|
 | 0.96    | 01-01-2018 | Thor Schliemann, Danish Health Data Authority | Revisions of initial version                                                                 |
 | 1.0.0   | 04-04-2024 | Ole Vilstrup Møller. MedCom                   | Revisions regarding further use of code systems added. Added MedCom logo and responsibility. |
-| 1.0.1   | Ole Vilstrup Møller. MedCom                   | 25-06-2025 | Revision of author.authorperson requirements. Now “R2” in both “Table 1. Metadata Attributes optionality and sources”. and concrete description in chapter 2.2.1.2. Before confusingly “R2” in the table and “R” in 2.2.1.2. A few typos.  |
+| 1.0.1   | 25-06-2025 | Ole Vilstrup Møller. MedCom                   |  Revision of author.authorperson requirements. Now “R2” in both “Table 1. Metadata Attributes optionality and sources”. and concrete description in chapter 2.2.1.2. Before confusingly “R2” in the table and “R” in 2.2.1.2. A few typos.  |
 | 2.0.0   | 01-01-2026 | Ole Vilstrup Møller. MedCom                   | Revisions regarding version 2.0.0 |
 
 # Introduction
