@@ -19,7 +19,7 @@ Title: "MedCom XDS HomeCommunityId"
 Description: "List of operational and in production home communities (XCA) in Danish Document Sharing"
 * ^version = "1.0.0"
 * ^status = #active
-* ^date = "2016-11-01"
+* ^date = "2020-08-21"
 * $DanishxdsOID#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
 * $DanishxdsOID#1.2.208.193.100 "Primary healthcare domain"
 

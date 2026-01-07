@@ -5,9 +5,10 @@ Description: "CodeSystem for FormatCode"
 * ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
-* ^date = "2022-01-26"
+* ^date = "2026-01-15"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.184.100.10"
+* ^url = "urn:oid:1.2.208.184.100.10"
 * #urn:ad:dk:medcom:apd-v2.0.1:full "DK APD schema" /*12-05-2020*/
 * #urn:ad:dk:medcom:appointmentsummary:full "DK Appointment Summary Document schema" /*08-06-2016*/
 * #urn:ad:dk:medcom:cmr-v1.0:full "DK CMR schema" /*01-09-2021*/
@@ -42,3 +43,5 @@ Description: "CodeSystem for FormatCode"
 * #urn:ad:dk:medcom:prf-v3.0:full "DK PRF schema"
 * #urn:ad:dk:medcom:phn-v1.0:full "DK Patient’s Home Note"
 * #urn:ad:dk:medcom:hcom-v1.0:full "DK HomeCareObservation message"
+* #urn:ad:dk:medcom:ekg-v1.0:full "DK EKG schema"
+

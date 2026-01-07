@@ -1,4 +1,4 @@
-/* CodeSystem: MedCom_XDS_EpisodeOfCare
+CodeSystem: MedCom_XDS_EpisodeOfCare
 Id: MedCom-xds-episodeOfCare-CS
 Title: "MedCom XDS Episode of care label"
 Description: "CodeSystem for Danish episode of care - defined by SKS Danish Collection og codesystems"
@@ -8,6 +8,8 @@ Description: "CodeSystem for Danish episode of care - defined by SKS Danish Coll
 * ^date = "2021-01-01"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.176.2.4"
+* ^url = "urn:oid:1.2.208.176.2.4"
+* ^content = #fragment
 * #ALAL01 "Kræftsygdomme"
 * #ALAL02 "Hjertesygdomme"
 * #ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
@@ -27,6 +29,8 @@ Description: "CodeSystem for Danish NPU"
 * ^date = "2015-01-01"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.176.2.1"
+* ^url = "urn:oid:1.2.208.176.2.1"
+* ^content = #fragment
 * #NPU03804 "Pt—Legeme; masse = ? kg"
 * #NPU19748 "P—C-reaktivt protein; massek. = ? mg/L"
 * #NPU22089 "P(kB)—Glucose; stofk. = ? mmol/L"
@@ -44,9 +48,16 @@ Description: "CodeSystem for MedCom analysis codes"
 * ^status = #active
 * ^date = "2015-01-01"
 * ^caseSensitive = false
+* ^url = "urn:oid:1.2.208.184.100.8"
 * ^identifier.value = "1.2.208.184.100.8"
+* ^content = #fragment
 * #MCS88100 "Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L"
 * #MCS88015 "Lunge—Lungefunktionsundersøgelse FEV1; vol. = ? L"
+* #MCS88019 "Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg"
+* #MCS88020 "Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg"
+* #MCS88050	"Pt—Rejse sætte sig testen; antal (værdi 0-50) = × 1/30s"
+* #MCS88137	"Pt—COPD Assessment Test (CAT) score; antal(værdi 0-40) = ?"
+* #MCS88021	"Pt(KOL) —MRC skala; arb.antal(værdi 1-5) = ?"
 
 CodeSystem: MedCom_XDS_PRODKQuestionnaire
 Id: MedCom-xds-prodk-questionnaire-CS
@@ -58,6 +69,8 @@ Description: "Standards and profiles used for the Patient Reported Outcome (PRO)
 * ^date = "2022-08-31"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.176.7.3.1"
+* ^url = "urn:oid:1.2.208.176.7.3.1"
+* ^content = #fragment
 * #3d3d6f46-ea42-4d64-a2bb-52646dcd6513 "Psoriasis v.3"
 * #1de279ff-99fd-4544-9e41-300f56bc08e4 "Diabetes v.10"
 * #898cba44-c668-41e8-ac25-c2b880ac7090 "Hjerterehabilitering uddrag start v.3"

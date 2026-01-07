@@ -5,7 +5,7 @@ Description: "IHE XDS Affinity Domains who has agreed to share healthcare relate
 * ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
-* ^date = "2016-11-01"
+* ^date = "2020-08-21"
 * ^caseSensitive = false
 /* * #1.2.208.176.43210.8.10 "TEST1"
 * #1.2.208.176.43210.8.20 "TEST2"

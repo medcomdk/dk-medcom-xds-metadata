@@ -5,7 +5,7 @@ Description: "ValueSet containing FormatCode."
 * ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
-* ^date = "2022-01-26"
+* ^date = "2026-01-15"
 * include codes from system MedCom-xds-formatcode-CS
 
 
