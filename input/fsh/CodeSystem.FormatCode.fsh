@@ -9,14 +9,22 @@ Description: "CodeSystem for FormatCode"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.184.100.10"
 * ^url = "urn:oid:1.2.208.184.100.10"
+* ^property[+].code = #deprecationDate
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#deprecationDate"
+* ^property[=].description = "The date from which the concept is considered deprecated."
+* ^property[=].type = #dateTime 
 * #urn:ad:dk:medcom:apd-v2.0.1:full "DK APD schema" /*12-05-2020*/
 * #urn:ad:dk:medcom:appointmentsummary:full "DK Appointment Summary Document schema" /*08-06-2016*/
 * #urn:ad:dk:medcom:cmr-v1.0:full "DK CMR schema" /*01-09-2021*/
 * #urn:ad:dk:medcom:cpd-v1.0.1:full "DK CPD schema" /*29-11-2018*/
 * #urn:ad:dk:medcom:sds:cpd-v1.0.1:maternity "DK CPD schema for maternity" /*01-02-2022*/ /*toDate: 31-12-2023*/
+  * ^property[+].code = #deprecationDate
+  * ^property[=].valueDateTime = "2023-12-31"
 * #urn:ad:dk:medcom:labreports:svareksponeringsservice "Laboratoriesvar (samling af svar)" /*01-09-2016*/
 * #urn:ad:dk:medcom:pdc-v2.0:full "DK PDC schema" /*30-11-2019*/
 * #urn:ad:dk:medcom:phmr-v1.3:full "DK PHMR schema" /*31-03-2014*/
+  * ^property[+].code = #deprecationDate
+  * ^property[=].valueDateTime = "2025-05-13"
 * #urn:ad:dk:medcom:prvs-v1.0:full "DK PRVS schema" /*01-09-2021*/
 * #urn:ad:dk:medcom:qfdd-v1.1:full "DK QFDD schema" /*19-05-2015*/
 * #urn:ad:dk:medcom:qfdd-v1.2:full "DK QFDD schema" /*11-02-2022*/
@@ -33,10 +41,18 @@ Description: "CodeSystem for FormatCode"
 * #urn:ad:dk:medcom:nadf-v501:full "Noah Admittance format 501"
 * #urn:ad:dk:medcom:nhisf-v500:full "Noah Hearing Instrument Selection format 500"
 * #urn:ad:dk:medcom:prf-v1.0:full "DK PRF schema" /*11-07-2024*/
+  * ^property[+].code = #deprecationDate
+  * ^property[=].valueDateTime = "2025-12-01"
 * #urn:ad:dk:medcom:pscr-v1.0:full "DK PSCR schema"
+  * ^property[+].code = #deprecationDate
+  * ^property[=].valueDateTime = "2025-12-01"
 * #urn:ad:dk:medcom:pmr-v1.0:full "DK PMR schema"
+  * ^property[+].code = #deprecationDate
+  * ^property[=].valueDateTime = "2025-12-01"
 * #urn:ad:dk:medcom:msg:hco-v1.1:full "DK HCO message"
 * #urn:ad:dk:medcom:prf-v2.0:full "DK PRF schema"
+  * ^property[+].code = #deprecationDate
+  * ^property[=].valueDateTime = "2025-12-01"
 * #urn:ad:dk:medcom:pscr-v2.0:full "DK PSCR schema"
 * #urn:ad:dk:medcom:pmr-v2.0:full "DK PMR schema"
 * #urn:ad:dk:medcom:phmr-v2.1:full "DK PHMR schema"
