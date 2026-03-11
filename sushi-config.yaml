@@ -82,8 +82,9 @@ menu:
     DK XDS Metadata profile 1.0.0: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.0.0.html
     DK XDS Metadata profile 1.0.1: XDS_Metadata_for_Document_Sharing_Danish_profile_v.1.0.1.html
     DK XDS Metadata profile 2.0.0: XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0.html
-    DK XDS Metadata profile CDA example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html
-    DK XDS Metadata profile ebXML example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html
+    DK XDS Metadata profile 2.0.0 CDA example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html
+    DK XDS Metadata profile 2.0.0 FHIR example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html
+    DK XDS Metadata profile 2.0.0 ebXML example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html
   DK XDS Metadata Terminology: DK-IHE_Metadata-Value_sets.html
   Artifacts: artifacts.html
   More:
