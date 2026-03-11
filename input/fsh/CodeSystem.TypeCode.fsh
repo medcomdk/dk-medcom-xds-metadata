@@ -9,7 +9,7 @@ Description: "MedCom document type codes (Danish)"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.184.100.1"
 * ^url = "urn:oid:1.2.208.184.100.1"
-* ^content = #fragment* 
+//* ^content = #fragment* 
 * ^property[+].code = #deprecationDate
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#deprecationDate"
 * ^property[=].description = "The date from which the concept is considered deprecated."
