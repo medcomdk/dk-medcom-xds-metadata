@@ -17,3 +17,4 @@ Alias: $HcoEventCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-ih
 Alias: $HcoHomeCommunityID = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-hco-homeCommunityId-VS
 Alias: $HcoFormatCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-hco-formatcode-VS
 
+Alias: $MedComEventCodeOID = urn:oid:1.2.208.184.100.8
