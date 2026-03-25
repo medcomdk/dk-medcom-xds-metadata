@@ -6,7 +6,8 @@ Description: "Values for the document metadata attribute mimeType"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-04"
-* $IANAMediaOID#text/xml "MimeType-text/xml"
+* $IANAMediaOID#text/xml "XML Text"
+* $IANAMediaOID#application/cda+xml "MimeType-application/cda+xml"
 
 ValueSet: MedCom_XDS_MimeType_FHIR
 Id: MedCom-xds-mimetype-fhir-VS
