@@ -5,8 +5,8 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: medcom.dk.xdsmetadata
 canonical: http://medcomfhir.dk/ig/xdsmetadata
-name: Danish profile of the XDS Metadata Standard
-title: Danish profile of the XDS Metadata Standard
+name: Danish profile of the IHE XDS Metadata Standard
+title: Danish profile of the IHE XDS Metadata Standard
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
 version: 2.0.0
@@ -85,7 +85,7 @@ menu:
     DK XDS Metadata profile 2.0.0 CDA example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html
     DK XDS Metadata profile 2.0.0 FHIR example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html
     DK XDS Metadata profile 2.0.0 ebXML example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html
-  DK XDS Metadata Terminology: DK-IHE_Metadata-Value_sets.html
+  DK XDS Metadata Terminology: DK-XDS_Metadata-Value_sets.html
   Artifacts: artifacts.html
   More:
     Roadmap: roadmap.html
