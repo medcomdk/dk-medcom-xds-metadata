@@ -109,7 +109,7 @@ Table 2. OID used in IHE Metadata
 | **SOR** Register of Danish Health Organisations                                                         | 1.2.208.176.1.1         | Administered and owned by Sundhedsdatastyrelsen (Danish Health Data Authority)                                                     |
 | **Autorisationsregister **Registered health professionals in Denmark                                    | 1.2.208.176.1.3         | Administered by Sundhedsdatastyrelsen (Danish Health Data Authority) for the owner Danish Patient Safety Authority                 |
 | **Yderregister**  Health Provider register                                                              | 1.2.208.176.1.4         | Administered by Sundhedsdatastyrelsen (Danish Health Data Authority) for Danske Regioner (Danish Regions)                          |
-| DK IHE classCodes                                                                                       | 1.2.208.184.100.9       | Administered and owned by MedCom                                                                                                   |
+| DK XDS ClassCodes                                                                                       | 1.2.208.184.100.9       | Administered and owned by MedCom                                                                                                   |
 | DK IHE formatCodes                                                                                      | 1.2.208.184.100.10      | Administered and owned by MedCom                                                                                                   |
 | SNOMED CT E.g. used by healthCareFacilityCodes and practiceSettingCode                                  |  2.16.840.1.113883.6.96 | IHTSDO. Administered by Sundhedsdatastyrelsen (Danish Health Data Authority)                                                       |
 | Danish NPU Codes                                                                                        | 1.2.208.176.2.1         | Administered and owned by Sundhedsdatastyrelsen (Danish Health Data Authority)                                                     |
@@ -414,7 +414,7 @@ The classCode attribute specifies the high-level use classification of the docum
 
 The classCode attribute is related to the typeCode and has a lower degree of granularity for the classification of the document. The typeCode attribute (see 2.2.32) specifies the precise type of document from the user perspective.
 
-In this profile, the classCode is given by values in the code system DK IHE classCodes described in section 3.7.
+In this profile, the classCode is given by values in the code system DK XDS ClassCodes described in section 3.7.
 
 **Coding:**
 
@@ -422,7 +422,7 @@ This metadata attribute has a limited allowed value set. See this reference for 
 
 There shall be exactly one ebRIM Classification containing a classCode for any DocumentEntry. For the classCode metadata attribute, the classificationScheme shall be urn: urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a.
 
-| RDK reference:  The code shall be a valid value for the document type.  The codeSystem shall be the associated OID for “DK IHE classCodes”  The displayName shall be the name for the document type found in the code system “DK IHE classCodes”.  Example values: \$code = “001” \$displayName = “Klinisk rapport” \$codeSystem = ” 1.2.208.184.100.9”  |
+| RDK reference:  The code shall be a valid value for the document type.  The codeSystem shall be the associated OID for “DK XDS ClassCodes”  The displayName shall be the name for the document type found in the code system “DK XDS ClassCodes”.  Example values: \$code = “001” \$displayName = “Klinisk rapport” \$codeSystem = ” 1.2.208.184.100.9”  |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 | XML example:  \<rim:Classification  classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"  classifiedObject="ExampleDocument"  id="IdExample_046"  objectType="urn:oasis:names:tc:ebxml- regrep:ObjectType:RegistryObject:Classification"  nodeRepresentation="001"  \>  \<rim:Name\>  \<rim:LocalizedString  value="Klinisk rapport"/\>  \</rim:Name\>  \<rim:Slot name="codingScheme"\>  \<rim:ValueList\>  \<rim:Value\>1.2.208.184.100.9\</rim:Value\>  \</rim:ValueList\>  \</rim:Slot\> \</rim:Classification\> |
@@ -1219,11 +1219,11 @@ Web: <http://www.medinfo.dk/sks/index.php>
 
 Responsible: Sundhedsdatastyrelsen
 
-## DK IHE classCodes
+## DK XDS ClassCodes
 
 ### General information
 
-DK IHE classCodes are used for the classCode attribute.
+DK XDS ClassCodes are used for the classCode attribute.
 
 ### Use
 

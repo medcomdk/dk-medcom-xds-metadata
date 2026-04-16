@@ -111,7 +111,7 @@ Table 1. OID used in IHE Metadata
 | **SOR** Register of Danish Health Organisations                                                         | 1.2.208.176.1.1         | Administered and owned by Sundhedsdatastyrelsen (Danish Health Data Authority)                                                     |
 | **Autorisationsregister **Registered health professionals in Denmark                                    | 1.2.208.176.1.3         | Administered by Sundhedsdatastyrelsen (Danish Health Data Authority) for the owner Danish Patient Safety Authority                 |
 | **Yderregister**  Health Provider register                                                              | 1.2.208.176.1.4         | Administered by Sundhedsdatastyrelsen (Danish Health Data Authority) for Danske Regioner (Danish Regions)                          |
-| DK IHE classCodes                                                                                       | 1.2.208.184.100.9       | Administered and owned by MedCom                                                                                                   |
+| DK XDS ClassCodes                                                                                       | 1.2.208.184.100.9       | Administered and owned by MedCom                                                                                                   |
 | DK IHE formatCodes                                                                                      | 1.2.208.184.100.10      | Administered and owned by MedCom                                                                                                   |
 | SNOMED CT E.g. used by healthCareFacilityCodes and practiceSettingCode                                  |  2.16.840.1.113883.6.96 | IHTSDO. Administered by Sundhedsdatastyrelsen (Danish Health Data Authority)                                                       |
 | Danish NPU Codes                                                                                        | 1.2.208.176.2.1         | Administered and owned by Sundhedsdatastyrelsen (Danish Health Data Authority)                                                     |
@@ -467,7 +467,7 @@ The classCode attribute specifies the high-level use classification of the docum
 
 The classCode attribute is related to the typeCode and has a lower degree of granularity for the classification of the document. The typeCode attribute (see 2.2.32) specifies the precise type of document from the user perspective.
 
-In this profile, the classCode is given by values in the code system DK IHE classCodes described in section 3.7.
+In this profile, the classCode is given by values in the code system DK XDS ClassCodes described in section 3.7.
 
 **Coding:**
 
@@ -479,8 +479,8 @@ There **SHALL** be exactly one ebRIM Classification containing a classCode for a
 [Link to RDK reference](XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html#)
 
         The code **SHALL** be a valid value for the document type.  
-        The codeSystem **SHALL** be the associated OID for “DK IHE classCodes”  
-        The displayName **SHALL** be the name for the document type found in the code system “DK IHE classCodes”.  
+        The codeSystem **SHALL** be the associated OID for “DK XDS ClassCodes”  
+        The displayName **SHALL** be the name for the document type found in the code system “DK XDS ClassCodes”.  
         
         Example values: 
         $code = “001"
@@ -1648,11 +1648,11 @@ Web: <http://www.medinfo.dk/sks/index.php>
 
 Responsible: Sundhedsdatastyrelsen
 
-## DK IHE classCodes
+## DK XDS ClassCodes
 
 **General information**
 
-DK IHE classCodes are used for the classCode attribute.
+DK XDS ClassCodes are used for the classCode attribute.
 
 **Use**
 
