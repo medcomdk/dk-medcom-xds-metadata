@@ -1,6 +1,6 @@
 CodeSystem: MedCom_XDS_FormatCode_CS
 Id: MedCom-xds-formatcode-CS
-Title: "MedCom XDS FormatCode"
+Title: "DK XDS FormatCode"
 Description: "CodeSystem for FormatCode"
 * ^experimental = true
 * ^version = "1.0.0"

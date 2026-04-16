@@ -1,6 +1,6 @@
 CodeSystem: MedCom_XDS_ClassCode_CS
 Id: MedCom-xds-classcode-CS
-Title: "MedCom XDS ClassCode"
+Title: "DK XDS ClassCode"
 Description: "CodeSystem for ClassCode"
 * ^experimental = true
 * ^version = "1.0.0"

@@ -1,6 +1,6 @@
 CodeSystem: MedCom_XDS_EpisodeOfCare
 Id: MedCom-xds-episodeOfCare-CS
-Title: "MedCom XDS Episode of care label"
+Title: "DK XDS Episode of care label"
 Description: "CodeSystem for Danish episode of care - defined by SKS Danish Collection og codesystems"
 * ^experimental = true
 * ^version = "1.0.0"
@@ -58,6 +58,8 @@ Description: "CodeSystem for MedCom analysis codes"
 * #MCS88050	"Pt—Rejse sætte sig testen; antal (værdi 0-50) = × 1/30s"
 * #MCS88137	"Pt—COPD Assessment Test (CAT) score; antal(værdi 0-40) = ?"
 * #MCS88021	"Pt(KOL) —MRC skala; arb.antal(værdi 1-5) = ?"
+
+//, "MCS88015", "MCS88019", "MCS88020", "MCS88050", "MCS88137", "MCS88021"
 
 CodeSystem: MedCom_XDS_PRODKQuestionnaire
 Id: MedCom-xds-prodk-questionnaire-CS

@@ -1,6 +1,6 @@
 ValueSet: MedCom_XDS_TypeCode
 Id: MedCom-xds-typecode-VS
-Title: "MedCom XDS TypeCode ValueSet"
+Title: "DK XDS TypeCode ValueSet"
 Description: "ValueSet containing TypeCode."
 * ^experimental = true
 * ^version = "1.0.0"

@@ -1,1 +1,1 @@
-Initial commit of DK MedCom XDS Metadata IG as trail use
+Initial commit of DK DK XDS Metadata IG as trail use
