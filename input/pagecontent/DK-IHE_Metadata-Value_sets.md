@@ -20,4 +20,4 @@ These define new code systems used by systems conforming to this implementation 
 | Terminology: Code Systems | |
 | --- | --- |
 | [DK XDS ClassCode](CodeSystem-MedCom-xds-classcode-CS.html) | CodeSystem for ClassCode |
-| [IHE XDS Affinity Domain](CodeSystem-MedCom-xds-homeCommunityId-CS.html) | IHE XDS Affinity Domains who has agreed to share healthcare related documents in Denmark |
+| [DK XDS Affinity Domain](CodeSystem-MedCom-xds-homeCommunityId-CS.html) | DK XDS Affinity Domains who has agreed to share healthcare related documents in Denmark |
