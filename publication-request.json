@@ -1,13 +1,11 @@
 {
     "package-id": "medcom.dk.xdsmetadata",
-    "version": "2.0.0",
-    "path": "http://medcomfhir.dk/ig/xdsmetadata/2.0.0",
-    "status": "release",
-    "sequence": "Release",
-    "first" : false,
+    "version": "2.0.0-rc-1.0.0",
+    "path": "http://medcomfhir.dk/ig/xdsmetadata/2.0.0-rc-1.0.0",
+    "status": "ballot",
+    "sequence": "Release Candidates",
     "milestone" : true,
-    "title": "Dk MedCom Terminology for XDS Metadata",
-    "introduction": "The MedCom Document Implementation Guide includes CodeSystems and ValueSets for XDS metadata.",
+    "desc": "See release notes for details",
     "descmd": "@release-notes.md"
 }
   
