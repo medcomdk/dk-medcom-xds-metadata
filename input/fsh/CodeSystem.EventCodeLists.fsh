@@ -48,7 +48,6 @@ Description: "CodeSystem for MedCom analysis codes"
 * ^status = #active
 * ^date = "2015-01-01"
 * ^caseSensitive = false
-* ^url = "urn:oid:1.2.208.184.100.8"
 * ^identifier.value = "1.2.208.184.100.8"
 * ^content = #fragment
 * #MCS88100 //"Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L"

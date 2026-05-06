@@ -8,7 +8,6 @@ Description: "CodeSystem for FormatCode"
 * ^date = "2026-01-15"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.184.100.10"
-* ^url = "urn:oid:1.2.208.184.100.10"
 * ^property[+].code = #deprecationDate
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#deprecationDate"
 * ^property[=].description = "The date from which the concept is considered deprecated."

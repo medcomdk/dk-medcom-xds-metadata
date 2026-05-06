@@ -4,9 +4,30 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-# This is an example and is expected
-%Reference is external which isn't supported by the specified aggregation mode(s) for the reference (bundled)%
+# We are aware that no definition is available for the OID. 
+%No definition could be found for URL value 'urn:oid:1.2.208.176.2.4'%
+%Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'urn:oid:1.2.208.176.2.4' could not be found, so the value set cannot be expanded%
+%No definition could be found for URL value 'urn:oid:1.2.208.176.7.3.1'%
+%No definition could be found for URL value 'urn:ad:dk:medcom:noah:action-categories'%
+%No definition could be found for URL value 'urn:oid:1.2.208.184.100.9'%
+%Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'urn:oid:1.2.208.184.100.9' could not be found, so the value set cannot be expanded%
 
-# We are aware of this information and it is not a problem.
-%This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)%
-%This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.3.0-ballot-tc1 (this may not be a problem, but you should check that it's not intended to match a slice)%
+# Due to the above, the following codes cannot be validated
+%The concepts in the value set include have not been validated because the code system 'urn:oid:1.2.208.176.2.4' is not known, and no terminology service supports it%
+%The concepts in the value set include have not been validated because the code system 'urn:oid:1.2.208.184.100.9' is not known, and no terminology service supports it%
+%The concepts in the value set include have not been validated because the code system 'urn:oid:1.2.208.176.7.3.1' is not known, and no terminology service supports it%
+%The concepts in the value set include have not been validated because the code system 'urn:ad:dk:medcom:noah:action-categories' is not known, and no terminology service supports it%
+
+# Some codes from SNOMED CT are inactive, this is expected to be adressed in the future
+%The concept '394812008' has a status of inactive and its use should be reviewed%
+%The concept '554231000005106' has a status of inactive and its use should be reviewed%
+%The concept '550681000005102' has a status of inactive and its use should be reviewed%
+%The concept '557671000005101' has a status of inactive and its use should be reviewed%
+%The concept '550641000005106' has a status of inactive and its use should be reviewed%
+%The concept '546811000005109' has a status of inactive and its use should be reviewed%
+%The concept '547011000005103' has a status of inactive and its use should be reviewed%
+%The concept '546821000005103' has a status of inactive and its use should be reviewed%
+%The concept '554221000005108' has a status of inactive and its use should be reviewed%
+
+# Only information
+%The value set references CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-mediaType' which has status 'fragment'%
