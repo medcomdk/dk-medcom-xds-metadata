@@ -2,24 +2,24 @@ ValueSet: MedCom_XDS_MimeType_XML
 Id: MedCom-xds-mimetype-xml-VS
 Title: "DK XDS MimeType for non-FHIR XML documents"
 Description: "Values for the document metadata attribute mimeType"
-* ^experimental = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-04"
 //* $IANAMediaOID#"All Mime Media Types" "MimeType-text/subType-text"
-* $IANAMediaOID#text/xml "XML Text"
-* $IANAMediaOID#application/cda+xml "MimeType-application/cda+xml"
+* $IANAMediaOID#text/xml //"XML Text"
+* $IANAMediaOID#application/cda+xml //"MimeType-application/cda+xml"
 
 ValueSet: MedCom_XDS_MimeType_FHIR
 Id: MedCom-xds-mimetype-fhir-VS
 Title: "DK XDS MimeType for FHIR documents"
 Description: "Values for the document metadata attribute mimeType"
-* ^experimental = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2025-01-01"
-* $IANAMediaOID#application/fhir+json "MimeType-application/fhir+json"
-* $IANAMediaOID#application/fhir+xml "MimeType-application/fhir+xml"
+* $IANAMediaOID#application/fhir+json //"MimeType-application/fhir+json"
+* $IANAMediaOID#application/fhir+xml // "MimeType-application/fhir+xml"
 
 /*
 ValueSet: MedCom_XDS_APDDkMimeType

@@ -2,7 +2,7 @@ CodeSystem: MedCom_XDS_TypeCode_CS
 Id: MedCom-xds-typecode-CS
 Title: "MedCom Message Codes"
 Description: "MedCom document type codes (Danish)"
-* ^experimental = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-01"
