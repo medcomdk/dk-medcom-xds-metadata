@@ -57,7 +57,7 @@ The codes in the ValueSet originate from different CodeSystems that are owned by
     <td class="tg-c3ow">SCT</td>
     <td class="tg-0pky">Systematized Nomenclature Of MEDicine (SNOMED) Clinical Terms (CT)</td>
     <td class="tg-c3ow">IHTSDO</td>
-    <td class="tg-0pky">http://snomed.info/sct|http://snomed.info/sct/554471000005108</td>
+    <td class="tg-0pky">http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20260331</td>
   </tr>
   <tr>
     <td class="tg-0pky">2.16.840.1.113883.6.1</td>

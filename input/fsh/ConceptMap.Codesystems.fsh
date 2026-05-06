@@ -3,7 +3,7 @@ InstanceOf: ConceptMap
 Usage: #definition
 Title: "OID to CodeSystem Reference ConceptMap"
 Description: "ConceptMap comparing OIDs from the OID registry with corresponding FHIR CodeSystem references."
-* name = "edCom_ConceptMap_OID_To_CodeSystem_Reference"
+* name = "MedComConceptMapOIDToCodeSystemReference"
 * title = "OID to CodeSystem Reference ConceptMap"
 * status = #draft
 * experimental = false
@@ -15,9 +15,11 @@ Description: "ConceptMap comparing OIDs from the OID registry with corresponding
 
 * group[0].element[0].code = #2.16.840.1.113883.6.96
 * group[0].element[0].display = "SCT"
-* group[0].element[0].target[0].code = #http://snomed.info/sct|http://snomed.info/sct/554471000005108
-* group[0].element[0].target[0].display = "http://snomed.info/sct|http://snomed.info/sct/554471000005108"
+* group[0].element[0].target[0].code = #http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20260331
+* group[0].element[0].target[0].display = "http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20260331"
 * group[0].element[0].target[0].equivalence = #equivalent
+* group[0].element[0].target[0].comment = "Latest SNOMED CT Danish Edition as of 2026-03-31 is used."
+
 
 * group[0].element[1].code = #2.16.840.1.113883.6.1
 * group[0].element[1].display = "LOINC"

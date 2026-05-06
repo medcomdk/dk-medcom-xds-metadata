@@ -1,6 +1,6 @@
 CodeSystem: MedCom_XDS_TypeCode_CS
 Id: MedCom-xds-typecode-CS
-Title: "MedCom Message Codes"
+Title: "DK MedCom Message Codes"
 Description: "MedCom document type codes (Danish)"
 * ^experimental = false
 * ^version = "1.0.0"
