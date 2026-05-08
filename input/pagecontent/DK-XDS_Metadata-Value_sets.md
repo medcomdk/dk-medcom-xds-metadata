@@ -26,7 +26,7 @@ These define new code systems used by systems conforming to this implementation 
 | | |
 | :--- | :--- |
 | [DK MedCom analysis codes](CodeSystem-MedCom-xds-analysis-codes-CS.html) | CodeSystem for MedCom analysis codes |
-| [MedCom Message Codes](CodeSystem-MedCom-xds-typecode-CS.html) | MedCom document type codes (Danish) |
-| [MedCom XDS Affinity Domain](CodeSystem-MedCom-xds-homeCommunityId-CS.html) | IHE XDS Affinity Domains who has agreed to share healthcare related documents in Denmark |
-| [MedCom XDS ClassCode](CodeSystem-MedCom-xds-classcode-CS.html) | CodeSystem for ClassCode |
-| [MedCom XDS FormatCode](CodeSystem-MedCom-xds-formatcode-CS.html) | CodeSystem for FormatCode |
+| [DK MedCom Message Codes](CodeSystem-MedCom-xds-typecode-CS.html) | MedCom document type codes (Danish) |
+| [DK MedCom XDS Affinity Domain](CodeSystem-MedCom-xds-homeCommunityId-CS.html) | IHE XDS Affinity Domains who has agreed to share healthcare related documents in Denmark |
+| [DK MedCom XDS ClassCode](CodeSystem-MedCom-xds-classcode-CS.html) | CodeSystem for ClassCode |
+| [DK MedCom XDS FormatCode](CodeSystem-MedCom-xds-formatcode-CS.html) | CodeSystem for FormatCode |
