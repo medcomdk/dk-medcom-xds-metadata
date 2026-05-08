@@ -2,13 +2,12 @@ CodeSystem: MedCom_XDS_FormatCode_CS
 Id: MedCom-xds-formatcode-CS
 Title: "DK XDS FormatCode"
 Description: "CodeSystem for FormatCode"
-* ^experimental = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2026-01-15"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.184.100.10"
-* ^url = "urn:oid:1.2.208.184.100.10"
 * ^property[+].code = #deprecationDate
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#deprecationDate"
 * ^property[=].description = "The date from which the concept is considered deprecated."

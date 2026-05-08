@@ -1,4 +1,4 @@
-CodeSystem: MedCom_XDS_EpisodeOfCare
+/* CodeSystem: MedCom_XDS_EpisodeOfCare
 Id: MedCom-xds-episodeOfCare-CS
 Title: "DK XDS Episode of care label"
 Description: "CodeSystem for Danish episode of care - defined by SKS Danish Collection og codesystems"
@@ -17,9 +17,9 @@ Description: "CodeSystem for Danish episode of care - defined by SKS Danish Coll
 * #ALAL22 "Type 2-diabetes"
 * #ALAL23 "Osteoporose"
 * #ALAL51 "Graviditet, fødsel og barsel"
-* #ALAL52 "Nyfødte"
+* #ALAL52 "Nyfødte" */
 
-CodeSystem: MedCom_XDS_NPU
+/* CodeSystem: MedCom_XDS_NPU
 Id: MedCom-xds-npu-CS
 Title: "MedCom XDS NPU"
 Description: "CodeSystem for Danish NPU"
@@ -38,17 +38,16 @@ Description: "CodeSystem for Danish NPU"
 * #DNK05472 "Arm—Blodtryk(systolisk); tryk = ? mmHg"
 * #DNK05473 "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
 * #NPU21692 "Hjerte—Systole; frekv. = ? × 1/min"
-
+ */
 CodeSystem: MedCom_XDS_AnalysisCodes
 Id: MedCom-xds-analysis-codes-CS
 Title: "DK MedCom analysis codes"
 Description: "CodeSystem for MedCom analysis codes"
-* ^experimental = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-01"
 * ^caseSensitive = false
-* ^url = "urn:oid:1.2.208.184.100.8"
 * ^identifier.value = "1.2.208.184.100.8"
 * ^content = #fragment
 * #MCS88100 "Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L"
@@ -61,7 +60,7 @@ Description: "CodeSystem for MedCom analysis codes"
 
 //, "MCS88015", "MCS88019", "MCS88020", "MCS88050", "MCS88137", "MCS88021"
 
-CodeSystem: MedCom_XDS_PRODKQuestionnaire
+/*CodeSystem: MedCom_XDS_PRODKQuestionnaire
 Id: MedCom-xds-prodk-questionnaire-CS
 Title: "Questionnaires used in the Danish Patient Reported Outcome (PRO), by PRO-sekretariatet."
 Description: "Standards and profiles used for the Patient Reported Outcome (PRO) in Danish Health; https://spgdef.dk/qfdd"
@@ -77,7 +76,7 @@ Description: "Standards and profiles used for the Patient Reported Outcome (PRO)
 * #1de279ff-99fd-4544-9e41-300f56bc08e4 "Diabetes v.10"
 * #898cba44-c668-41e8-ac25-c2b880ac7090 "Hjerterehabilitering uddrag start v.3"
 * #c820effc-91d3-45cd-b2df-53ae95284349 "Hjerterehabilitering uddrag slut v.3"
-/*
+
 * #cfe60422-8a81-4511-bed2-f40f7229e30e "Hjerterehabilitering start v.4"
 * #4d97cd29-3874-4de7-a77e-b2bd62582e78 "Hjerterehabilitering slut v.4"
 * #931ed2c3-0dd3-4800-8e48-c9d48c3e9b33 "Hjerterehabilitering baseline v.4"

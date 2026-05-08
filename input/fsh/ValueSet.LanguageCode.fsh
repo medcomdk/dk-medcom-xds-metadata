@@ -2,12 +2,12 @@ ValueSet: MedCom_XDS_LanguageCode
 Id: MedCom-xds-languagecode-VS
 Title: "DK XDS LanguageCode"
 Description: "Tags for the Identification of Languages (RFC 3066)"
-* ^experimental = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2015-01-01"
-* $IANALanguageOID#da-DK "Danish (Denmark)"
-* $IANALanguageOID#da "Danish"
+* $IANALanguageOID#da-DK // "Danish (Denmark)"
+* $IANALanguageOID#da // "Danish"
 /*
 ValueSet: MedCom_XDS_APDDkLanguageCode
 Id: MedCom-xds-apd-languagecode-VS

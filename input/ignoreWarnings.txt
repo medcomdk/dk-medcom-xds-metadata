@@ -3,3 +3,47 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+# We are aware that no definition is available for the OID. 
+%No definition could be found for URL value 'urn:oid:1.2.208.176.2.4'%
+%Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'urn:oid:1.2.208.176.2.4' could not be found, so the value set cannot be expanded%
+%No definition could be found for URL value 'urn:oid:1.2.208.176.7.3.1'%
+%No definition could be found for URL value 'urn:ad:dk:medcom:noah:action-categories'%
+%No definition could be found for URL value 'urn:oid:1.2.208.184.100.9'%
+%Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'urn:oid:1.2.208.184.100.9' could not be found, so the value set cannot be expanded%
+
+# Due to the above, the following codes cannot be validated.
+%The concepts in the value set include have not been validated because the code system 'urn:oid:1.2.208.176.2.4' is not known, and no terminology service supports it%
+%The concepts in the value set include have not been validated because the code system 'urn:oid:1.2.208.184.100.9' is not known, and no terminology service supports it%
+%The concepts in the value set include have not been validated because the code system 'urn:oid:1.2.208.176.7.3.1' is not known, and no terminology service supports it%
+%The concepts in the value set include have not been validated because the code system 'urn:ad:dk:medcom:noah:action-categories' is not known, and no terminology service supports it%
+
+# Some codes from SNOMED CT are inactive, this is expected to be addressed in the future.
+%The concept '394812008' has a status of inactive and its use should be reviewed%
+%The concept '554231000005106' has a status of inactive and its use should be reviewed%
+%The concept '550681000005102' has a status of inactive and its use should be reviewed%
+%The concept '557671000005101' has a status of inactive and its use should be reviewed%
+%The concept '550641000005106' has a status of inactive and its use should be reviewed%
+%The concept '546811000005109' has a status of inactive and its use should be reviewed%
+%The concept '547011000005103' has a status of inactive and its use should be reviewed%
+%The concept '546821000005103' has a status of inactive and its use should be reviewed%
+%The concept '554221000005108' has a status of inactive and its use should be reviewed%
+
+# Only information
+%The value set references CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-mediaType' which has status 'fragment'%
+%The value set references CodeSystem 'http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-xds-analysis-codes-CS' which has status 'fragment'%
+
+# SNOMED CT codes are unavailable but are included to support content from SOR, this is expected to be addressed in the future.
+%The code '56781000005109' is not valid in the system http://snomed.info/sct version http://snomed.info/sct/554471000005108/version/20260331 (56781000005109)%
+%The code '557881000005104' is not valid in the system http://snomed.info/sct version http://snomed.info/sct/554471000005108/version/20260331 (557881000005104)%
+
+# LOINC codes cannot be validated as the Danish extension of NPU isn't available on the terminology server. This will be addressed in the future.
+%The code 'DNK05472' is not valid in the system http://npu-terminology.org (Unknown code 'DNK05472' in the CodeSystem 'http://npu-terminology.org' version 'INT 2026-03-27')%
+%The code 'DNK05473' is not valid in the system http://npu-terminology.org (Unknown code 'DNK05473' in the CodeSystem 'http://npu-terminology.org' version 'INT 2026-03-27')%
+
+# Warnings related to use of ConceptMap is accepted in the current use. 
+%No definition could be found for URL value 'oid-registry'%
+%No definition could be found for URL value 'XDS-Metadata-CodeSystems'%
+%Constraint failed: cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'%
+%The Source Code System oid-registry is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed%
+%The Target Code System XDS-Metadata-CodeSystems is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed%

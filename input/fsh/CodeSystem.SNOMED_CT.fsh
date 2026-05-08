@@ -2,7 +2,7 @@
 Id: MedCom-xds-snomed-CS
 Title: "DK-subset SNOMED CT"
 Description: "Subset of the SNOMED CT CodeSystem"
-* ^experimental = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-01-01"

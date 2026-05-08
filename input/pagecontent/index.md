@@ -57,7 +57,7 @@ The codes in the ValueSet originate from different CodeSystems that are owned by
     <td class="tg-c3ow">SCT</td>
     <td class="tg-0pky">Systematized Nomenclature Of MEDicine (SNOMED) Clinical Terms (CT)</td>
     <td class="tg-c3ow">IHTSDO</td>
-    <td class="tg-0pky">http://snomed.info/sct|http://snomed.info/sct/554471000005108</td>
+    <td class="tg-0pky">http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20260331</td>
   </tr>
   <tr>
     <td class="tg-0pky">2.16.840.1.113883.6.1</td>
@@ -99,7 +99,7 @@ The codes in the ValueSet originate from different CodeSystems that are owned by
     <td class="tg-c3ow">NPU</td>
     <td class="tg-0pky">Nomenclature for Properties and Units (NPU) terminology in Danish</td>
     <td class="tg-c3ow">Danish Health Data Authority</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">http://npu-terminology.org</td>
   </tr>
   <tr>
     <td class="tg-0pky">1.2.208.176.7.3.1</td>
@@ -113,28 +113,28 @@ The codes in the ValueSet originate from different CodeSystems that are owned by
     <td class="tg-c3ow">ihe</td>
     <td class="tg-0pky">Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain</td>
     <td class="tg-c3ow">Danish Health Data Authority</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-xds-homeCommunityId-CS</td>
   </tr>
   <tr>
     <td class="tg-0pky">1.2.208.184.100.9</td>
     <td class="tg-c3ow">classcode</td>
     <td class="tg-0pky">Danish Integrating the Healthcare Enterprise (IHE) metadata class codes</td>
     <td class="tg-c3ow">MedCom</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-xds-classcode-CS</td>
   </tr>
   <tr>
     <td class="tg-0pky">1.2.208.184.100.1</td>
     <td class="tg-c3ow">message-codes</td>
     <td class="tg-0pky">Message codes administered by MedCom</td>
     <td class="tg-c3ow">MedCom</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-typecode-CS</td>
   </tr>
   <tr>
     <td class="tg-0pky">1.2.208.184.100.10</td>
     <td class="tg-c3ow">formatcode</td>
     <td class="tg-0pky">Danish Integrating the Healthcare Enterprise (IHE) metadata format codes</td>
     <td class="tg-c3ow">MedCom</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-formatcode-CS</td>
   </tr>
 </tbody>
 </table>
