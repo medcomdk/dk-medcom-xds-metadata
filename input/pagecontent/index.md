@@ -10,13 +10,13 @@ The [IHE-XDS metadata standard](https://svn.medcom.dk/svn/releases/Standarder/IH
 
 The Danish Profile is based upon the international <a href="https://profiles.ihe.net/ITI/papers/metadata/index.html" target="_blank">IHE Profile</a>
 
-Standarden definerer en række metadataelementer, der er knyttet til sundhedsdokumenter, og som tillader en ensartet og struktureret beskrivelse af dokumenterne. Formålet er at muliggøre en pålidelig og sikker udveksling af dokumenter.
+The standard defines a number of metadata elements associated with health associated documents, allowing the documents to be described in a uniform and structured way. The purpose is to enable reliable and secure document exchange.
 
-Standarden bliver anvendt i bl.a. Et Samlet Patientoverblik, Graviditetsmappen og PRO-løsningerne til opmærkning af dokumenter i dokumentdelingsservicens SDS Patientindeks. Derfra anvendes standarden til afgrænsning af dokumentudsøgning.
+The XDS-metadata standard is used, among other things, in Patient Data Card (Da: Et Samlet Patient Overblik), document supporting a pregnancy (Da: Graviditetsmappen) and the PRO solutions (Da: Pro-løsningen) to tag documents in the SDS Patient Index of the document sharing service. From the index, the standard is used to delimit document searches.
 
-Ejerskabsoverdragelsen vil centralisere ansvaret for løbende revision af XSD-metadata, hvilket resulterer i en hurtigere og mere effektiv specifikation af søgeparametre. Dette vil gavne både leverandører og slutbrugere ved at levere præcise og mere relevante søgeresultater.
+The transfer of ownership will centralize responsibility for the ongoing revision of XSD metadata, resulting in faster and more efficient specification of search parameters. This will benefit both vendors and end users by providing precise and more relevant search results.
 
-Du finder standarddokumentationen på MedComs SVN.
+You can find the standard documentation in [MedCom’s SVN](https://svn.medcom.dk/svn/releases/Standarder/IHE/DK_profil_metadata/).
 
 # Terminology for XDS Metadata
 
@@ -24,12 +24,12 @@ Du finder standarddokumentationen på MedComs SVN.
 This IG includes ValueSets used in the MedComDocumentReference profile. Further, it includes relevant CodeSystems defined by MedCom.
 
 ### ValueSets
-Codes represented in the ValueSets comes from more CodeSystems, intended for use in a particular context. For each coded element in the DocumentReference profile, a ValueSet is included. The included ValueSet can either be generic across metadata for all standards, e.g. [HealthCareFacilityTypeCode](https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata/ValueSet-MedCom-xds-HealthcareFacilityTypeCode-VS.html), or specific for the individual standard, e.g. [formatcode](https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata/ValueSet-MedCom-ihe-plr-formatcode-VS.html). Therefore, several ValueSets for representing e.g. formatCode can be found, one for each type of MedCom document standard. 
+Codes represented in the ValueSets comes from more CodeSystems, intended for use in a particular context. For each coded element in the DocumentReference profile, a ValueSet is included. The included ValueSet can either be generic across metadata for all standards, e.g. [HealthCareFacilityTypeCode](/ValueSet-MedCom-xds-HealthcareFacilityTypeCode-VS.html), or specific for the individual standard. In the latter case, the ValueSet can be found in the Xds-Documents IG (link will be provided). 
 
 ### CodeSystems
 CodeSystems defines which codes exists and how they should be understood to avoid ambiguities. As mentioned, this IG only includes relevant CodeSystems defined by MedCom, whereas CodeSystems defined by other organizations can be found elsewhere. 
 
-The codes in the ValueSet originate from different CodeSystems that are owned by various organizations. In the table below, these CodeSystems are presented with an OID, name, description from the [OID-repository](http://www.oid-info.com/), owner of the CodeSystem, and a reference to the CodeSystem if it is different from the OID listed below. 
+The codes in the ValueSet originate from different CodeSystems that are owned by various organizations. In the table below, these CodeSystems are presented with an OID, name, description from the [OID-repository](http://www.oid-info.com/), owner of the CodeSystem, and a reference to the CodeSystem used in this IG, if it is different from the OID listed below. 
 
 
 <style type="text/css">
