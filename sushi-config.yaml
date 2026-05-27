@@ -5,14 +5,14 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: medcom.dk.xdsmetadata
 canonical: http://medcomfhir.dk/ig/xdsmetadata
-name: Danish profile of the XDS Metadata Standard
-title: Danish profile of the XDS Metadata Standard
+name: Danish profile of the IHE XDS Metadata Standard
+title: Danish profile of the IHE XDS Metadata Standard
 # description: Example Implementation Guide for getting started with SUSHI
-status: draft # draft | active | retired | unknown
-version: 2.0.0
+status: "draft"
+version: "2.0.0-trial-use-rc-2.0.0"
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2026+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: "trial-use"
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
@@ -65,7 +65,7 @@ publisher:
 #   validation: [allow-any-extensions, no-broken-links]
 parameters:
   show-inherited-invariants: false
-  special-url: [urn:oid:1.2.208.184.100.9, urn:oid:2.16.840.1.113883.6.96, urn:oid:2.16.840.1.113883.6.1, urn:oid:1.2.208.184.100.1, urn:oid:1.2.208.176.2.4, urn:oid:1.2.208.176.2.1, urn:oid:1.2.208.176.7.3.1, urn:oid:1.2.208.184.100.10, urn:oid:1.2.208.176.8.1, urn:oid:2.16.840.1.113883.6.121, urn:oid:2.16.840.1.113883.5.79]
+  special-url: [urn:oid:1.2.208.184.100.9, urn:oid:2.16.840.1.113883.6.96, urn:oid:2.16.840.1.113883.6.1, urn:oid:1.2.208.184.100.1, urn:oid:1.2.208.176.2.4, urn:oid:1.2.208.176.2.1, urn:oid:1.2.208.176.7.3.1, urn:oid:1.2.208.184.100.10, urn:oid:1.2.208.176.8.1, urn:oid:2.16.840.1.113883.6.121, urn:oid:2.16.840.1.113883.5.79, urn:oid:1.2.208.184.100.8]
 
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
@@ -85,7 +85,7 @@ menu:
     DK XDS Metadata profile 2.0.0 CDA example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_cda.html
     DK XDS Metadata profile 2.0.0 FHIR example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_fhir.html
     DK XDS Metadata profile 2.0.0 ebXML example: XDS_Metadata_for_Document_Sharing_Danish_profile_v.2.0.0_ebxml.html
-  DK XDS Metadata Terminology: DK-IHE_Metadata-Value_sets.html
+  DK XDS Metadata Terminology: DK-XDS_Metadata-Value_sets.html
   Artifacts: artifacts.html
   More:
     Roadmap: roadmap.html
