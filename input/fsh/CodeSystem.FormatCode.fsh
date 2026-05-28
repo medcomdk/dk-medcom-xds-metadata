@@ -61,4 +61,6 @@ Description: "CodeSystem for FormatCode"
 // And what should the display value be? It differs here also
 * #urn:ad:dk:medcom:msg:hco-v1.1:full "DK HomeCareObservation message v1.1"
 * #urn:ad:dk:medcom:msg:hco-v1.2:full "DK HomeCareObservation message v1.2"
+* # urn:ad:dk:medcom:ecn-v1.0:full "DK ECN schema"
+
 
