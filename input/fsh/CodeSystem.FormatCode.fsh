@@ -2,8 +2,8 @@ CodeSystem: MedCom_XDS_FormatCode_CS
 Id: MedCom-xds-formatcode-CS
 Title: "DK XDS FormatCode"
 Description: "CodeSystem for FormatCode"
-* ^experimental = false
 * ^version = "1.0.0"
+* ^experimental = false
 * ^status = #active
 * ^date = "2026-01-15"
 * ^caseSensitive = false
@@ -48,7 +48,6 @@ Description: "CodeSystem for FormatCode"
 * #urn:ad:dk:medcom:pmr-v1.0:full "DK PMR schema"
   * ^property[+].code = #deprecationDate
   * ^property[=].valueDateTime = "2025-12-01"
-* #urn:ad:dk:medcom:msg:hco-v1.1:full "DK HCO message"
 * #urn:ad:dk:medcom:prf-v2.0:full "DK PRF schema"
   * ^property[+].code = #deprecationDate
   * ^property[=].valueDateTime = "2025-12-01"
@@ -57,6 +56,9 @@ Description: "CodeSystem for FormatCode"
 * #urn:ad:dk:medcom:phmr-v2.1:full "DK PHMR schema"
 * #urn:ad:dk:medcom:prf-v3.0:full "DK PRF schema"
 * #urn:ad:dk:medcom:phn-v1.0:full "DK Patient's Home Note"
-* #urn:ad:dk:medcom:hcom-v1.1:full "DK HomeCareObservation message"
 * #urn:ad:dk:medcom:ekg-v1.0:full "DK EKG schema"
+// TODO: Note for review, should it be hcom or hco? It was both hcom and hco in here, and in the one Systematic has it was hco
+// And what should the display value be? It differs here also
+* #urn:ad:dk:medcom:msg:hco-v1.1:full "DK HomeCareObservation message v1.1"
+* #urn:ad:dk:medcom:msg:hco-v1.2:full "DK HomeCareObservation message v1.2"
 

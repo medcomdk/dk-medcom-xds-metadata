@@ -1,10 +1,10 @@
 {
-  "mode": "milestone",
-  "package-id": "medcom.dk.xdsmetadata",
+  "package-id": "medcom.fhir.dk.xdsmetadata",
+  "version": "2.0.0-trial-use-1",
+  "path": "http://medcomfhir.dk/ig/xdsmetadata/2.0.0-trial-use-1",
+  "status": "trial-use",
+  "sequence": "Trial Uses",
+  "mode": "working",
   "descmd": "@release-notes.md",
-  "desc": "2.0.0-trial-use-rc-1.0.0 - See release notes for details",
-  "version": "2.0.0-trial-use-rc-1.0.0",
-  "path": "http://medcomfhir.dk/ig/xdsmetadata/2.0.0-trial-use-rc-1.0.0",
-  "status": "draft",
-  "sequence": "Trial Uses"
+  "desc": "See release notes"
 }

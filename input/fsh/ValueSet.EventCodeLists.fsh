@@ -2,8 +2,8 @@
 Id: MedCom-xds-eventcodelist-VS
 Title: "DK XDS EventCodeLists"
 Description: "ValueSet containing EventCodeLists."
-* ^experimental = false
 * ^version = "1.0.0"
+* ^experimental = false
 * ^status = #active
 * ^date = "2022-01-26"
 * $SKSOID#ALAL01 // "Kræftsygdomme"
@@ -22,8 +22,8 @@ Description: "ValueSet containing EventCodeLists."
 * $NPUOID#NPU19748 // "P—C-reaktivt protein; massek. = ? mg/L"
 * $NPUOID#NPU22089 // "P(kB)—Glucose; stofk. = ? mmol/L"
 * $NPUOID#NPU03963 // "U—Erythrocytter; arb.k.(proc.) = ?"
-* $NPUOID#DNK05472 // "Arm—Blodtryk(systolisk); tryk = ? mmHg"
-* $NPUOID#DNK05473 // "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
+* $NPUDanishOID#DNK05472 // "Arm—Blodtryk(systolisk); tryk = ? mmHg"
+* $NPUDanishOID#DNK05473 // "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
 * $NPUOID#NPU21692 // "Hjerte—Systole; frekv. = ? x 1/min"
 * MedCom_XDS_AnalysisCodes#MCS88100 // "Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L"
 * MedCom_XDS_AnalysisCodes#MCS88015 // "Lunge—Lungefunktionsundersøgelse FEV1; vol. = ? L"

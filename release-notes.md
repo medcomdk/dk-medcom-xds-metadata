@@ -1,1 +1,1 @@
-Release candidate of XDS metadata
+Includes XDS Metadata valuesets and codesystems for use in DocumentSharing

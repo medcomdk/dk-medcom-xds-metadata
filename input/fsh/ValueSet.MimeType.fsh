@@ -1,42 +1,10 @@
-ValueSet: MedCom_XDS_MimeType_XML
-Id: MedCom-xds-mimetype-xml-VS
-Title: "DK XDS MimeType for non-FHIR XML documents"
-Description: "Values for the document metadata attribute mimeType"
-* ^experimental = false
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2015-01-04"
-//* $IANAMediaOID#"All Mime Media Types" "MimeType-text/subType-text"
-* $IANAMediaOID#text/xml //"XML Text"
-* $IANAMediaOID#application/cda+xml //"MimeType-application/cda+xml"
-
 ValueSet: MedCom_XDS_MimeType_FHIR
 Id: MedCom-xds-mimetype-fhir-VS
 Title: "DK XDS MimeType for FHIR documents"
 Description: "Values for the document metadata attribute mimeType"
-* ^experimental = false
 * ^version = "1.0.0"
+* ^experimental = false
 * ^status = #active
 * ^date = "2025-01-01"
-* $IANAMediaOID#application/fhir+json //"MimeType-application/fhir+json"
-* $IANAMediaOID#application/fhir+xml // "MimeType-application/fhir+xml"
-
-/*
-ValueSet: MedCom_XDS_APDDkMimeType
-Id: MedCom-xds-apd-mimetype-VS
-Title: "APD-DK IHE MimeType"
-Description: "APD-DK: Values for the document metadata attribute mimeType"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2015-01-04"
-* include codes from system MedCom_XDS_MediaTypes
-
-ValueSet: MedCom_XDS_QRDDkMimeType
-Id: MedCom-xds-qrd-mimetype-VS
-Title: "ARD-DK IHE MimeType"
-Description: "QRD-DK: Values for the document metadata attribute mimeType"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2015-01-04"
-* include codes from system MedCom_XDS_MediaTypes
-*/
+* $IANAMediaOID#application/fhir+json
+* $IANAMediaOID#application/fhir+xml

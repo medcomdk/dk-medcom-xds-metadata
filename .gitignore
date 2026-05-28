@@ -4,4 +4,14 @@ Thumbs.db
 /input-cache
 /output
 /temp
+/out
 /template
+/.vscode
+/_gencontinuous.bat
+/_gencontinuous.sh
+/_genonce.bat
+/_genonce.sh
+/_build.bat
+/_build.sh
+/_updatePublisher.bat
+/_updatePublisher.sh

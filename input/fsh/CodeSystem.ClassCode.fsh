@@ -2,14 +2,13 @@ CodeSystem: MedCom_XDS_ClassCode_CS
 Id: MedCom-xds-classcode-CS
 Title: "DK XDS ClassCode"
 Description: "CodeSystem for ClassCode"
-* ^experimental = false
 * ^version = "1.0.0"
+* ^experimental = false
 * ^status = #active
 * ^date = "2022-01-26"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.184.100.9"
 * #001 "Klinisk rapport"
-//* #001 "Report" English
 * #002 "Summary"
 * #003 "Images"
 * #004 "Treatment Plan"
