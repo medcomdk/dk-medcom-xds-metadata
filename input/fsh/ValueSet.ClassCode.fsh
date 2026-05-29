@@ -6,7 +6,6 @@ Description: "Value set for the classCode attribute. classCode used in DK IHE Do
 * ^experimental = false
 * ^status = #active
 * ^date = "2015-01-01"
-// TODO: Ask Thea during review, why is only these two included out of the six that are in the codesystem?
 * MedCom_XDS_ClassCode_CS#001 // "Klinisk Rapport"
 * MedCom_XDS_ClassCode_CS#006 // "Workflow"
 

@@ -1,4 +1,4 @@
-id: medcom.fhir.dk.xdsmetadata
+id: medcom.dk.xdsmetadata
 canonical: http://medcomfhir.dk/ig/xdsmetadata
 name: Danish profile of the IHE XDS Metadata Standard
 title: Danish profile of the IHE XDS Metadata Standard
@@ -12,7 +12,6 @@ jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 publisher:
   name: MedCom
   url: http://www.medcom.dk
-  email: fhir@medcom.dk
 
 menu:
   Home: index.html

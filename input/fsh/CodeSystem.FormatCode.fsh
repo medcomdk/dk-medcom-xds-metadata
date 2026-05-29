@@ -57,10 +57,7 @@ Description: "CodeSystem for FormatCode"
 * #urn:ad:dk:medcom:prf-v3.0:full "DK PRF schema"
 * #urn:ad:dk:medcom:phn-v1.0:full "DK Patient's Home Note"
 * #urn:ad:dk:medcom:ekg-v1.0:full "DK EKG schema"
-// TODO: Note for review, should it be hcom or hco? It was both hcom and hco in here, and in the one Systematic has it was hco
-// And what should the display value be? It differs here also
-* #urn:ad:dk:medcom:msg:hco-v1.1:full "DK HomeCareObservation message v1.1"
-* #urn:ad:dk:medcom:msg:hco-v1.2:full "DK HomeCareObservation message v1.2"
-* # urn:ad:dk:medcom:ecn-v1.0:full "DK ECN schema"
-
+* #urn:ad:dk:medcom:hcom-v1.1:full "DK HomeCareObservation message v1.1"
+* #urn:ad:dk:medcom:hcom-v1.2:full "DK HomeCareObservation message v1.2"
+* #urn:ad:dk:medcom:ecn-v1.0:full "DK ECN schema"
 

@@ -1,5 +1,5 @@
 {
-  "package-id": "medcom.fhir.dk.xdsmetadata",
+  "package-id": "medcom.dk.xdsmetadata",
   "version": "2.0.0-trial-use-1",
   "path": "http://medcomfhir.dk/ig/xdsmetadata/2.0.0-trial-use-1",
   "status": "trial-use",

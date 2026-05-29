@@ -1,8 +1,7 @@
-Alias: $SnomedctOIDDK = http://snomed.info/sct/554471000005108
+Alias: $SnomedctDKModule = http://snomed.info/sct|http://snomed.info/sct/554471000005108
 Alias: $LoincOID = http://loinc.org //urn:oid:2.16.840.1.113883.6.1
 Alias: $SKSOID = urn:oid:1.2.208.176.2.4
-Alias: $NPUOID = http://npu-terminology.org
-Alias: $NPUDanishOID = urn:oid:1.2.208.176.2.1
+Alias: $NPU = http://npu-terminology.org
 Alias: $PROdkOID = urn:oid:1.2.208.176.7.3.1
 Alias: $MedComFormatOID = urn:oid:1.2.208.184.100.10
 Alias: $DanishxdsOID = urn:oid:1.2.208.176.8.1
