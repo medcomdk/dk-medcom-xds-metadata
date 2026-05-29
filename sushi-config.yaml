@@ -1,4 +1,4 @@
-id: medcom.dk.xdsmetadata
+id: medcom.fhir.dk.xdsmetadata
 canonical: http://medcomfhir.dk/ig/xdsmetadata
 name: Danish profile of the IHE XDS Metadata Standard
 title: Danish profile of the IHE XDS Metadata Standard
