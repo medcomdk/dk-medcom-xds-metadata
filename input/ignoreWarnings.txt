@@ -37,10 +37,6 @@
 %The code '56781000005109' is not valid in the system http://snomed.info/sct version http://snomed.info/sct/554471000005108/version/20260331 (56781000005109)%
 %The code '557881000005104' is not valid in the system http://snomed.info/sct version http://snomed.info/sct/554471000005108/version/20260331 (557881000005104)%
 
-# LOINC codes cannot be validated as the Danish extension of NPU isn't available on the terminology server. This will be addressed in the future.
-%The code 'DNK05472' is not valid in the system http://npu-terminology.org (Unknown code 'DNK05472' in the CodeSystem 'http://npu-terminology.org' version 'INT 2026-03-27')%
-%The code 'DNK05473' is not valid in the system http://npu-terminology.org (Unknown code 'DNK05473' in the CodeSystem 'http://npu-terminology.org' version 'INT 2026-03-27')%
-
 # Warnings related to use of ConceptMap is accepted in the current use. 
 %No definition could be found for URL value 'oid-registry'%
 %No definition could be found for URL value 'XDS-Metadata-CodeSystems'%

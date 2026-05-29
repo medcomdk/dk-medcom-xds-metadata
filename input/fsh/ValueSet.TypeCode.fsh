@@ -2,8 +2,8 @@ ValueSet: MedCom_XDS_TypeCode
 Id: MedCom-xds-typecode-VS
 Title: "DK XDS TypeCode ValueSet"
 Description: "ValueSet containing TypeCode."
-* ^experimental = false
 * ^version = "1.0.0"
+* ^experimental = false
 * ^status = #active
 * ^date = "2026-01-15"
 * $LoincOID#53576-5 // "Personal health monitoring report Document"
@@ -28,3 +28,4 @@ Description: "ValueSet containing TypeCode."
 * MedCom_XDS_TypeCode_CS#PSCR // "Pregnancy Shared Care Report"
 * MedCom_XDS_TypeCode_CS#PMR // "Pregnancy Measurement Report"
 * MedCom_XDS_TypeCode_CS#HCOM // "HomeCareObservation message"
+* $Snomedct#866144008 // "Encounter note"

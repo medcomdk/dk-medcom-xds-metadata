@@ -2,13 +2,12 @@ CodeSystem: MedCom_XDS_TypeCode_CS
 Id: MedCom-xds-typecode-CS
 Title: "DK MedCom Message Codes"
 Description: "MedCom document type codes (Danish)"
-* ^experimental = false
 * ^version = "1.0.0"
+* ^experimental = false
 * ^status = #active
 * ^date = "2015-01-01"
 * ^caseSensitive = false
 * ^identifier.value = "1.2.208.184.100.1"
-//* ^content = #fragment* 
 * ^property[+].code = #deprecationDate
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#deprecationDate"
 * ^property[=].description = "The date from which the concept is considered deprecated."
