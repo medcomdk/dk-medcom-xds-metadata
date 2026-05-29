@@ -1,3 +1,4 @@
+Alias: $Snomedct = http://snomed.info/sct
 Alias: $SnomedctDKModule = http://snomed.info/sct|http://snomed.info/sct/554471000005108
 Alias: $LoincOID = http://loinc.org //urn:oid:2.16.840.1.113883.6.1
 Alias: $SKSOID = urn:oid:1.2.208.176.2.4
