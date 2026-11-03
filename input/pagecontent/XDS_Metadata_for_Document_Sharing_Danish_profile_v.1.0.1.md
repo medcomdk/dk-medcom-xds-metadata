@@ -14,6 +14,24 @@
 | 1.0.0   | 04-04-2024 | Ole Vilstrup Møller. MedCom                   | Revisions regarding further use of code systems added. Added MedCom logo and responsibility. |
 | 1.0.1   | 25-06-2025 | Ole Vilstrup Møller. MedCom                   |  Revision of author.authorperson requirements. Now “R2” in both “Table 1. Metadata Attributes optionality and sources”. and concrete description in chapter 2.2.1.2. Before confusingly “R2” in the table and “R” in 2.2.1.2. A few typos.  |
 
+# Fejlrapport
+
+Her er en oversigt over de tre primære fejltyper på siden:
+
+1. **Uhensigtsmæssig escaping af Markdown-hatte (`\^`)**
+   I HL7 v2-datastrukturer, hvor der anvendes komponent-skilletegn (`^`), har konverteringen indsat en backslash foran.
+   * *Eksempel under 2.2.1.2 (authorPerson):* XML-boksen viser `\^Andersen\^Anders\^`. Det resulterer i en fejlbehæftet tekststreng i testsystemer i stedet for den tilsigtede komponentopdeling.
+
+2. **Dobbeltkonvertering af ampersand (`&amp;`)**
+   I de rå HL7-strenge er ampersand-tegnene (som bruges til sub-komponenter, f.eks. `&amp;ISO`) blevet konverteret til almindelige `&`. 
+   * *Eksempel under 2.2.1.1 (authorInstitution):* Der vises `& 1.2.208.176.1.1&ISO` i stedet for det korrekte XML-escapede `&amp;1.2.208.176.1.1&amp;ISO`.
+
+3. **Manglende/forkerte citationstegn (Ugyldig XML-syntaks)**
+   Nogle steder mangler attribut-anførselstegn helt, eller også anvendes der typografiske/krøllede anførselstegn, hvilket bryder XML-valideringen.
+   * *Eksempel under 2.2.12 (healthcareFacilityTypeCode):* XML-teksten skriver `<rim:value hospital/>`. Her mangler et `value=`-præfiks samt korrekte citationstegn omkring værdien.
+   * *Eksempel under 2.2.32 (typeCode):* Strengen afsluttes med et typografisk anførselstegn: `Report”`.
+
+
 # Introduction
 
 The Danish Document Sharing Service is based on IHE XDS specifications. The aim is that the document can be used for implementing XDS Metadata across Danish IHE Affinity Domains. Metadata is information about documents or records that is used when searching to find the right item. This metadata has to be supplied by the document source and is generally limited to what can be provided by source information systems.
